@@ -1,0 +1,56 @@
+# https://www.ivoa.net/documents/REC/DM/STC-20071030.html#_Toc181531804
+FK4,"Fundamental Katalog, system 4; Besselian","Requires Equinox; default B1950.0
+Left-handed in spherical coordinates"
+FK5,"Fundamental Katalog, system 5; Julian","Requires Equinox; default J2000.0
+Left-handed in spherical coordinates"
+ECLIPTIC,Ecliptic coordinates,Left-handed in spherical coordinates
+ICRS,International Celestial Reference System,Left-handed in spherical coordinates
+GALACTIC_I,Old Galactic coordinates,Left-handed in spherical coordinates
+GALACTIC[_II],“New” Galactic coordinates,Left-handed in spherical coordinates
+SUPER_GALACTIC,"Super-galactic coordinates:
+pole at GALACTIC_II (47.37,+6.32)
+origin at GALACTIC_II (137.37,0)",Left-handed in spherical coordinates
+AZ_EL,Local azimuth and elevation,"Ground-based observatories
+Azimuth: from north through east"
+BODY,Generic “BODY” coordinates,
+GEO_C,"Geographic (geocentric) coordinates: longitude, latitude, geocentric distance",3-D spherical or 3-D Cartesian
+GEO_D,"Geodetic coordinates: longitude, latitude, elevation","Semi-major axis and inverse flattening of the reference spheroid may need to be provided; default is IAU 1976 (6378140 m, 298.2577)"
+MAG,Geomagnetic coordinates,See F&H (2002)
+GSE,Geocentric Solar Ecliptic coordinates,See F&H (2002)
+GSM,Geocentric Solar Magnetic coordinates,See F&H (2002)
+SM,Solar Magnetic coordinates,See F&H (2002)
+HGC,Heliographic coordinates (Carrington),"See Explanatory Supplement, Section 7.2
+Thompson (2006), Section 2.2"
+HGS,Heliographic coordinates (Stonyhurst),"See Explanatory Supplement, Section 7.2
+Thompson (2006), Section 2.2"
+HEEQ,Heliographic Earth Equatorial coordinates,"See F&H (2002); related to Heliographic (Stonyhurst), see Thompson (2006), Section 2.1"
+HRTN,Heliocentric Radial-Tangential-Normal coordinates,See F&H (2002)
+HPC,Helioprojective Cartesian coordinates,"See Thompson (2006), Section 4.1, 2- or 3-dimensional (angular coordinates); left-handed"
+HPR,Helioprojective Polar coordinates,"See Thompson (2006), Section 4.1, 2-dimensional (angular coordinates); left-handed"
+HCC,Heliocentric Cartesian coordinates,"See Thompson (2006), Section 3.1 (linear coordinates); right-handed"
+HGI,Heliographic Inertial coordinates,See F&H (2002)
+MERCURY_C,Planetocentric coordinates on Mercury,"See Explanatory Supplement, Section 7.4"
+VENUS_C,Planetocentric coordinates on Venus,"See Explanatory Supplement, Section 7.4"
+LUNA_C,Selenocentric coordinates,"See Explanatory Supplement, Section 7.3"
+MARS_C,Planetocentric coordinates on Mars,"See Explanatory Supplement, Section 7.4"
+JUPITER_C _III,"Planetocentric coordinates on Jupiter, system III","See Explanatory Supplement, Section 7.4"
+SATURN_C _III,"Planetocentric coordinates on Saturn, system III","See Explanatory Supplement, Section 7.4"
+URANUS_C _III,"Planetocentric coordinates on Uranus, system III","See Explanatory Supplement, Section 7.4"
+NEPTUNE_C _III,"Planetocentric coordinates on Neptune, system III","See Explanatory Supplement, Section 7.4"
+PLUTO_C,Planetocentric coordinates on Pluto,"See Explanatory Supplement, Section 7.4"
+MERCURY_G,Planetographic coordinates on Mercury,"See Explanatory Supplement, Section 7.4
+Left-handed"
+VENUS_G,Planetographic coordinates on Venus,"See Explanatory Supplement, Section 7.4"
+LUNA_G,Selenographic coordinates,"See Explanatory Supplement, Section 7.3"
+MARS_G,Planetographic coordinates on Mars,"See Explanatory Supplement, Section 7.4
+Left-handed"
+JUPITER_G _III,"Planetographic coordinates on Jupiter, system III","See Explanatory Supplement, Section 7.4
+Left-handed"
+SATURN_G _III,"Planetographic coordinates on Saturn, system III","See Explanatory Supplement, Section 7.4
+Left-handed"
+URANUS_G _III,"Planetographic coordinates on Uranus, system III","See Explanatory Supplement, Section 7.4"
+NEPTUNE_G _III,"Planetographic coordinates on Neptune, system III","See Explanatory Supplement, Section 7.4
+Left-handed"
+PLUTO_G,Planetographic coordinates on Pluto,"See Explanatory Supplement, Section 7.4"
+UNKNOWNFrame,Unknown reference frame,"Only to be used as a last resort or for simulations
+The client is responsible for assigning a suitable default"

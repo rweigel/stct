@@ -1,0 +1,1181 @@
+<?xml version="1.0"?>
+<treps>
+	<frames>
+		<frame id="EME">
+			<fullname>
+				Earth Mean Equator and Equinox 
+			</fullname>
+			<description>
+   The Earth Mean Equator and Equinox of Date frame is defined as follows:
+
+      -  +Z axis is aligned with the north-pointing vector normal to the
+         mean equatorial plane of the Earth;
+
+      -  +X axis points along the ``mean equinox'', which is defined as the
+         intersection of the Earth's mean orbital plane with the Earth's mean
+         equatorial plane. It is aligned with the cross product of the
+         north-pointing vectors normal to the Earth's mean equator and mean
+         orbit plane of date;
+
+      -  +Y axis is the cross product of the Z and X axes and completes the
+         right-handed frame;
+
+      -  the origin of this frame is the Earth's center of mass.
+
+   The mathematical model used to obtain the orientation of the Earth's mean
+   equator and equinox of date frame is the 1976 IAU precession model, built
+   into SPICE.
+
+   The base frame for the 1976 IAU precession model is J2000.
+			</description>
+		</frame>
+		<frame id="JEME">
+			<fullname>
+				J2000 centered on Jupiter
+			</fullname>
+			<description>
+			Earth mean equator, dynamical equinox of J2000 centered on Jupiter.
+			</description>
+		</frame>
+		<frame id="KEME">
+			<fullname>
+				J2000 centered on Saturn
+			</fullname>
+			<description>
+			Earth mean equator, dynamical equinox of J2000 centered on Saturn.
+			</description>
+		</frame>
+		<frame id="VME">
+			<fullname>
+				Venus Mean Equator
+			</fullname>
+			<description>
+   The Venus Mean Equatorial of Date frame (also known as Venus Mean
+   Equator and IAU vector of Date frame) is defined as follows :
+
+      -  X-Y plane is defined by the Venus equator of date, and
+         the +Z axis is parallel to the Venus' rotation axis of date,
+         pointing toward the North side of the invariant plane;
+
+      -  +X axis is defined by the intersection of the Venus' equator
+         of date with the Earth Mean Equator of J2000;
+
+      -  +Y axis completes the right-handed system;
+
+      -  the origin of this frame is Venus' center of mass.
+
+   All vectors are geometric: no corrections are used.
+			</description>
+		</frame>
+		<frame id="MME">
+			<fullname>
+				Mars Mean Equator
+			</fullname>
+			<description>
+   The Mars Mean Equator of Date frame (also known as Mars Mean Equator
+   and IAU vector of Date frame) is defined as follows :
+
+      -  X-Y plane is defined by the Mars equator of date: the
+         +Z axis, primary vector, is parallel to the Mars' rotation
+         axis of date, pointing toward the North side of the invariant
+         plane;
+
+      -  +X axis is defined by the intersection of the Mars' equator of
+         date with the J2000 equator;
+
+      -  +Y axis completes the right-handed system;
+
+      -  the origin of this frame is Mars' center of mass.
+
+
+   All vectors are geometric: no corrections are used.
+			</description>
+		</frame>
+		<frame id="LME">
+			<fullname>
+				Moon Mean Equator
+			</fullname>
+			<description>
+   The Moon Mean Equator of Date frame (also known as Moon Mean Equator
+   and IAU vector of Date frame) is defined as follows :
+
+      -  X-Y plane is defined by the Moon equator of date, and the
+         +Z axis, primary vector of this frame, is parallel to the
+         Moon's rotation axis of date, pointing toward the North side
+         of the invariant plane;
+
+      -  +X axis is defined by the intersection of the Moon's equator
+         of date with the Earth Mean Equator of J2000;
+
+      -  +Y axis completes the right-handed system;
+
+      -  the origin of this frame is Moon's center of mass.
+
+   All vectors are geometric: no corrections are used.
+			</description>
+		</frame>
+		<frame id="HEE">
+			<fullname>
+				Heliocentric Earth Ecliptic
+			</fullname>
+			<description>
+   The Heliocentric Earth Ecliptic frame is defined as follows :
+
+      -  X-Y plane is defined by the Earth Mean Ecliptic plane of date,
+         therefore, the +Z axis is the primary vector,and it defined as
+         the normal vector to the Ecliptic plane that points toward the
+         north pole of date;
+
+      -  +X axis is the component of the Sun-Earth vector that is
+         orthogonal to the +Z axis;
+
+      -  +Y axis completes the right-handed system;
+
+      -  the origin of this frame is the Sun's center of mass.
+
+   All vectors are geometric: no aberration corrections are used.
+
+			</description>
+		</frame>
+		<frame id="JECLIP">
+			<fullname>
+				ECLIPJ2000 centered on Jupiter
+			</fullname>
+			<description>The value for the obliquity of the
+                      ecliptic at J2000 is taken from 
+                      of 'Explanatory Supplement to the Astronomical Almanac'
+						edited by P. Kenneth Seidelmann. University Science
+						Books, 20 Edgehill Road, Mill Valley, CA 94941 (1992)
+					  page 114 equation 3.222-1
+			</description>
+		</frame>
+		<frame id="KECLIP">
+			<fullname>
+				ECLIPJ2000 centered on Saturn
+			</fullname>
+			<description>The value for the obliquity of the
+                      ecliptic at J2000 is taken from 
+                      of 'Explanatory Supplement to the Astronomical Almanac'
+						edited by P. Kenneth Seidelmann. University Science
+						Books, 20 Edgehill Road, Mill Valley, CA 94941 (1992)
+					  page 114 equation 3.222-1
+			</description>
+		</frame>
+		<frame id="VSO">
+			<fullname>
+				Venus Solar Orbital
+			</fullname>
+			<description>
+   The Venus Solar Orbital frame is defined as follows:
+
+      -  The position of the Sun relative to Venus is the primary vector:
+         +X axis points from Venus to the Sun;
+
+      -  The inertially referenced velocity of the Sun relative to Venus
+         is the secondary vector: +Y axis is the component of this
+         velocity vector orthogonal to the +X axis;
+
+      -  +Z axis completes the right-handed system;
+
+      -  the origin of this frame is Venus center of mass.
+
+   All vectors are geometric: no corrections are used.
+			</description>
+		</frame>
+		<frame id="GSE">
+			<fullname>
+				Geocentric Solar Ecliptic
+			</fullname>
+			<description>
+   The Earth-centric Solar Ecliptic frame is defined as follows :
+
+      -  X-Y plane is defined by the Earth Mean Ecliptic plane of date:
+         the +Z axis, primary vector, is the normal vector to this plane,
+         always pointing toward the North side of the invariant plane;
+
+      -  +X axis is the component of the Earth-Sun vector that is orthogonal
+         to the +Z axis;
+
+      -  +Y axis completes the right-handed system;
+
+      -  the origin of this frame is the Sun's center of mass.
+
+   All the vectors are geometric: no aberration corrections are used.
+			</description>
+		</frame>
+		<frame id="JSO">
+			<fullname>
+				Jovian Solar Orbital
+			</fullname>
+			<description>
+   The Jupiter Solar Orbital frame is defined as follows:
+
+      -  The position of the Sun relative to Jupiter is the primary vector:
+         +X axis points from Jupiter to the Sun;
+
+      -  The inertially referenced velocity of the Sun relative to Jupiter
+         is the secondary vector: +Y axis is the component of this
+         velocity vector orthogonal to the +X axis;
+
+      -  +Z axis completes the right-handed system;
+
+      -  the origin of this frame is Jupiter center of mass.
+
+   All vectors are geometric: no corrections are used.
+			</description>
+		</frame>
+		<frame id="KSO">
+			<fullname>
+				Kronian Solar Orbital
+			</fullname>
+			<description>
+   The Saturn Solar Orbital frame is defined as follows:
+
+      -  The position of the Sun relative to Saturn is the primary vector:
+         +X axis points from Saturn to the Sun;
+
+      -  The inertially referenced velocity of the Sun relative to Saturn
+         is the secondary vector: +Y axis is the component of this
+         velocity vector orthogonal to the +X axis;
+
+      -  +Z axis completes the right-handed system;
+
+      -  the origin of this frame is Saturn center of mass.
+
+   All vectors are geometric: no corrections are used.
+			</description>
+		</frame>
+		<frame id="LSE">
+			<fullname>
+				Selenocentric Solar Ecliptic
+			</fullname>
+			<description>
+   The Moon-centric Solar Ecliptic frame is defined as follows:
+
+      -  The position of the Sun relative to Moon is the primary vector:
+         +X axis points from Moon to the Sun;
+ 
+      -  The inertially referenced velocity of the Sun relative to Moon
+         is the secondary vector: +Y axis is the component of this
+         velocity vector orthogonal to the +X axis;
+
+      -  +Z axis completes the right-handed system;
+
+      -  the origin of this frame is Moon's center of mass.
+
+   All vectors are geometric: no corrections are used.
+			</description>
+		</frame>
+		<frame id="GSM">
+			<fullname>
+				Geocentric Solar Magnetospheric
+			</fullname>
+			<description>
+      Geocentric Solar Magnetospheric - A coordinate system where
+      the X axis is from Earth to Sun, Z axis is northward in a plane
+      containing the X axis and the geomagnetic dipole axis.
+      See Russell, 1971
+
+      Thus, +X is identical as GSE +X and is the primary, and +Z is the
+      secondary and is the MAG +Z.
+			</description>
+		</frame>
+		<frame id="KSM">
+			<fullname>
+				Kronian Solar Magnetospheric
+			</fullname>
+			<description>
+   The KSM frame is defined as follows:
+
+      Kronocentric Solar Magnetospheric Coordinates (KSM)
+      ---------------------------------------------------
+      A coordinate system where the X axis is from Saturn to Sun,
+      Z axis is northward in a plane containing the X axis and the
+      Kronian dipole axis.
+
+   Some sources refers magnetic dipole at 180 degrees longitude, 89.99 degrees latitude
+   in the IAU_SATURN frame. Other source make assume that the dipole axis is 
+   parallel to the spin axis.
+			</description>
+		</frame>
+		<frame id="JSM">
+			<fullname>
+				Jovian Solar Magnetospheric
+			</fullname>
+			<description>
+   The JSM frame is defined as follows:
+
+      Jovian Solar Magnetospheric (JSM)
+      ---------------------------------------------------
+      A coordinate system where the X axis is from Jupiter to Sun,
+      Z axis is northward in a plane containing the X axis and the Jovian dipole axis.
+
+   Dipole is 159 longitude and 80 latitude.
+			</description>
+		</frame>
+		<frame id="MAG">
+			<fullname>
+				Geomagnetic coordinate system
+			</fullname>
+			<description>
+      MAG Frame: from http://rbsp.space.umn.edu/data/rbsp/teams/spice/fk/rbsp_general011.tf
+      ---------------------------------------------------------
+
+      Definition :
+
+      Geomagnetic - geocentric. Z axis is parallel to the geomagnetic
+      dipole axis, positive north. X is in the plane defined by the Z axis
+      and the Earth's rotation axis. If N is a unit vector from the Earth's
+      center to the north geographic pole, the signs of the X and Y axes are
+      given by Y = N x Z, X = Y x Z.. See Russell, 1971
+      
+
+      The implementation of this frame is complicated in that the definition
+      of the IGRF dipole is a function of time and the IGRF model cannot be
+      directly incorporated into Spice. However, Spice does allow one to define
+      time dependent Euler angles. Meaning, you can define an Euler angle
+      that rotates GEO to MAG for a given ephemeris time t:
+
+         V           = r(t) * V
+          GEI                  MAG
+      
+      where r(t) is a time dependent Euler angle representation of a
+      rotation. Spice allows for the time dependence to be represented by a
+      polynomial expansion. This expansion can be fit using the IGRF model,
+      thus representing the IGRF dipole axis.
+
+      IGRF-11 (the 11th version) was fit for the period of 1990-2020, which
+      should encompass the mission and will also make this kernel useful for
+      performing Magnetic dipole frame transformations for the 1990's and
+      the 2000's. However, IGRF-11 is not as accurate for this entire time
+      interval. The years between 1945-2005 are labeled definitive, although
+      only back to 1990 was used in the polynomial fit. 2005-2010 is
+      provisional, and may change with IGRF-12. 2010-2015 was only a
+      prediction. Beyond 2015, the predict is so far in the future as to not
+      be valid. So to make the polynomials behave nicely in this region (in
+      case someone does try to use this frame during that time), the
+      2015 prediction was extended until 2020. So for low precision, this
+      kernel can be used for the years 2015-2020. Any times less than 1990
+      and greater than 2020 were not used in the fit, and therefore may be
+      vastly incorrect as the polynomials may diverge outside of this region.
+      These coefficients will be refit when IGRF-12 is released.
+      
+      Also, since the rest of the magnetic dipole frames are defined from
+      this one, similar time ranges should be used for those frames.
+
+                  Definitive           Provisional   Predict    Not Valid
+       |------------------------------|+++++++++++|###########|???????????|
+     1990                           2005        2010        2015        2020
+
+      In addition to the error inherit in the model itself, the polynomial
+      expansion cannot perfectly be fit the IGRF dipole. The maximum error
+      on the fit is .2 milliradians, or .01 degrees. 
+
+      The MAG frame is achieved by first rotating the GEO frame about Z by
+      the longitude degrees, and then rotating about the Y axis by the
+      amount of latitude. This matches the new frame to Russell's definition.
+			</description>
+		</frame>
+		<frame id="SM">
+			<fullname>
+				Solar Magnetic coordinates
+			</fullname>
+			<description>
+      Solar Magnetic - A geocentric coordinate system where the
+      Z axis is northward along Earth's dipole axis,
+      X axis is in plane of z axis and Earth-Sun line, positive sunward.
+      See Russell, 1971.
+
+      Thus, this is much like GSM, except that now the +Z axis is the
+      primary, meaning it is parallel to the dipole vector, and +X is the
+      secondary. Since the X-Z plane is the same as GSM's X-Z plane, the Y
+      axis is the same as GSM.
+			</description>
+		</frame>
+		<frame id="GSEQ">
+			<fullname>
+				Geocentric Solar Equatorial
+			</fullname>
+			<description>
+   The Geocentric Solar Equatorial frame is defined as follows :
+
+      -  +X axis is the position of the Sun relative to the Earth; it's
+         the primary vector and points from the Earth to the Sun;
+
+      -  +Z axis is the component of the Sun's north pole of date orthogonal
+         to the +X axis;
+
+      -  +Y axis completes the right-handed reference frame;
+
+      -  the origin of this frame is the Earth's center of mass.
+
+   All the vectors are geometric: no aberration corrections are used.
+			</description>
+		</frame>
+		<frame id="ECLIPDATE">
+			<fullname>
+				Earth Mean Ecliptic and Equinox
+			</fullname>
+			<description>
+   The Earth Mean Ecliptic and Equinox of Date frame is defined as follows:
+
+      -  +Z axis is aligned with the north-pointing vector normal to the
+         mean orbital plane of the Earth;
+
+      -  +X axis points along the ``mean equinox'', which is defined as the
+         intersection of the Earth's mean orbital plane with the Earth's mean
+         equatorial plane. It is aligned with the cross product of the
+         north-pointing vectors normal to the Earth's mean equator and mean
+         orbit plane of date;
+
+      -  +Y axis is the cross product of the Z and X axes and completes the
+         right-handed frame;
+
+      -  the origin of this frame is the Earth's center of mass.
+
+   The mathematical model used to obtain the orientation of the Earth's mean
+   equator and equinox of date frame is the 1976 IAU precession model, built
+   into SPICE.
+
+   The mathematical model used to obtain the mean orbital plane of the Earth
+   is the 1980 IAU obliquity model, also built into SPICE.
+
+   The base frame for the 1976 IAU precession model is J2000.
+			</description>
+		</frame>
+		<frame id="67PCG_EME">
+			<fullname>
+				J2000 centered on comet Churyumov Gerasimenko
+			</fullname>
+			<description>
+			Earth mean equator, dynamical equinox of J2000 centered on comet Churyumov Gerasimenko.
+			</description>
+		</frame>
+		<frame id="LUTETIA_EME">
+			<fullname>
+				J2000 centered on asteroid LUTETIA
+			</fullname>
+			<description>
+			Earth mean equator, dynamical equinox of J2000 centered on LUTETIA.
+			</description>
+		</frame>
+		<frame id="STEINS_EME">
+			<fullname>
+				J2000 centered on asteroid STEINS
+			</fullname>
+			<description>
+			Earth mean equator, dynamical equinox of J2000 centered on STEINS.
+			</description>
+		</frame>
+		<frame id="HEEQ">
+			<fullname>
+				Heliocentric Earth Equatorial	
+			</fullname>
+			<description>
+   The Heliocentric Earth Equatorial frame is defined as follows:
+
+      -  X-Y plane is the solar equator of date, therefore, the +Z axis 
+         is the primary vector and it is aligned to the Sun's north pole
+         of date;
+
+      -  +X axis is defined by the intersection between the Sun equatorial
+         plane and the solar central meridian of date as seen from the Earth.
+         The solar central meridian of date is defined as the meridian of the
+         Sun that is turned toward the Earth. Therefore, +X axis is the
+         component of the Sun-Earth vector that is orthogonal to the +Z axis;
+
+      -  +Y axis completes the right-handed system;
+
+      -  the origin of this frame is the Sun's center of mass.
+
+   All vectors are geometric: no aberration corrections are used.
+			</description>
+		</frame>
+		<frame id="HCI">
+			<fullname>
+				Heliocentric Inertial
+			</fullname>
+			<description>
+   The Heliocentric Inertial Frame is defined as follows :
+
+    -  X-Y plane is defined by the Sun's equator of epoch J2000: the +Z
+       axis, primary vector, is parallel to the Sun's rotation axis of
+       epoch J2000, pointing toward the Sun's north pole;
+
+    -  +X axis is defined by the ascending node of the Sun's equatorial
+       plane on the ecliptic plane of J2000;
+
+    -  +Y completes the right-handed frame;
+
+    -  the origin of this frame is the Sun's center of mass.
+			</description>
+		</frame>
+		<frame id="MSO">
+			<fullname>
+				Mars Solar Orbital
+			</fullname>
+			<description>
+   The Mars Solar Orbital frame is defined as follows:
+
+      -  The position of the Sun relative to Mars is the primary vector:
+         +X axis points from Mars to the Sun;
+
+      -  The inertially referenced velocity of the Sun relative to Mars
+         is the secondary vector: +Y axis is the component of this
+         velocity vector orthogonal to the +X axis;
+
+      -  +Z axis completes the right-handed system;
+
+      -  the origin of this frame is Mars' center of mass.
+
+   All vectors are geometric: no corrections are used.
+			</description>
+		</frame>
+		<frame id="MEME">
+			<fullname>
+				J2000 centered on Mercury
+			</fullname>
+			<description>
+			Earth mean equator, dynamical equinox of J2000 centered on Mercury.
+			</description>
+		</frame>
+		<frame id="MECLIP">
+			<fullname>
+				ECLIPJ2000 centered on Mercury
+			</fullname>
+			<description>The value for the obliquity of the
+                      ecliptic at J2000 is taken from 
+                      of 'Explanatory Supplement to the Astronomical Almanac'
+						edited by P. Kenneth Seidelmann. University Science
+						Books, 20 Edgehill Road, Mill Valley, CA 94941 (1992)
+					  page 114 equation 3.222-1
+			</description>
+		</frame>
+		<frame id="MESO">
+			<fullname>
+				Mercury Solar Orbital
+			</fullname>
+			<description>
+   The Mercury Solar Orbital frame is defined as follows:
+
+      -  The position of the Sun relative to Mercury is the primary vector:
+         +X axis points from Mercury to the Sun;
+
+      -  The inertially referenced velocity of the Sun relative to Mercury
+         is the secondary vector: +Y axis is the component of this
+         velocity vector orthogonal to the +X axis;
+
+      -  +Z axis completes the right-handed system;
+
+      -  the origin of this frame is Mercury center of mass.
+
+   All vectors are geometric: no corrections are used.
+			</description>
+		</frame>
+		<frame id="J2000">
+			<fullname>
+				Earth mean equator, dynamical equinox of J2000
+			</fullname>
+			<description>
+			</description>
+		</frame>
+		<frame id="ECLIPJ2000">
+			<fullname>
+				Ecliptic coordinates based upon the J2000 frame
+			</fullname>
+			<description>The value for the obliquity of the
+                      ecliptic at J2000 is taken from 
+                      of 'Explanatory Supplement to the Astronomical Almanac'
+						edited by P. Kenneth Seidelmann. University Science
+						Books, 20 Edgehill Road, Mill Valley, CA 94941 (1992)
+					  page 114 equation 3.222-1
+			</description>
+		</frame>
+		<frame id="GPHIO">
+			<fullname>
+				Ganymede Phi-Omega
+			</fullname>
+			<description>
+In those Cartesian coordinate system (referred to as MphiO, M=Ganymede, Europa, Io, Callisto),
+X is along the flow direction, Y is along the Moon-Jupiter vector, and Z is along the spin axis.
+These coordinates are analogous to the earth-centered GSE coordinates that relate to the direction of
+flow of the solar wind onto Earth's environment
+All the vectors are geometric: no aberration corrections are used.
+			</description>
+		</frame>
+		<frame id="IAU_SUN">
+			<fullname>Body-Fixed Frame</fullname>
+			<description>
+			Archinal, B.A., Acton, C.H., A’Hearn, M.F. et al. Report of the IAU Working Group on Cartographic Coordinates and Rotational Elements: 2015.
+			Celest Mech Dyn Astr 130, 22 (2018). https://doi.org/10.1007/s10569-017-9805-5
+			</description>
+		</frame>
+		<frame id="MESE">
+			<fullname>Mercury-centric Solar Ecliptic</fullname>
+			<description>
+   The Mercury-centric Solar Ecliptic frame is defined as follows :
+
+      -  X-Y plane is defined by the Earth Mean Ecliptic plane of date:
+         the +Z axis, primary vector, is the normal vector to this plane,
+         always pointing toward the North side of the invariant plane;
+
+      -  +X axis is the component of the Mercury-Sun vector that is orthogonal
+         to the +Z axis;
+
+      -  +Y axis completes the right-handed system;
+
+      -  the origin of this frame is the Sun's center of mass.
+
+   All the vectors are geometric: no aberration corrections are used.
+			</description>
+		</frame>
+		<frame id="MESEQ">
+			<fullname>Mercury-centric Solar Equatorial</fullname>
+			<description>
+   The Mercury-centric Solar Equatorial frame is defined as follows :
+
+      -  +X axis is the position of the Sun relative to the Mercury; it's
+         the primary vector and points from the Mercury to the Sun;
+
+      -  +Z axis is the component of the Sun's north pole of date orthogonal
+         to the +X axis;
+
+      -  +Y axis completes the right-handed reference frame;
+
+      -  the origin of this frame is the Mercury's center of mass.
+
+   All the vectors are geometric: no aberration corrections are used.
+			</description>
+		</frame>
+		<frame id="IAU_MERCURY">
+			<fullname>Body-Fixed Frame</fullname>
+			<description>
+			Archinal, B.A., Acton, C.H., A’Hearn, M.F. et al. Report of the IAU Working Group on Cartographic Coordinates and Rotational Elements: 2015.
+			Celest Mech Dyn Astr 130, 22 (2018). https://doi.org/10.1007/s10569-017-9805-5
+			</description>
+		</frame>
+		<frame id="IAU_VENUS">
+			<fullname>Body-Fixed Frame</fullname>
+			<description>
+			Archinal, B.A., Acton, C.H., A’Hearn, M.F. et al. Report of the IAU Working Group on Cartographic Coordinates and Rotational Elements: 2015.
+			Celest Mech Dyn Astr 130, 22 (2018). https://doi.org/10.1007/s10569-017-9805-5
+			</description>
+		</frame>
+		<frame id="IAU_EARTH">
+			<fullname>Body-Fixed Frame</fullname>
+			<description>
+			Archinal, B.A., Acton, C.H., A’Hearn, M.F. et al. Report of the IAU Working Group on Cartographic Coordinates and Rotational Elements: 2015.
+			Celest Mech Dyn Astr 130, 22 (2018). https://doi.org/10.1007/s10569-017-9805-5
+			</description>
+		</frame>
+		<frame id="IAU_MOON">
+			<fullname>Body-Fixed Frame</fullname>
+			<description>
+			Archinal, B.A., Acton, C.H., A’Hearn, M.F. et al. Report of the IAU Working Group on Cartographic Coordinates and Rotational Elements: 2015.
+			Celest Mech Dyn Astr 130, 22 (2018). https://doi.org/10.1007/s10569-017-9805-5
+			</description>
+		</frame>
+		<frame id="IAU_MARS">
+			<fullname>Body-Fixed Frame</fullname>
+			<description>
+			Archinal, B.A., Acton, C.H., A’Hearn, M.F. et al. Report of the IAU Working Group on Cartographic Coordinates and Rotational Elements: 2015.
+			Celest Mech Dyn Astr 130, 22 (2018). https://doi.org/10.1007/s10569-017-9805-5
+			</description>
+		</frame>
+		<frame id="PSE">
+			<fullname>Phobos-centric Solar Ecliptic</fullname>
+			<description>
+   The Moon-centric Solar Ecliptic frame is defined as follows:
+
+      -  The position of the Sun relative to Phobos is the primary vector:
+         +X axis points from Moon to the Sun;
+ 
+      -  The inertially referenced velocity of the Sun relative to Phobos
+         is the secondary vector: +Y axis is the component of this
+         velocity vector orthogonal to the +X axis;
+
+      -  +Z axis completes the right-handed system;
+
+      -  the origin of this frame is Phobos' center of mass.
+
+   All vectors are geometric: no corrections are used.
+			</description>
+		</frame>
+		<frame id="PME">
+			<fullname>Phobos Mean Equator</fullname>
+			<description>
+   The Phobos Mean Equator of Date frame (also known as Phobos Mean Equator
+   and IAU vector of Date frame) is defined as follows :
+
+      -  X-Y plane is defined by the Phobos equator of date, and the
+         +Z axis, primary vector of this frame, is parallel to the
+         Moon's rotation axis of date, pointing toward the North side
+         of the invariant plane;
+
+      -  +X axis is defined by the intersection of the Moon's equator
+         of date with the Earth Mean Equator of J2000;
+
+      -  +Y axis completes the right-handed system;
+
+      -  the origin of this frame is Phobos' center of mass.
+
+   All vectors are geometric: no corrections are used.
+			</description>
+		</frame>
+		<frame id="DSE">
+			<fullname>Deimos-centric Solar Ecliptic</fullname>
+			<description>
+   The Moon-centric Solar Ecliptic frame is defined as follows:
+
+      -  The position of the Sun relative to Deimos is the primary vector:
+         +X axis points from Moon to the Sun;
+ 
+      -  The inertially referenced velocity of the Sun relative to Deimos
+         is the secondary vector: +Y axis is the component of this
+         velocity vector orthogonal to the +X axis;
+
+      -  +Z axis completes the right-handed system;
+
+      -  the origin of this frame is Deimos' center of mass.
+
+   All vectors are geometric: no corrections are used.
+			</description>
+		</frame>
+		<frame id="DME">
+			<fullname>Deimos Mean Equator</fullname>
+			<description>
+  The Deimos Mean Equator of Date frame (also known as Deimos Mean Equator
+   and IAU vector of Date frame) is defined as follows :
+
+      -  X-Y plane is defined by the Deimos equator of date, and the
+         +Z axis, primary vector of this frame, is parallel to the
+         Moon's rotation axis of date, pointing toward the North side
+         of the invariant plane;
+
+      -  +X axis is defined by the intersection of the Moon's equator
+         of date with the Earth Mean Equator of J2000;
+
+      -  +Y axis completes the right-handed system;
+
+      -  the origin of this frame is Deimos' center of mass.
+
+   All vectors are geometric: no corrections are used.
+			</description>
+		</frame>
+		<frame id="SYSTEM_3">
+			<fullname>Body-Fixed Frame, same as IAU_JUPITER</fullname>
+			<description>
+			System 3 frame is the body fixed frame known in SPICE as IAU_JUPITER
+			</description>
+		</frame>
+		<frame id="IAU_JUPITER">
+			<fullname>Body-Fixed Frame</fullname>
+			<description>
+			Archinal, B.A., Acton, C.H., A’Hearn, M.F. et al. Report of the IAU Working Group on Cartographic Coordinates and Rotational Elements: 2015.
+			Celest Mech Dyn Astr 130, 22 (2018). https://doi.org/10.1007/s10569-017-9805-5
+			</description>
+		</frame>
+		<frame id="IPHIO">
+			<fullname>Io Phi-Omega</fullname>
+			<description>
+In those Cartesian coordinate system (referred to as MphiO - M is Moon prefix -),
+X is along the flow direction, Y is along the Moon-Jupiter vector, and Z is along the spin axis.
+These coordinates are analogous to the earth-centered GSE coordinates that relate to the direction of
+flow of the solar wind onto Earth's environment
+			</description>
+		</frame>
+		<frame id="EPHIO">
+			<fullname>Europa Phi-Omega</fullname>
+			<description>
+In those Cartesian coordinate system (referred to as MphiO - M is Moon prefix -),
+X is along the flow direction, Y is along the Moon-Jupiter vector, and Z is along the spin axis.
+These coordinates are analogous to the earth-centered GSE coordinates that relate to the direction of
+flow of the solar wind onto Earth's environment			</description>
+		</frame>
+		<frame id="CPHIO">
+			<fullname>Callisto Phi-Omega</fullname>
+			<description>
+In those Cartesian coordinate system (referred to as MphiO - M is Moon prefix -),
+X is along the flow direction, Y is along the Moon-Jupiter vector, and Z is along the spin axis.
+These coordinates are analogous to the earth-centered GSE coordinates that relate to the direction of
+flow of the solar wind onto Earth's environment			</description>
+		</frame>
+		<frame id="IAU_SATURN">
+			<fullname>Body-Fixed Frame</fullname>
+			<description>
+			Archinal, B.A., Acton, C.H., A’Hearn, M.F. et al. Report of the IAU Working Group on Cartographic Coordinates and Rotational Elements: 2015.
+			Celest Mech Dyn Astr 130, 22 (2018). https://doi.org/10.1007/s10569-017-9805-5
+			</description>
+		</frame>
+		<frame id="MIIS">
+			<fullname>Mimas Inter-action coordinate System</fullname>
+			<description>
+   The Moon Inter-action coordinate System frame is defined as follows:
+
+      -  The inertially referenced velocity of Saturn relative to Moon
+         is the primary vector: +X;
+
+	  -  The position of Saturn relative to Moon is the secondary vector:
+         +Y axis points from Moon to the Saturn;
+
+      -  +Z axis completes the right-handed system;
+
+      -  the origin of this frame is Moon's center of mass.
+
+   All vectors are geometric: no corrections are used.
+			</description>
+		</frame>
+		<frame id="ENIS">
+			<fullname>Enceladus Inter-action coordinate System</fullname>
+			<description>
+   The Moon Inter-action coordinate System frame is defined as follows:
+
+      -  The inertially referenced velocity of Saturn relative to Moon
+         is the primary vector: +X;
+
+	  -  The position of Saturn relative to Moon is the secondary vector:
+         +Y axis points from Moon to the Saturn;
+
+      -  +Z axis completes the right-handed system;
+
+      -  the origin of this frame is Moon's center of mass.
+
+   All vectors are geometric: no corrections are used.
+			</description>
+		</frame>
+		<frame id="TEIS">
+			<fullname>Tethys Inter-action coordinate System</fullname>
+			<description>
+   The Moon Inter-action coordinate System frame is defined as follows:
+
+      -  The inertially referenced velocity of Saturn relative to Moon
+         is the primary vector: +X;
+
+	  -  The position of Saturn relative to Moon is the secondary vector:
+         +Y axis points from Moon to the Saturn;
+
+      -  +Z axis completes the right-handed system;
+
+      -  the origin of this frame is Moon's center of mass.
+
+   All vectors are geometric: no corrections are used.
+			</description>
+		</frame>
+		<frame id="DIIS">
+			<fullname>Dione Inter-action coordinate System</fullname>
+			<description>
+   The Moon Inter-action coordinate System frame is defined as follows:
+
+      -  The inertially referenced velocity of Saturn relative to Moon
+         is the primary vector: +X;
+
+	  -  The position of Saturn relative to Moon is the secondary vector:
+         +Y axis points from Moon to the Saturn;
+
+      -  +Z axis completes the right-handed system;
+
+      -  the origin of this frame is Moon's center of mass.
+
+   All vectors are geometric: no corrections are used.
+			</description>
+		</frame>
+		<frame id="RHIS">
+			<fullname>Rhea Inter-action coordinate System</fullname>
+			<description>
+   The Moon Inter-action coordinate System frame is defined as follows:
+
+      -  The inertially referenced velocity of Saturn relative to Moon
+         is the primary vector: +X;
+
+	  -  The position of Saturn relative to Moon is the secondary vector:
+         +Y axis points from Moon to the Saturn;
+
+      -  +Z axis completes the right-handed system;
+
+      -  the origin of this frame is Moon's center of mass.
+
+   All vectors are geometric: no corrections are used.
+			</description>
+		</frame>
+		<frame id="TIIS">
+			<fullname>TItan Inter-action coordinate System</fullname>
+			<description>
+   The Moon Inter-action coordinate System frame is defined as follows:
+
+      -  The inertially referenced velocity of Saturn relative to Moon
+         is the primary vector: +X;
+
+	  -  The position of Saturn relative to Moon is the secondary vector:
+         +Y axis points from Moon to the Saturn;
+
+      -  +Z axis completes the right-handed system;
+
+      -  the origin of this frame is Moon's center of mass.
+
+   All vectors are geometric: no corrections are used.
+			</description>
+		</frame>
+		<frame id="UEME">
+			<fullname>J2000 centered on Uranus</fullname>
+			<description>
+			Earth mean equator, dynamical equinox of J2000 centered on Uranus.
+			</description>
+		</frame>
+		<frame id="UECLIP">
+			<fullname>ECLIPJ2000 centered on Uranus</fullname>
+			<description>The value for the obliquity of the
+                      ecliptic at J2000 is taken from 
+                      of 'Explanatory Supplement to the Astronomical Almanac'
+						edited by P. Kenneth Seidelmann. University Science
+						Books, 20 Edgehill Road, Mill Valley, CA 94941 (1992)
+					  page 114 equation 3.222-1
+			</description>
+		</frame>
+		<frame id="USO">
+			<fullname>Uranus Solar Orbital</fullname>
+			<description>
+   The Uranus Solar Orbital frame is defined as follows:
+
+      -  The position of the Sun relative to Uranus is the primary vector:
+         +X axis points from Uranus to the Sun;
+
+      -  The inertially referenced velocity of the Sun relative to Uranus
+         is the secondary vector: +Y axis is the component of this
+         velocity vector orthogonal to the +X axis;
+
+      -  +Z axis completes the right-handed system;
+
+      -  the origin of this frame is Uranus center of mass.
+
+   All vectors are geometric: no corrections are used.
+			</description>
+		</frame>
+		<frame id="IAU_URANUS">
+			<fullname>Body-Fixed Frame</fullname>
+			<description>
+			Archinal, B.A., Acton, C.H., A’Hearn, M.F. et al. Report of the IAU Working Group on Cartographic Coordinates and Rotational Elements: 2015.
+			Celest Mech Dyn Astr 130, 22 (2018). https://doi.org/10.1007/s10569-017-9805-5
+			</description>
+		</frame>
+		<frame id="NEME">
+			<fullname>J2000 centered on Neptune</fullname>
+			<description>
+			Earth mean equator, dynamical equinox of J2000 centered on Neptune.
+			</description>
+		</frame>
+		<frame id="NECLIP">
+			<fullname>ECLIPJ2000 centered on Neptune</fullname>
+			<description>The value for the obliquity of the
+                      ecliptic at J2000 is taken from 
+                      of 'Explanatory Supplement to the Astronomical Almanac'
+						edited by P. Kenneth Seidelmann. University Science
+						Books, 20 Edgehill Road, Mill Valley, CA 94941 (1992)
+					  page 114 equation 3.222-1
+			</description>
+		</frame>
+		<frame id="NSO">
+			<fullname>Neptune Solar Orbital</fullname>
+			<description>
+   The Neptune Solar Orbital frame is defined as follows:
+
+      -  The position of the Sun relative to Neptune is the primary vector:
+         +X axis points from Neptune to the Sun;
+
+      -  The inertially referenced velocity of the Sun relative to Neptune
+         is the secondary vector: +Y axis is the component of this
+         velocity vector orthogonal to the +X axis;
+
+      -  +Z axis completes the right-handed system;
+
+      -  the origin of this frame is Neptune center of mass.
+
+   All vectors are geometric: no corrections are used.
+			</description>
+		</frame>
+		<frame id="IAU_NEPTUNE">
+			<fullname>Body-Fixed Frame</fullname>
+			<description>
+			Archinal, B.A., Acton, C.H., A’Hearn, M.F. et al. Report of the IAU Working Group on Cartographic Coordinates and Rotational Elements: 2015.
+			Celest Mech Dyn Astr 130, 22 (2018). https://doi.org/10.1007/s10569-017-9805-5
+			</description>
+		</frame>
+		<frame id="PEME">
+			<fullname>EME2000 centered on Pluto</fullname>
+			<description>
+			</description>
+		</frame>
+		<frame id="PECLIP">
+			<fullname>ECLIPJ2000 centered on Pluto</fullname>
+			<description>The value for the obliquity of the
+                      ecliptic at J2000 is taken from 
+                      of 'Explanatory Supplement to the Astronomical Almanac'
+						edited by P. Kenneth Seidelmann. University Science
+						Books, 20 Edgehill Road, Mill Valley, CA 94941 (1992)
+					  page 114 equation 3.222-1
+			</description>
+		</frame>
+		<frame id="PSO">
+			<fullname>Pluto Solar Orbital</fullname>
+			<description>
+   The Pluto Solar Orbital frame is defined as follows:
+
+      -  The position of the Sun relative to Pluto is the primary vector:
+         +X axis points from Pluto to the Sun;
+
+      -  The inertially referenced velocity of the Sun relative to Pluto
+         is the secondary vector: +Y axis is the component of this
+         velocity vector orthogonal to the +X axis;
+
+      -  +Z axis completes the right-handed system;
+
+      -  the origin of this frame is Pluto center of mass.
+
+   All vectors are geometric: no corrections are used.
+			</description>
+		</frame>
+		<frame id="IAU_PLUTO">
+			<fullname>Body-Fixed Frame</fullname>
+			<description>
+			Archinal, B.A., Acton, C.H., A’Hearn, M.F. et al. Report of the IAU Working Group on Cartographic Coordinates and Rotational Elements: 2015.
+			Celest Mech Dyn Astr 130, 22 (2018). https://doi.org/10.1007/s10569-017-9805-5
+			</description>
+		</frame>
+		<frame id="67PCG_CSO">
+			<fullname>Comet solar orbital  centered on comet churyumov gerasimenko</fullname>
+			<description>
+	Comet frames are defined as a two-vector style dynamic frames as follows:
+ 
+      -  The position of the sun relative to the comet is the primary
+         vector: the X axis points from the comet to the sun.
+
+      -  The inertially referenced velocity of the sun relative to the
+         comet is the secondary vector: the Y axis is the component of
+         this velocity vector orthogonal to the X axis.
+
+      -  The Z axis is X cross Y, completing the right-handed reference
+         frame.
+
+      -  All vectors are geometric: no aberration corrections are used.
+			</description>
+		</frame>
+		<frame id="LUTETIA_CSO">
+			<fullname>Comet solar orbital  centered on asteroid LUTETIA</fullname>
+			<description>
+	Comet frames are defined as a two-vector style dynamic frames as follows:
+ 
+      -  The position of the sun relative to the comet is the primary
+         vector: the X axis points from the comet to the sun.
+
+      -  The inertially referenced velocity of the sun relative to the
+         comet is the secondary vector: the Y axis is the component of
+         this velocity vector orthogonal to the X axis.
+
+      -  The Z axis is X cross Y, completing the right-handed reference
+         frame.
+
+      -  All vectors are geometric: no aberration corrections are used.
+			</description>
+		</frame>
+		<frame id="STEINS_CSO">
+			<fullname>Comet solar orbital  centered on asteroid STEINS</fullname>
+			<description>
+	Comet frames are defined as a two-vector style dynamic frames as follows:
+ 
+      -  The position of the sun relative to the comet is the primary
+         vector: the X axis points from the comet to the sun.
+
+      -  The inertially referenced velocity of the sun relative to the
+         comet is the secondary vector: the Y axis is the component of
+         this velocity vector orthogonal to the X axis.
+
+      -  The Z axis is X cross Y, completing the right-handed reference
+         frame.
+
+      -  All vectors are geometric: no aberration corrections are used.
+			</description>
+		</frame>
+		<frame id="HALLEY_EME">
+			<fullname>J2000 centered on HALLEY comet</fullname>
+			<description>
+			Earth mean equator, dynamical equinox of J2000 centered on Halley comet.
+			</description>
+		</frame>
+		<frame id="HALLEY_CSO">
+			<fullname>Comet solar orbital  centered on HALLEY comet</fullname>
+			<description>
+	Comet frames are defined as a two-vector style dynamic frames as follows:
+ 
+      -  The position of the sun relative to the comet is the primary
+         vector: the X axis points from the comet to the sun.
+
+      -  The inertially referenced velocity of the sun relative to the
+         comet is the secondary vector: the Y axis is the component of
+         this velocity vector orthogonal to the X axis.
+
+      -  The Z axis is X cross Y, completing the right-handed reference
+         frame.
+
+      -  All vectors are geometric: no aberration corrections are used.
+			</description>
+		</frame>
+		<frame id="GRIGGSKELL_EME">
+			<fullname>J2000 centered on GRIGG-SKJELLERUP comet</fullname>
+			<description>
+				Earth mean equator, dynamical equinox of J2000 centered on GRIGG-SKJELLERUP.
+			</description>
+		</frame>
+		<frame id="GRIGGSKELL_CSO">
+			<fullname>Comet solar orbital  centered on GRIGG-SKJELLERUP comet</fullname>
+			<description>
+	Comet frames are defined as a two-vector style dynamic frames as follows:
+ 
+      -  The position of the sun relative to the comet is the primary
+         vector: the X axis points from the comet to the sun.
+
+      -  The inertially referenced velocity of the sun relative to the
+         comet is the secondary vector: the Y axis is the component of
+         this velocity vector orthogonal to the X axis.
+
+      -  The Z axis is X cross Y, completing the right-handed reference
+         frame.
+
+      -  All vectors are geometric: no aberration corrections are used.
+	  </description>
+		</frame>
+		<frame id="RTN">
+			<fullname>Sun-Spacecraft coordinate system</fullname>
+			<description>
+				RTN Frame is defined as follows:
+                    - R is positive from the Sun to the spacecraft.
+                    - T is omega cross R, where omega is the sun spin axis.
+                    - N is R cross T, which completes the right-handed system.
+					
+					This frame assumes the instantaneous center is located at the Sun,
+                        and not the spacecraft. Further, the axes are associated
+                        with the normal X, Y, and Z in the following manner:
+                     
+					- R -> X
+					- T -> Y
+					- N -> Z
+			</description>
+		</frame>
+		<frame id="RTP">
+			<fullname>Planet-Spacecraft coordinate system</fullname>
+			<description>
+				The RTP frame is defined as follows:
+                    - R is positive from the Planet to the spacecraft.
+                    - T is omega cross R, where omega is the planet spin axis.
+                    - P is R cross T, which completes the right-handed system.
+                     
+                
+                      This frame assumes the instantaneous center is located at planet
+                      and not the spacecraft. Further, the axes are associated
+                      with the normal X, Y, and Z in the following manner:
+                     
+					        - R     -> X
+							- Theta -> Y
+							- Phi   -> Z
+				</description>
+		</frame>
+	</frames>
+</treps>
