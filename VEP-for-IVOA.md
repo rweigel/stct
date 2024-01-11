@@ -1,6 +1,6 @@
 **Vocabulary**: http://www.ivoa.net/rdf/refframe
-**Author**: Baptiste Cecconi <baptiste.cecconi@obspm.fr>
-**Date**: 2023-11-10
+**Author**: Baptiste Cecconi <baptiste.cecconi@obspm.fr> and Bob Weigel <rweigel@gmu.edu>
+**Date**: 2024-01-11
 
 **Action**: Addition/Modification
 **Used-in**: http://treps.cdpp.eu
