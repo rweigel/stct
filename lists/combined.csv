@@ -1,0 +1,1002 @@
+term,label,definition,sourceLabel,source
+67PCG_CSO,"Comet solar orbital  centered on comet churyumov gerasimenko","Comet frames are defined as a two-vector style dynamic frames as follows:
+ 
+      -  The position of the sun relative to the comet is the primary
+         vector: the X axis points from the comet to the sun.
+
+      -  The inertially referenced velocity of the sun relative to the
+         comet is the secondary vector: the Y axis is the component of
+         this velocity vector orthogonal to the X axis.
+
+      -  The Z axis is X cross Y, completing the right-handed reference
+         frame.
+
+      -  All vectors are geometric: no aberration corrections are used.",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+67PCG_EME,"J2000 centered on comet Churyumov Gerasimenko","Earth mean equator, dynamical equinox of J2000 centered on comet Churyumov Gerasimenko.",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+AACGM,"	Altitude-Adjusted Corrected Geomagnetic Coordinates (Sect. 4.2)","",Laundal,"https://doi.org/10.1007/s11214-016-0275-y"
+AZ_EL,"Local azimuth and elevation","Ground-based observatories
+Azimuth: from north through east",IVOA,"https://www.ivoa.net/documents/REC/DM/STC-20071030.html#_Toc181531804"
+BODY,"Generic “BODY” coordinates","",IVOA,"https://www.ivoa.net/documents/REC/DM/STC-20071030.html#_Toc181531804"
+CD,"	Centered Dipole (Sect. 3.1)","",Laundal,"https://doi.org/10.1007/s11214-016-0275-y"
+CGM,"Corrected Geomagnetic - A coordinate system from a spatial point with GEO radial distance and geomagnetic latitude and longitude, follow the epoch-appropriate IGRF/DGRF model field vector through to the point where the field line crosses the geomagnetic dipole equatorial plane. Then trace the dipole magnetic field vector Earthward from that point on the equatorial plane, in the same hemisphere as the original point, until the initial radial distance is reached. Designate the dipole latitude and longitude at that point as the CGM latitude and longitude of the original point. See <http://nssdc.gsfc.nasa.gov/space/cgm/cgmm_des.html>","Corrected Geomagnetic - A coordinate system from a spatial point with GEO radial distance and geomagnetic latitude and longitude, follow the epoch-appropriate IGRF/DGRF model field vector through to the point where the field line crosses the geomagnetic dipole equatorial plane. Then trace the dipole magnetic field vector Earthward from that point on the equatorial plane, in the same hemisphere as the original point, until the initial radial distance is reached. Designate the dipole latitude and longitude at that point as the CGM latitude and longitude of the original point. See <http://nssdc.gsfc.nasa.gov/space/cgm/cgmm_des.html>",SPASE,"https://spase-group.org/data/model/spase-2.4.0/spase-2_4_0_xsd.html#CoordinateSystemName"
+CGM,"	Corrected Geomagnetic Coordinates (Sect. 4.2)","",Laundal,"https://doi.org/10.1007/s11214-016-0275-y"
+CPHIO,"Callisto Phi-Omega","In those Cartesian coordinate system (referred to as MphiO - M is Moon prefix -),
+X is along the flow direction, Y is along the Moon-Jupiter vector, and Z is along the spin axis.
+These coordinates are analogous to the earth-centered GSE coordinates that relate to the direction of
+flow of the solar wind onto Earth's environment",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+CSO,"Corrected Solar Orbital - A coordinate system related to Earth where X is anti-sunward, Y along the orbital velocity direction.","Corrected Solar Orbital - A coordinate system related to Earth where X is anti-sunward, Y along the orbital velocity direction.",SPASE,"https://spase-group.org/data/model/spase-2.4.0/spase-2_4_0_xsd.html#CoordinateSystemName"
+Carrington,"A coordinate system which is centered at the Sun and is "fixed" with respect to the synodic rotation rate; the mean synodic value is about 27.2753 days. The Astronomical Almanac gives a value for Carrington longitude of 349.03 degrees at 0000 UT on 1 January 1995.","A coordinate system which is centered at the Sun and is "fixed" with respect to the synodic rotation rate; the mean synodic value is about 27.2753 days. The Astronomical Almanac gives a value for Carrington longitude of 349.03 degrees at 0000 UT on 1 January 1995.",SPASE,"https://spase-group.org/data/model/spase-2.4.0/spase-2_4_0_xsd.html#CoordinateSystemName"
+DIIS,"Dione Inter-action coordinate System","The Moon Inter-action coordinate System frame is defined as follows:
+
+      -  The inertially referenced velocity of Saturn relative to Moon
+         is the primary vector: +X;
+
+	  -  The position of Saturn relative to Moon is the secondary vector:
+         +Y axis points from Moon to the Saturn;
+
+      -  +Z axis completes the right-handed system;
+
+      -  the origin of this frame is Moon's center of mass.
+
+   All vectors are geometric: no corrections are used.",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+DIP,"	Dip (latitude) (Sect. 3.2)","",Laundal,"https://doi.org/10.1007/s11214-016-0275-y"
+DM,"Dipole Meridian - A coordinate system centered at the observation point. Z axis is parallel to the Earths dipole axis, positive northward. X is in the plane defined by Z and the line linking the observation point with the Earths center. Y is positive eastward. See <http://cdpp.cnes.fr/00428.pdf>","Dipole Meridian - A coordinate system centered at the observation point. Z axis is parallel to the Earths dipole axis, positive northward. X is in the plane defined by Z and the line linking the observation point with the Earths center. Y is positive eastward. See <http://cdpp.cnes.fr/00428.pdf>",SPASE,"https://spase-group.org/data/model/spase-2.4.0/spase-2_4_0_xsd.html#CoordinateSystemName"
+DME,"Deimos Mean Equator","The Deimos Mean Equator of Date frame (also known as Deimos Mean Equator
+   and IAU vector of Date frame) is defined as follows :
+
+      -  X-Y plane is defined by the Deimos equator of date, and the
+         +Z axis, primary vector of this frame, is parallel to the
+         Moon's rotation axis of date, pointing toward the North side
+         of the invariant plane;
+
+      -  +X axis is defined by the intersection of the Moon's equator
+         of date with the Earth Mean Equator of J2000;
+
+      -  +Y axis completes the right-handed system;
+
+      -  the origin of this frame is Deimos' center of mass.
+
+   All vectors are geometric: no corrections are used.",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+DSE,"Deimos-centric Solar Ecliptic","The Moon-centric Solar Ecliptic frame is defined as follows:
+
+      -  The position of the Sun relative to Deimos is the primary vector:
+         +X axis points from Moon to the Sun;
+ 
+      -  The inertially referenced velocity of the Sun relative to Deimos
+         is the secondary vector: +Y axis is the component of this
+         velocity vector orthogonal to the +X axis;
+
+      -  +Z axis completes the right-handed system;
+
+      -  the origin of this frame is Deimos' center of mass.
+
+   All vectors are geometric: no corrections are used.",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+ECD,"Eccentric Dipole (ECD) coordinate system that aligns with a dipole whose origin and orientation may be different from the physical center and spin axis of the containing body. The IGRF-12 coefficients for 2015 are used to determine the origin for the earth. The 2015 positions are North dip pole: latitude: 86.29, longitude -160.06. South dip pole latitide: -64.28, longitude: 136.59, North geometric pole latitude: 80.37, longitude: -72.63, South geomagnetic pole latitude: -80.37, longitude: 107.37ECD is defined in doi:10.1186/s40623-015-0228-9.","Eccentric Dipole (ECD) coordinate system that aligns with a dipole whose origin and orientation may be different from the physical center and spin axis of the containing body. The IGRF-12 coefficients for 2015 are used to determine the origin for the earth. The 2015 positions are North dip pole: latitude: 86.29, longitude -160.06. South dip pole latitide: -64.28, longitude: 136.59, North geometric pole latitude: 80.37, longitude: -72.63, South geomagnetic pole latitude: -80.37, longitude: 107.37ECD is defined in doi:10.1186/s40623-015-0228-9.",SPASE,"https://spase-group.org/data/model/spase-2.4.0/spase-2_4_0_xsd.html#CoordinateSystemName"
+ECEF,"The Earth-Centered, Earth-Fixed (ECEF) coordinate system has point (0,0,0) defined as the center of mass of the Earth. Its axes are aligned with the International Reference Pole (IRP) and International Reference Meridian (IRM). The x-axis intersects the sphere of the Earth at 0 degree latitude (Equator) and 0 degree longitude (Greenwich). The z-axis points north. The y-axis completes the right handed coordinate system.","The Earth-Centered, Earth-Fixed (ECEF) coordinate system has point (0,0,0) defined as the center of mass of the Earth. Its axes are aligned with the International Reference Pole (IRP) and International Reference Meridian (IRM). The x-axis intersects the sphere of the Earth at 0 degree latitude (Equator) and 0 degree longitude (Greenwich). The z-axis points north. The y-axis completes the right handed coordinate system.",SPASE,"https://spase-group.org/data/model/spase-2.4.0/spase-2_4_0_xsd.html#CoordinateSystemName"
+ECEF,"	Earth-Centered Earth-Fixed (Sect. 2)","",Laundal,"https://doi.org/10.1007/s11214-016-0275-y"
+ECLIPDATE,"Earth Mean Ecliptic and Equinox","The Earth Mean Ecliptic and Equinox of Date frame is defined as follows:
+
+      -  +Z axis is aligned with the north-pointing vector normal to the
+         mean orbital plane of the Earth;
+
+      -  +X axis points along the ``mean equinox'', which is defined as the
+         intersection of the Earth's mean orbital plane with the Earth's mean
+         equatorial plane. It is aligned with the cross product of the
+         north-pointing vectors normal to the Earth's mean equator and mean
+         orbit plane of date;
+
+      -  +Y axis is the cross product of the Z and X axes and completes the
+         right-handed frame;
+
+      -  the origin of this frame is the Earth's center of mass.
+
+   The mathematical model used to obtain the orientation of the Earth's mean
+   equator and equinox of date frame is the 1976 IAU precession model, built
+   into SPICE.
+
+   The mathematical model used to obtain the mean orbital plane of the Earth
+   is the 1980 IAU obliquity model, also built into SPICE.
+
+   The base frame for the 1976 IAU precession model is J2000.",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+ECLIPJ2000,"Ecliptic coordinates based upon the J2000 frame","The value for the obliquity of the
+                      ecliptic at J2000 is taken from 
+                      of 'Explanatory Supplement to the Astronomical Almanac'
+						edited by P. Kenneth Seidelmann. University Science
+						Books, 20 Edgehill Road, Mill Valley, CA 94941 (1992)
+					  page 114 equation 3.222-1",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+ECLIPTIC,"Ecliptic coordinates","Left-handed in spherical coordinates",IVOA,"https://www.ivoa.net/documents/REC/DM/STC-20071030.html#_Toc181531804"
+ED,"	Eccentric Dipole (Sect. 3.3)","",Laundal,"https://doi.org/10.1007/s11214-016-0275-y"
+EME,"Earth Mean Equator and Equinox","The Earth Mean Equator and Equinox of Date frame is defined as follows:
+
+      -  +Z axis is aligned with the north-pointing vector normal to the
+         mean equatorial plane of the Earth;
+
+      -  +X axis points along the ``mean equinox'', which is defined as the
+         intersection of the Earth's mean orbital plane with the Earth's mean
+         equatorial plane. It is aligned with the cross product of the
+         north-pointing vectors normal to the Earth's mean equator and mean
+         orbit plane of date;
+
+      -  +Y axis is the cross product of the Z and X axes and completes the
+         right-handed frame;
+
+      -  the origin of this frame is the Earth's center of mass.
+
+   The mathematical model used to obtain the orientation of the Earth's mean
+   equator and equinox of date frame is the 1976 IAU precession model, built
+   into SPICE.
+
+   The base frame for the 1976 IAU precession model is J2000.",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+ENIS,"Enceladus Inter-action coordinate System","The Moon Inter-action coordinate System frame is defined as follows:
+
+      -  The inertially referenced velocity of Saturn relative to Moon
+         is the primary vector: +X;
+
+	  -  The position of Saturn relative to Moon is the secondary vector:
+         +Y axis points from Moon to the Saturn;
+
+      -  +Z axis completes the right-handed system;
+
+      -  the origin of this frame is Moon's center of mass.
+
+   All vectors are geometric: no corrections are used.",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+ENP,"ENP (also called PEN) - The P vector component points northward, perpendicular to orbit plane which for a zero degree inclination orbit is parallel to Earths spin axis. The E vector component is perpendicular to P and N and points earthward. The N component is perpendicular to P and E and is positive eastward.","ENP (also called PEN) - The P vector component points northward, perpendicular to orbit plane which for a zero degree inclination orbit is parallel to Earths spin axis. The E vector component is perpendicular to P and N and points earthward. The N component is perpendicular to P and E and is positive eastward.",SPASE,"https://spase-group.org/data/model/spase-2.4.0/spase-2_4_0_xsd.html#CoordinateSystemName"
+ENU,"	East North Up (Sect. 2)","",Laundal,"https://doi.org/10.1007/s11214-016-0275-y"
+EPHIO,"Europa Phi-Omega","In those Cartesian coordinate system (referred to as MphiO - M is Moon prefix -),
+X is along the flow direction, Y is along the Moon-Jupiter vector, and Z is along the spin axis.
+These coordinates are analogous to the earth-centered GSE coordinates that relate to the direction of
+flow of the solar wind onto Earth's environment",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+FK4,"Fundamental Katalog, system 4; Besselian","Requires Equinox; default B1950.0
+Left-handed in spherical coordinates",IVOA,"https://www.ivoa.net/documents/REC/DM/STC-20071030.html#_Toc181531804"
+FK5,"Fundamental Katalog, system 5; Julian","Requires Equinox; default J2000.0
+Left-handed in spherical coordinates",IVOA,"https://www.ivoa.net/documents/REC/DM/STC-20071030.html#_Toc181531804"
+GALACTIC[_II],"“New” Galactic coordinates","Left-handed in spherical coordinates",IVOA,"https://www.ivoa.net/documents/REC/DM/STC-20071030.html#_Toc181531804"
+GALACTIC_I,"Old Galactic coordinates","Left-handed in spherical coordinates",IVOA,"https://www.ivoa.net/documents/REC/DM/STC-20071030.html#_Toc181531804"
+GEI,"GEI Geocentric Equatorial Inertial - A coordinate system where the Z axis is along Earths spin vector, positive northward. X axis points towards the first point of Aries (from the Earth towards the Sun at the vernal equinox). See Russell, 1971. When the X axis is the direction of the mean vernal equinox of J2000, the coordinate system is also called GCI. Then the Z axis is also defined as being normal to the mean Earth equator of J2000.","GEI Geocentric Equatorial Inertial - A coordinate system where the Z axis is along Earths spin vector, positive northward. X axis points towards the first point of Aries (from the Earth towards the Sun at the vernal equinox). See Russell, 1971. When the X axis is the direction of the mean vernal equinox of J2000, the coordinate system is also called GCI. Then the Z axis is also defined as being normal to the mean Earth equator of J2000.",SPASE,"https://spase-group.org/data/model/spase-2.4.0/spase-2_4_0_xsd.html#CoordinateSystemName"
+GEO,"Geographic - geocentric corotating - A coordinate system where the Z axis is along Earths spin vector, positive northward. X axis lies in Greenwich meridian, positive towards Greenwich. See Russell, 1971.","Geographic - geocentric corotating - A coordinate system where the Z axis is along Earths spin vector, positive northward. X axis lies in Greenwich meridian, positive towards Greenwich. See Russell, 1971.",SPASE,"https://spase-group.org/data/model/spase-2.4.0/spase-2_4_0_xsd.html#CoordinateSystemName"
+GEO,"	Geocentric (Sect. 2)","",Laundal,"https://doi.org/10.1007/s11214-016-0275-y"
+GEO_C,"Geographic (geocentric) coordinates: longitude, latitude, geocentric distance","3-D spherical or 3-D Cartesian",IVOA,"https://www.ivoa.net/documents/REC/DM/STC-20071030.html#_Toc181531804"
+GEO_D,"Geodetic coordinates: longitude, latitude, elevation","Semi-major axis and inverse flattening of the reference spheroid may need to be provided; default is IAU 1976 (6378140 m, 298.2577)",IVOA,"https://www.ivoa.net/documents/REC/DM/STC-20071030.html#_Toc181531804"
+GPHIO,"Kronian Solar Orbital - A coordinate system related to Saturn where X is anti-sunward, Y along the orbital velocity direction.","Kronian Solar Orbital - A coordinate system related to Saturn where X is anti-sunward, Y along the orbital velocity direction.",SPASE,"https://spase-group.org/data/model/spase-2.4.0/spase-2_4_0_xsd.html#CoordinateSystemName"
+GPHIO,"Ganymede Phi-Omega","In those Cartesian coordinate system (referred to as MphiO, M=Ganymede, Europa, Io, Callisto),
+X is along the flow direction, Y is along the Moon-Jupiter vector, and Z is along the spin axis.
+These coordinates are analogous to the earth-centered GSE coordinates that relate to the direction of
+flow of the solar wind onto Earth's environment
+All the vectors are geometric: no aberration corrections are used.",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+GRIGGSKELL_CSO,"Comet solar orbital  centered on GRIGG-SKJELLERUP comet","Comet frames are defined as a two-vector style dynamic frames as follows:
+ 
+      -  The position of the sun relative to the comet is the primary
+         vector: the X axis points from the comet to the sun.
+
+      -  The inertially referenced velocity of the sun relative to the
+         comet is the secondary vector: the Y axis is the component of
+         this velocity vector orthogonal to the X axis.
+
+      -  The Z axis is X cross Y, completing the right-handed reference
+         frame.
+
+      -  All vectors are geometric: no aberration corrections are used.",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+GRIGGSKELL_EME,"J2000 centered on GRIGG-SKJELLERUP comet","Earth mean equator, dynamical equinox of J2000 centered on GRIGG-SKJELLERUP.",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+GSE,"Geocentric Solar Ecliptic coordinates","See F&H (2002)",IVOA,"https://www.ivoa.net/documents/REC/DM/STC-20071030.html#_Toc181531804"
+GSE,"Geocentric Solar Ecliptic - A coordinate system where the X axis is from Earth to Sun. Z axis is normal to the ecliptic, positive northward. See Russell, 1971.","Geocentric Solar Ecliptic - A coordinate system where the X axis is from Earth to Sun. Z axis is normal to the ecliptic, positive northward. See Russell, 1971.",SPASE,"https://spase-group.org/data/model/spase-2.4.0/spase-2_4_0_xsd.html#CoordinateSystemName"
+GSE,"	Geocentric Solar Ecliptic (Sect. 3.4)","",Laundal,"https://doi.org/10.1007/s11214-016-0275-y"
+GSE,"Geocentric Solar Ecliptic","The Earth-centric Solar Ecliptic frame is defined as follows :
+
+      -  X-Y plane is defined by the Earth Mean Ecliptic plane of date:
+         the +Z axis, primary vector, is the normal vector to this plane,
+         always pointing toward the North side of the invariant plane;
+
+      -  +X axis is the component of the Earth-Sun vector that is orthogonal
+         to the +Z axis;
+
+      -  +Y axis completes the right-handed system;
+
+      -  the origin of this frame is the Sun's center of mass.
+
+   All the vectors are geometric: no aberration corrections are used.",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+GSEQ,"Geocentric Solar Equatorial - A coordinate system where the X axis is from Earth to Sun. Y axis is parallel to solar equatorial plane. Z axis is positive northward. See Russell, 1971","Geocentric Solar Equatorial - A coordinate system where the X axis is from Earth to Sun. Y axis is parallel to solar equatorial plane. Z axis is positive northward. See Russell, 1971",SPASE,"https://spase-group.org/data/model/spase-2.4.0/spase-2_4_0_xsd.html#CoordinateSystemName"
+GSEQ,"Geocentric Solar Equatorial","The Geocentric Solar Equatorial frame is defined as follows :
+
+      -  +X axis is the position of the Sun relative to the Earth; it's
+         the primary vector and points from the Earth to the Sun;
+
+      -  +Z axis is the component of the Sun's north pole of date orthogonal
+         to the +X axis;
+
+      -  +Y axis completes the right-handed reference frame;
+
+      -  the origin of this frame is the Earth's center of mass.
+
+   All the vectors are geometric: no aberration corrections are used.",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+GSM,"Geocentric Solar Magnetic coordinates","See F&H (2002)",IVOA,"https://www.ivoa.net/documents/REC/DM/STC-20071030.html#_Toc181531804"
+GSM,"Geocentric Solar Magnetospheric - A coordinate system where the X axis is from Earth to Sun, Z axis is northward in a plane containing the X axis and the geomagnetic dipole axis. See Russell, 1971","Geocentric Solar Magnetospheric - A coordinate system where the X axis is from Earth to Sun, Z axis is northward in a plane containing the X axis and the geomagnetic dipole axis. See Russell, 1971",SPASE,"https://spase-group.org/data/model/spase-2.4.0/spase-2_4_0_xsd.html#CoordinateSystemName"
+GSM,"	 Geocentric Solar Magnetic (Sect. 3.4)","",Laundal,"https://doi.org/10.1007/s11214-016-0275-y"
+GSM,"Geocentric Solar Magnetospheric","Geocentric Solar Magnetospheric - A coordinate system where
+      the X axis is from Earth to Sun, Z axis is northward in a plane
+      containing the X axis and the geomagnetic dipole axis.
+      See Russell, 1971
+
+      Thus, +X is identical as GSE +X and is the primary, and +Z is the
+      secondary and is the MAG +Z.",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+GeocentricEarthEquatorial(MeanJ2000.0orDate),"GeocentricEarthEquatorial","Astropy's PrecessedGeocentric is similar, but includes aberration due to Earth motion",SunPy,"https://github.com/sunpy/sunpy/wiki/Coordinate-systems"
+GeocentricEarthEquatorial(MeanJ2000.0orDate),"GeocentricEarthEquatorial","Astropy's PrecessedGeocentric is similar, but includes aberration due to Earth motion",SunPy,"https://github.com/sunpy/sunpy/wiki/Coordinate-systems"
+GeocentricEarthEquatorial(True),"none","",SunPy,"https://github.com/sunpy/sunpy/wiki/Coordinate-systems"
+GeocentricEarthEquatorial(True),"none","",SunPy,"https://github.com/sunpy/sunpy/wiki/Coordinate-systems"
+GeocentricSolarEcliptic,"GeocentricSolarEcliptic","X=Earth-Sun line, XZ-plane contains the mean ecliptic north pole",SunPy,"https://github.com/sunpy/sunpy/wiki/Coordinate-systems"
+GeocentricSolarEcliptic,"GeocentricSolarEcliptic","X=Earth-Sun line, XZ-plane contains the mean ecliptic north pole",SunPy,"https://github.com/sunpy/sunpy/wiki/Coordinate-systems"
+GeocentricSolarMagnetospheric,"none","Z=projection of northern dipole axis on GSE YZ plane, X=Earth–Sun line",SunPy,"https://github.com/sunpy/sunpy/wiki/Coordinate-systems"
+GeocentricSolarMagnetospheric,"none","Z=projection of northern dipole axis on GSE YZ plane, X=Earth–Sun line",SunPy,"https://github.com/sunpy/sunpy/wiki/Coordinate-systems"
+Geographic,"Astropy's ITRS","Z=true geographic north pole, X=intersection of Greenwich meridian and geographic equator",SunPy,"https://github.com/sunpy/sunpy/wiki/Coordinate-systems"
+Geographic,"Astropy's ITRS","Z=true geographic north pole, X=intersection of Greenwich meridian and geographic equator",SunPy,"https://github.com/sunpy/sunpy/wiki/Coordinate-systems"
+HAE,"Heliocentric Aries Ecliptic - A coordinate system where the Z axis is normal to the ecliptic plane, positive northward. X axis is positive towards the first point of Aries (from Earth to Sun at vernal equinox). Same as SE below. See Hapgood, 1992.","Heliocentric Aries Ecliptic - A coordinate system where the Z axis is normal to the ecliptic plane, positive northward. X axis is positive towards the first point of Aries (from Earth to Sun at vernal equinox). Same as SE below. See Hapgood, 1992.",SPASE,"https://spase-group.org/data/model/spase-2.4.0/spase-2_4_0_xsd.html#CoordinateSystemName"
+HALLEY_CSO,"Comet solar orbital  centered on HALLEY comet","Comet frames are defined as a two-vector style dynamic frames as follows:
+ 
+      -  The position of the sun relative to the comet is the primary
+         vector: the X axis points from the comet to the sun.
+
+      -  The inertially referenced velocity of the sun relative to the
+         comet is the secondary vector: the Y axis is the component of
+         this velocity vector orthogonal to the X axis.
+
+      -  The Z axis is X cross Y, completing the right-handed reference
+         frame.
+
+      -  All vectors are geometric: no aberration corrections are used.",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+HALLEY_EME,"J2000 centered on HALLEY comet","Earth mean equator, dynamical equinox of J2000 centered on Halley comet.",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+HCC,"Heliocentric Cartesian coordinates","See Thompson (2006), Section 3.1 (linear coordinates); right-handed",IVOA,"https://www.ivoa.net/documents/REC/DM/STC-20071030.html#_Toc181531804"
+HCC,"Heliocentric Cartesian - A 3-D orthonormal coordinate system that is primarily intended to specify with two dimensions a point on the solar disk. The Z axis points toward the observer. The Y axis lies in the plane defined by the solar spin vector and the Z axis, positive northward. The X axis is perpendicular to the Y and Z axes, positive toward solar west. Standard representation for this system is via the points x and y values, expressed either as physical distances or as fractions of the solar disk radius.","Heliocentric Cartesian - A 3-D orthonormal coordinate system that is primarily intended to specify with two dimensions a point on the solar disk. The Z axis points toward the observer. The Y axis lies in the plane defined by the solar spin vector and the Z axis, positive northward. The X axis is perpendicular to the Y and Z axes, positive toward solar west. Standard representation for this system is via the points x and y values, expressed either as physical distances or as fractions of the solar disk radius.",SPASE,"https://spase-group.org/data/model/spase-2.4.0/spase-2_4_0_xsd.html#CoordinateSystemName"
+HCI,"Heliographic Carrington Inertial.","Heliographic Carrington Inertial.",SPASE,"https://spase-group.org/data/model/spase-2.4.0/spase-2_4_0_xsd.html#CoordinateSystemName"
+HCI,"Heliocentric Inertial","The Heliocentric Inertial Frame is defined as follows :
+
+    -  X-Y plane is defined by the Sun's equator of epoch J2000: the +Z
+       axis, primary vector, is parallel to the Sun's rotation axis of
+       epoch J2000, pointing toward the Sun's north pole;
+
+    -  +X axis is defined by the ascending node of the Sun's equatorial
+       plane on the ecliptic plane of J2000;
+
+    -  +Y completes the right-handed frame;
+
+    -  the origin of this frame is the Sun's center of mass.",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+HCR,"Heliocentric Radial - A 3-D orthonormal coordinate system that is primarily intended to specify with two dimensions a point on the solar disk. The Z axis points toward the observer. The Y axis lies in the plane defined by the solar spin vector and the Z axis, positive northward. The X axis is perpendicular to the Y and Z axes, positive toward solar west. Standard representation for this system is via the points distance rho from the Z axis [Rho = SQRT(x**2 + y**2)] and its phase angle psi measured counterclockwise from the +Y axis [psi = arctan (-y/x)]","Heliocentric Radial - A 3-D orthonormal coordinate system that is primarily intended to specify with two dimensions a point on the solar disk. The Z axis points toward the observer. The Y axis lies in the plane defined by the solar spin vector and the Z axis, positive northward. The X axis is perpendicular to the Y and Z axes, positive toward solar west. Standard representation for this system is via the points distance rho from the Z axis [Rho = SQRT(x**2 + y**2)] and its phase angle psi measured counterclockwise from the +Y axis [psi = arctan (-y/x)]",SPASE,"https://spase-group.org/data/model/spase-2.4.0/spase-2_4_0_xsd.html#CoordinateSystemName"
+HEE,"Heliocentric Earth Ecliptic - A coordinate system where the Z axis is normal to the ecliptic plane, positive northward. X axis points from Sun to Earth. See Hapgood, 1992","Heliocentric Earth Ecliptic - A coordinate system where the Z axis is normal to the ecliptic plane, positive northward. X axis points from Sun to Earth. See Hapgood, 1992",SPASE,"https://spase-group.org/data/model/spase-2.4.0/spase-2_4_0_xsd.html#CoordinateSystemName"
+HEE,"Heliocentric Earth Ecliptic","The Heliocentric Earth Ecliptic frame is defined as follows :
+
+      -  X-Y plane is defined by the Earth Mean Ecliptic plane of date,
+         therefore, the +Z axis is the primary vector,and it defined as
+         the normal vector to the Ecliptic plane that points toward the
+         north pole of date;
+
+      -  +X axis is the component of the Sun-Earth vector that is
+         orthogonal to the +Z axis;
+
+      -  +Y axis completes the right-handed system;
+
+      -  the origin of this frame is the Sun's center of mass.
+
+   All vectors are geometric: no aberration corrections are used.",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+HEEQ,"Heliographic Earth Equatorial coordinates","See F&H (2002); related to Heliographic (Stonyhurst), see Thompson (2006), Section 2.1",IVOA,"https://www.ivoa.net/documents/REC/DM/STC-20071030.html#_Toc181531804"
+HEEQ,"Heliocentric Earth Equatorial - A coordinate system where the Z axis is normal to the solar equatorial plane, positive northward. X axis is generally Earthward in the plane defined by the Z axis and the Sun-Earth direction. See Hapgood, 1992.","Heliocentric Earth Equatorial - A coordinate system where the Z axis is normal to the solar equatorial plane, positive northward. X axis is generally Earthward in the plane defined by the Z axis and the Sun-Earth direction. See Hapgood, 1992.",SPASE,"https://spase-group.org/data/model/spase-2.4.0/spase-2_4_0_xsd.html#CoordinateSystemName"
+HEEQ,"Heliocentric Earth Equatorial","The Heliocentric Earth Equatorial frame is defined as follows:
+
+      -  X-Y plane is the solar equator of date, therefore, the +Z axis 
+         is the primary vector and it is aligned to the Sun's north pole
+         of date;
+
+      -  +X axis is defined by the intersection between the Sun equatorial
+         plane and the solar central meridian of date as seen from the Earth.
+         The solar central meridian of date is defined as the meridian of the
+         Sun that is turned toward the Earth. Therefore, +X axis is the
+         component of the Sun-Earth vector that is orthogonal to the +Z axis;
+
+      -  +Y axis completes the right-handed system;
+
+      -  the origin of this frame is the Sun's center of mass.
+
+   All vectors are geometric: no aberration corrections are used.",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+HERTN,"Helio-Eclipitic Radial Tangential Normal coordinate system. Typically centered at a spacecraft. The X axis (radial) is set as the primary axis, and is defined as the axis pointing from the spacecraft to the Sun.  The Z axis (tangential) is set as the secondary axis, and is defined as that portion of the ecliptic rotational axis which is perpendicular to the primary axis. The Y axis (Normal) is defined as Z cross X.","Helio-Eclipitic Radial Tangential Normal coordinate system. Typically centered at a spacecraft. The X axis (radial) is set as the primary axis, and is defined as the axis pointing from the spacecraft to the Sun.  The Z axis (tangential) is set as the secondary axis, and is defined as that portion of the ecliptic rotational axis which is perpendicular to the primary axis. The Y axis (Normal) is defined as Z cross X.",SPASE,"https://spase-group.org/data/model/spase-2.4.0/spase-2_4_0_xsd.html#CoordinateSystemName"
+HG,"Heliographic - A heliocentric rotating coordinate system where the Z axis is normal to the solar equatorial plane, positive northward. X, Y axes rotate with a 25.38 day period. The zero longitude (X axis) is defined as the longitude that passed through the ascending node of the solar equator on the ecliptic plane on 1 January, 1854 at 12 UT. See <http://nssdc.gsfc.nasa.gov/space/helios/coor_des.html>","Heliographic - A heliocentric rotating coordinate system where the Z axis is normal to the solar equatorial plane, positive northward. X, Y axes rotate with a 25.38 day period. The zero longitude (X axis) is defined as the longitude that passed through the ascending node of the solar equator on the ecliptic plane on 1 January, 1854 at 12 UT. See <http://nssdc.gsfc.nasa.gov/space/helios/coor_des.html>",SPASE,"https://spase-group.org/data/model/spase-2.4.0/spase-2_4_0_xsd.html#CoordinateSystemName"
+HGC,"Heliographic coordinates (Carrington)","See Explanatory Supplement, Section 7.2
+Thompson (2006), Section 2.2",IVOA,"https://www.ivoa.net/documents/REC/DM/STC-20071030.html#_Toc181531804"
+HGI,"Heliographic Inertial coordinates","See F&H (2002)",IVOA,"https://www.ivoa.net/documents/REC/DM/STC-20071030.html#_Toc181531804"
+HGI,"Heliographic Inertial - A heliocentric coordinate system where the Z axis is normal to the solar equatorial plane, positive northward. X axis is along the intersection line between solar equatorial and ecliptic planes. The X axis was positive at SE longitude of 74.367 deg on Jan 1, 1900. (See SE below.) See <http://nssdc.gsfc.nasa.gov/space/helios/coor_des.html>","Heliographic Inertial - A heliocentric coordinate system where the Z axis is normal to the solar equatorial plane, positive northward. X axis is along the intersection line between solar equatorial and ecliptic planes. The X axis was positive at SE longitude of 74.367 deg on Jan 1, 1900. (See SE below.) See <http://nssdc.gsfc.nasa.gov/space/helios/coor_des.html>",SPASE,"https://spase-group.org/data/model/spase-2.4.0/spase-2_4_0_xsd.html#CoordinateSystemName"
+HGRTN,"Heliocentric Radial Tangential Normal coordinate system (aka RTN). Typically centered at a spacecraft. Used for IMF and plasma V vectors. The X axis (radial) is set as the primary axis, and is defined as the axis pointing from the spacecraft to the Sun. The Z axis (tangential) is set as the secondary axis, and is defined as that portion of the solar North rotational axis which is perpendicular to the primary axis. The Y axis (normal) is defined as Z cross X.","Heliocentric Radial Tangential Normal coordinate system (aka RTN). Typically centered at a spacecraft. Used for IMF and plasma V vectors. The X axis (radial) is set as the primary axis, and is defined as the axis pointing from the spacecraft to the Sun. The Z axis (tangential) is set as the secondary axis, and is defined as that portion of the solar North rotational axis which is perpendicular to the primary axis. The Y axis (normal) is defined as Z cross X.",SPASE,"https://spase-group.org/data/model/spase-2.4.0/spase-2_4_0_xsd.html#CoordinateSystemName"
+HGS,"Heliographic coordinates (Stonyhurst)","See Explanatory Supplement, Section 7.2
+Thompson (2006), Section 2.2",IVOA,"https://www.ivoa.net/documents/REC/DM/STC-20071030.html#_Toc181531804"
+HPC,"Helioprojective Cartesian coordinates","See Thompson (2006), Section 4.1, 2- or 3-dimensional (angular coordinates); left-handed",IVOA,"https://www.ivoa.net/documents/REC/DM/STC-20071030.html#_Toc181531804"
+HPC,"Helioprojective Cartesian = A 3-D orthonormal (left-handed) coordinate system that is primarily intended to specify with two dimensions a point on the solar disk. The Z axis points from the observer to the center of the solar disk. The Y axis lies in the plane defined by the solar spin vector and the Z axis, positive northward. The X axis is perpendicular to the Y and Z axes, positive toward solar west. Given as the distance between the observer and the center of the solar disk, the standard representation of an (x,y) point on the solar disk is via the points longitude angle [arctan (x/d)] and latitude angle [arctan y/d].","Helioprojective Cartesian = A 3-D orthonormal (left-handed) coordinate system that is primarily intended to specify with two dimensions a point on the solar disk. The Z axis points from the observer to the center of the solar disk. The Y axis lies in the plane defined by the solar spin vector and the Z axis, positive northward. The X axis is perpendicular to the Y and Z axes, positive toward solar west. Given as the distance between the observer and the center of the solar disk, the standard representation of an (x,y) point on the solar disk is via the points longitude angle [arctan (x/d)] and latitude angle [arctan y/d].",SPASE,"https://spase-group.org/data/model/spase-2.4.0/spase-2_4_0_xsd.html#CoordinateSystemName"
+HPR,"Helioprojective Polar coordinates","See Thompson (2006), Section 4.1, 2-dimensional (angular coordinates); left-handed",IVOA,"https://www.ivoa.net/documents/REC/DM/STC-20071030.html#_Toc181531804"
+HPR,"Helioprojective Radial - A 3-D orthonormal (left-handed) coordinate system that is primarily intended to specify with two dimensions a point on the solar disk. The Z axis points from the observer to the center of the solar disk. The Y axis lies in the plane defined by the solar spin vector and the Z axis, positive northward. The X axis is perpendicular to the Y and Z axes, positive toward solar west. Given as the distance between the observer and the center of the solar disk, the standard representation for this system of an (x,y) point on the solar disk is via the points latitude angle theta {= arctan [SQRT(x**2 + y**2)]/d]} or equivalent declination parameter delta (= theta - 90 deg), and its phase angle psi as measured counter- clockwise from the +Y axis [psi = arctan (-y/x)].","Helioprojective Radial - A 3-D orthonormal (left-handed) coordinate system that is primarily intended to specify with two dimensions a point on the solar disk. The Z axis points from the observer to the center of the solar disk. The Y axis lies in the plane defined by the solar spin vector and the Z axis, positive northward. The X axis is perpendicular to the Y and Z axes, positive toward solar west. Given as the distance between the observer and the center of the solar disk, the standard representation for this system of an (x,y) point on the solar disk is via the points latitude angle theta {= arctan [SQRT(x**2 + y**2)]/d]} or equivalent declination parameter delta (= theta - 90 deg), and its phase angle psi as measured counter- clockwise from the +Y axis [psi = arctan (-y/x)].",SPASE,"https://spase-group.org/data/model/spase-2.4.0/spase-2_4_0_xsd.html#CoordinateSystemName"
+HRTN,"Heliocentric Radial-Tangential-Normal coordinates","See F&H (2002)",IVOA,"https://www.ivoa.net/documents/REC/DM/STC-20071030.html#_Toc181531804"
+HSM,"Heliospheric Solar Magnetospheric - A coordinate system where the X axis is from Earth to Sun, Z axis is northward in a plane containing the X axis and the geomagnetic dipole axis.","Heliospheric Solar Magnetospheric - A coordinate system where the X axis is from Earth to Sun, Z axis is northward in a plane containing the X axis and the geomagnetic dipole axis.",SPASE,"https://spase-group.org/data/model/spase-2.4.0/spase-2_4_0_xsd.html#CoordinateSystemName"
+Heliocentric/HeliographicRadial-Tangential-Normal,"~Heliocentric","The axes are permuted, with HCC X, Y, Z equivalent respectively to HGRTN Y, Z, X",SunPy,"https://github.com/sunpy/sunpy/wiki/Coordinate-systems"
+Heliocentric/HeliographicRadial-Tangential-Normal,"~Heliocentric","The axes are permuted, with HCC X, Y, Z equivalent respectively to HGRTN Y, Z, X",SunPy,"https://github.com/sunpy/sunpy/wiki/Coordinate-systems"
+HeliocentricAriesEcliptic(MeanJ2000.0orDate),"Astropy's HeliocentricMeanEcliptic","If using an Astropy version before v3.2, use the misleadingly named HeliocentricTrueEcliptic",SunPy,"https://github.com/sunpy/sunpy/wiki/Coordinate-systems"
+HeliocentricAriesEcliptic(MeanJ2000.0orDate),"Astropy's HeliocentricMeanEcliptic","If using an Astropy version before v3.2, use the misleadingly named HeliocentricTrueEcliptic",SunPy,"https://github.com/sunpy/sunpy/wiki/Coordinate-systems"
+HeliocentricCartesian,"Heliocentric","Z=Sun-observer line, YZ-plane contains solar rotation axis",SunPy,"https://github.com/sunpy/sunpy/wiki/Coordinate-systems"
+HeliocentricCartesian,"Heliocentric","Z=Sun-observer line, YZ-plane contains solar rotation axis",SunPy,"https://github.com/sunpy/sunpy/wiki/Coordinate-systems"
+HeliocentricEarthEcliptic,"HeliocentricEarthEcliptic","X=Sun-Earth line, XZ-plane contains the mean ecliptic north pole",SunPy,"https://github.com/sunpy/sunpy/wiki/Coordinate-systems"
+HeliocentricEarthEcliptic,"HeliocentricEarthEcliptic","X=Sun-Earth line, XZ-plane contains the mean ecliptic north pole",SunPy,"https://github.com/sunpy/sunpy/wiki/Coordinate-systems"
+HeliocentricEarthEquatorial,"HeliographicStonyhurst","Specify the coordinate representation using CartesianRepresentation, and retrieve the representation via the attribute .cartesian",SunPy,"https://github.com/sunpy/sunpy/wiki/Coordinate-systems"
+HeliocentricEarthEquatorial,"HeliographicStonyhurst","Specify the coordinate representation using CartesianRepresentation, and retrieve the representation via the attribute .cartesian",SunPy,"https://github.com/sunpy/sunpy/wiki/Coordinate-systems"
+HeliocentricInertial,"HeliocentricInertial","Z=solar rotational axis, X=solar ascending node on mean ecliptic (J2000.0)",SunPy,"https://github.com/sunpy/sunpy/wiki/Coordinate-systems"
+HeliocentricInertial,"HeliocentricInertial","Z=solar rotational axis, X=solar ascending node on mean ecliptic (J2000.0)",SunPy,"https://github.com/sunpy/sunpy/wiki/Coordinate-systems"
+HeliocentricRadial,"~Heliocentric","Use a cylindrical representation, but with a 90-degree offset in psi because Heliocentric in cylindrical measures counter-clockwise from the west limb rather than solar north",SunPy,"https://github.com/sunpy/sunpy/wiki/Coordinate-systems"
+HeliocentricRadial,"~Heliocentric","Use a cylindrical representation, but with a 90-degree offset in psi because Heliocentric in cylindrical measures counter-clockwise from the west limb rather than solar north",SunPy,"https://github.com/sunpy/sunpy/wiki/Coordinate-systems"
+HeliocentricofDate,"none","Z=solar rotational axis, X=solar ascending node on mean ecliptic of date",SunPy,"https://github.com/sunpy/sunpy/wiki/Coordinate-systems"
+HeliocentricofDate,"none","Z=solar rotational axis, X=solar ascending node on mean ecliptic of date",SunPy,"https://github.com/sunpy/sunpy/wiki/Coordinate-systems"
+HeliographicCarrington,"HeliographicCarrington","",SunPy,"https://github.com/sunpy/sunpy/wiki/Coordinate-systems"
+HeliographicCarrington,"HeliographicCarrington","",SunPy,"https://github.com/sunpy/sunpy/wiki/Coordinate-systems"
+HeliographicStonyhurst,"HeliographicStonyhurst","",SunPy,"https://github.com/sunpy/sunpy/wiki/Coordinate-systems"
+HeliographicStonyhurst,"HeliographicStonyhurst","",SunPy,"https://github.com/sunpy/sunpy/wiki/Coordinate-systems"
+HelioprojectiveCartesian,"Helioprojective","",SunPy,"https://github.com/sunpy/sunpy/wiki/Coordinate-systems"
+HelioprojectiveCartesian,"Helioprojective","",SunPy,"https://github.com/sunpy/sunpy/wiki/Coordinate-systems"
+HelioprojectiveRadial,"none","Is to Heliocentric Radial what HPC is to HCC",SunPy,"https://github.com/sunpy/sunpy/wiki/Coordinate-systems"
+HelioprojectiveRadial,"none","Is to Heliocentric Radial what HPC is to HCC",SunPy,"https://github.com/sunpy/sunpy/wiki/Coordinate-systems"
+IAU_52_EUROPA,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_ADRASTEA,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_AMALTHEA,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_ANANKE,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_ARIEL,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_ARROKOTH,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_ATLAS,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_BELINDA,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_BENNU,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_BIANCA,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_BORRELLY,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_CALLIRRHOE,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_CALLISTO,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_CALYPSO,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_CARME,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_CERES,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_CHALDENE,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_CHARON,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_CORDELIA,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_CRESSIDA,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_DAVIDA,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_DEIMOS,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_DESDEMONA,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_DESPINA,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_DIDYMOS,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_DIMORPHOS,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_DIONE,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_DONALDJOHANSON,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_EARTH,"Body-Fixed Frame","Archinal, B.A., Acton, C.H., A’Hearn, M.F. et al. Report of the IAU Working Group on Cartographic Coordinates and Rotational Elements: 2015.
+			Celest Mech Dyn Astr 130, 22 (2018). https://doi.org/10.1007/s10569-017-9805-5",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+IAU_EARTH,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_ELARA,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_ENCELADUS,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_EPIMETHEUS,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_ERINOME,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_EROS,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_EUROPA,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_EURYBATES,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_GALATEA,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_GANYMEDE,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_GASPRA,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_HARPALYKE,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_HELENE,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_HIMALIA,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_HYDRA,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_HYPERION,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_IAPETUS,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_IDA,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_IO,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_IOCASTE,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_ISONOE,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_ITOKAWA,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_JANUS,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_JULIET,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_JUPITER,"","This system is analogous to the geographic (longitude and latitude) system used at the Earth and rotates with Jupiter at the official IAU rotation period. This coordinate system should always be used with respect to the official epoch and rotation rate (as defined by the IAU)",CDPP/AMDA,"Request sent to SPASE email list"
+IAU_JUPITER,"Body-Fixed Frame","Archinal, B.A., Acton, C.H., A’Hearn, M.F. et al. Report of the IAU Working Group on Cartographic Coordinates and Rotational Elements: 2015.
+			Celest Mech Dyn Astr 130, 22 (2018). https://doi.org/10.1007/s10569-017-9805-5",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+IAU_JUPITER,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_KALYKE,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_LARISSA,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_LEDA,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_LEUCUS,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_LUTETIA,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_LYSITHEA,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_MAGACLITE,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_MARS,"Body-Fixed Frame","Archinal, B.A., Acton, C.H., A’Hearn, M.F. et al. Report of the IAU Working Group on Cartographic Coordinates and Rotational Elements: 2015.
+			Celest Mech Dyn Astr 130, 22 (2018). https://doi.org/10.1007/s10569-017-9805-5",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+IAU_MARS,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_MENOETIUS,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_MERCURY,"Body-Fixed Frame","Archinal, B.A., Acton, C.H., A’Hearn, M.F. et al. Report of the IAU Working Group on Cartographic Coordinates and Rotational Elements: 2015.
+			Celest Mech Dyn Astr 130, 22 (2018). https://doi.org/10.1007/s10569-017-9805-5",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+IAU_MERCURY,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_METIS,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_MIMAS,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_MIRANDA,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_MOON,"Body-Fixed Frame","Archinal, B.A., Acton, C.H., A’Hearn, M.F. et al. Report of the IAU Working Group on Cartographic Coordinates and Rotational Elements: 2015.
+			Celest Mech Dyn Astr 130, 22 (2018). https://doi.org/10.1007/s10569-017-9805-5",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+IAU_MOON,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_NAIAD,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_NEPTUNE,"Body-Fixed Frame","Archinal, B.A., Acton, C.H., A’Hearn, M.F. et al. Report of the IAU Working Group on Cartographic Coordinates and Rotational Elements: 2015.
+			Celest Mech Dyn Astr 130, 22 (2018). https://doi.org/10.1007/s10569-017-9805-5",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+IAU_NEPTUNE,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_NEREID,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_NIX,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_OBERON,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_OPHELIA,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_ORUS,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_PALLAS,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_PAN,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_PANDORA,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_PASIPHAE,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_PATROCLUS,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_PHOBOS,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_PHOEBE,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_PLUTO,"Body-Fixed Frame","Archinal, B.A., Acton, C.H., A’Hearn, M.F. et al. Report of the IAU Working Group on Cartographic Coordinates and Rotational Elements: 2015.
+			Celest Mech Dyn Astr 130, 22 (2018). https://doi.org/10.1007/s10569-017-9805-5",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+IAU_PLUTO,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_POLYMELE,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_PORTIA,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_PRAXIDIKE,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_PROMETHEUS,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_PROTEUS,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_PUCK,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_QUETA,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_RHEA,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_ROSALIND,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_RYUGU,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_SATURN,"","This system is analogous to the geographic (longitude and latitude) system used at the Earth and rotates with Saturn at the official IAU rotation period. This coordinate system should always be used with respect to the official epoch and rotation rate (as defined by the IAU)",CDPP/AMDA,"Request sent to SPASE email list"
+IAU_SATURN,"Body-Fixed Frame","Archinal, B.A., Acton, C.H., A’Hearn, M.F. et al. Report of the IAU Working Group on Cartographic Coordinates and Rotational Elements: 2015.
+			Celest Mech Dyn Astr 130, 22 (2018). https://doi.org/10.1007/s10569-017-9805-5",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+IAU_SATURN,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_SINOPE,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_STEINS,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_SUN,"This system is analogous to the geographic (longitude and latitude) system used at the Earth and rotates with the Sun at the official IAU rotation period. This coordinate system should always be used with respect to the official epoch and rotation rate (as defined by the IAU)"," with X pointing along the Sun Prime Meridian as defined by the IAU",CDPP/AMDA,"Request sent to SPASE email list"
+IAU_SUN,"Body-Fixed Frame","Archinal, B.A., Acton, C.H., A’Hearn, M.F. et al. Report of the IAU Working Group on Cartographic Coordinates and Rotational Elements: 2015.
+			Celest Mech Dyn Astr 130, 22 (2018). https://doi.org/10.1007/s10569-017-9805-5",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+IAU_SUN,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_TAYGETE,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_TELESTO,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_TEMPEL_1,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_TETHYS,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_THALASSA,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_THEBE,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_THEMISTO,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_TITAN,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_TITANIA,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_TRITON,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_UMBRIEL,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_URANUS,"Body-Fixed Frame","Archinal, B.A., Acton, C.H., A’Hearn, M.F. et al. Report of the IAU Working Group on Cartographic Coordinates and Rotational Elements: 2015.
+			Celest Mech Dyn Astr 130, 22 (2018). https://doi.org/10.1007/s10569-017-9805-5",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+IAU_URANUS,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_VENUS,"Body-Fixed Frame","Archinal, B.A., Acton, C.H., A’Hearn, M.F. et al. Report of the IAU Working Group on Cartographic Coordinates and Rotational Elements: 2015.
+			Celest Mech Dyn Astr 130, 22 (2018). https://doi.org/10.1007/s10569-017-9805-5",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+IAU_VENUS,"","https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20PCK-Based%20IAU%20Body-Fixed%20Reference%20Frames",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+IAU_VESTA,"","",NAIF,"https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in%20Inertial%20Reference%20Frames"
+ICRS,"International Celestial Reference System","Left-handed in spherical coordinates",IVOA,"https://www.ivoa.net/documents/REC/DM/STC-20071030.html#_Toc181531804"
+IPHIO,"Io Phi-Omega","In those Cartesian coordinate system (referred to as MphiO - M is Moon prefix -),
+X is along the flow direction, Y is along the Moon-Jupiter vector, and Z is along the spin axis.
+These coordinates are analogous to the earth-centered GSE coordinates that relate to the direction of
+flow of the solar wind onto Earth's environment",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+J2000,"An astronomical coordinate system which uses the mean equator and equinox of Julian date 2451545.0 TT (Terrestrial Time), or January 1, 2000, noon TT. (aka J2000) to define a celestial reference frame.","An astronomical coordinate system which uses the mean equator and equinox of Julian date 2451545.0 TT (Terrestrial Time), or January 1, 2000, noon TT. (aka J2000) to define a celestial reference frame.",SPASE,"https://spase-group.org/data/model/spase-2.4.0/spase-2_4_0_xsd.html#CoordinateSystemName"
+J2000,"Earth mean equator, dynamical equinox of J2000","None",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+JECLIP,"ECLIPJ2000 centered on Jupiter","The value for the obliquity of the
+                      ecliptic at J2000 is taken from 
+                      of 'Explanatory Supplement to the Astronomical Almanac'
+						edited by P. Kenneth Seidelmann. University Science
+						Books, 20 Edgehill Road, Mill Valley, CA 94941 (1992)
+					  page 114 equation 3.222-1",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+JEME,"J2000 centered on Jupiter","Earth mean equator, dynamical equinox of J2000 centered on Jupiter.",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+JSM,"Jovian Solar Magnetospheric - A coordinate system related to Jupiter where the X axis is from Jupiter to Sun, Z axis is northward in a plane containing the X axis and the Jovian dipole axis.","Jovian Solar Magnetospheric - A coordinate system related to Jupiter where the X axis is from Jupiter to Sun, Z axis is northward in a plane containing the X axis and the Jovian dipole axis.",SPASE,"https://spase-group.org/data/model/spase-2.4.0/spase-2_4_0_xsd.html#CoordinateSystemName"
+JSM,"Jovian Solar Magnetospheric","The JSM frame is defined as follows:
+
+      Jovian Solar Magnetospheric (JSM)
+      ---------------------------------------------------
+      A coordinate system where the X axis is from Jupiter to Sun,
+      Z axis is northward in a plane containing the X axis and the Jovian dipole axis.
+
+   Dipole is 159 longitude and 80 latitude.",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+JSO,"Jovian Solar Orbital - A coordinate system related to Jupiter where X anti-sunward, Y along the orbital velocity direction.","Jovian Solar Orbital - A coordinate system related to Jupiter where X anti-sunward, Y along the orbital velocity direction.",SPASE,"https://spase-group.org/data/model/spase-2.4.0/spase-2_4_0_xsd.html#CoordinateSystemName"
+JSO,"Jovian Solar Orbital","The Jupiter Solar Orbital frame is defined as follows:
+
+      -  The position of the Sun relative to Jupiter is the primary vector:
+         +X axis points from Jupiter to the Sun;
+
+      -  The inertially referenced velocity of the Sun relative to Jupiter
+         is the secondary vector: +Y axis is the component of this
+         velocity vector orthogonal to the +X axis;
+
+      -  +Z axis completes the right-handed system;
+
+      -  the origin of this frame is Jupiter center of mass.
+
+   All vectors are geometric: no corrections are used.",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+JUPITER_C_III,"Planetocentric coordinates on Jupiter, system III","See Explanatory Supplement, Section 7.4",IVOA,"https://www.ivoa.net/documents/REC/DM/STC-20071030.html#_Toc181531804"
+JUPITER_G_III,"Planetographic coordinates on Jupiter, system III","See Explanatory Supplement, Section 7.4
+Left-handed",IVOA,"https://www.ivoa.net/documents/REC/DM/STC-20071030.html#_Toc181531804"
+KECLIP,"ECLIPJ2000 centered on Saturn","The value for the obliquity of the
+                      ecliptic at J2000 is taken from 
+                      of 'Explanatory Supplement to the Astronomical Almanac'
+						edited by P. Kenneth Seidelmann. University Science
+						Books, 20 Edgehill Road, Mill Valley, CA 94941 (1992)
+					  page 114 equation 3.222-1",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+KEME,"J2000 centered on Saturn","Earth mean equator, dynamical equinox of J2000 centered on Saturn.",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+KRTP​,"Kronocentric body-fixed"," J2000 spherical Coordinates - standard right-handed spherical triad (R",CDPP/AMDA,"Request sent to SPASE email list"
+KSM,"Kronian Solar Magnetospheric - A coordinate system related to Saturn where the X axis is anti-sunward, Z axis is northward in a plane containing the X axis and the Kronian dipole axis.","Kronian Solar Magnetospheric - A coordinate system related to Saturn where the X axis is anti-sunward, Z axis is northward in a plane containing the X axis and the Kronian dipole axis.",SPASE,"https://spase-group.org/data/model/spase-2.4.0/spase-2_4_0_xsd.html#CoordinateSystemName"
+KSM,"Kronian Solar Magnetospheric","The KSM frame is defined as follows:
+
+      Kronocentric Solar Magnetospheric Coordinates (KSM)
+      ---------------------------------------------------
+      A coordinate system where the X axis is from Saturn to Sun,
+      Z axis is northward in a plane containing the X axis and the
+      Kronian dipole axis.
+
+   Some sources refers magnetic dipole at 180 degrees longitude, 89.99 degrees latitude
+   in the IAU_SATURN frame. Other source make assume that the dipole axis is 
+   parallel to the spin axis.",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+KSO,"Kronian Solar Orbital - A coordinate system related to Saturn where X is anti-sunward, Y along the orbital velocity direction.","Kronian Solar Orbital - A coordinate system related to Saturn where X is anti-sunward, Y along the orbital velocity direction.",SPASE,"https://spase-group.org/data/model/spase-2.4.0/spase-2_4_0_xsd.html#CoordinateSystemName"
+KSO,"Kronian Solar Orbital","The Saturn Solar Orbital frame is defined as follows:
+
+      -  The position of the Sun relative to Saturn is the primary vector:
+         +X axis points from Saturn to the Sun;
+
+      -  The inertially referenced velocity of the Sun relative to Saturn
+         is the secondary vector: +Y axis is the component of this
+         velocity vector orthogonal to the +X axis;
+
+      -  +Z axis completes the right-handed system;
+
+      -  the origin of this frame is Saturn center of mass.
+
+   All vectors are geometric: no corrections are used.",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+LGM,"Local Geomagnetic - A coordinate system used mainly for Earth surface or near Earth surface magnetic field data. X axis northward from observation point in a geographic meridian. Z axis downward towards Earths center. In this system, H (total horizontal component) = SQRT (Bx^2 + By^2) and D (declination angle) = arctan (By/Bx)","Local Geomagnetic - A coordinate system used mainly for Earth surface or near Earth surface magnetic field data. X axis northward from observation point in a geographic meridian. Z axis downward towards Earths center. In this system, H (total horizontal component) = SQRT (Bx^2 + By^2) and D (declination angle) = arctan (By/Bx)",SPASE,"https://spase-group.org/data/model/spase-2.4.0/spase-2_4_0_xsd.html#CoordinateSystemName"
+LME,"Moon Mean Equator","The Moon Mean Equator of Date frame (also known as Moon Mean Equator
+   and IAU vector of Date frame) is defined as follows :
+
+      -  X-Y plane is defined by the Moon equator of date, and the
+         +Z axis, primary vector of this frame, is parallel to the
+         Moon's rotation axis of date, pointing toward the North side
+         of the invariant plane;
+
+      -  +X axis is defined by the intersection of the Moon's equator
+         of date with the Earth Mean Equator of J2000;
+
+      -  +Y axis completes the right-handed system;
+
+      -  the origin of this frame is Moon's center of mass.
+
+   All vectors are geometric: no corrections are used.",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+LSE,"Selenocentric Solar Ecliptic","The Moon-centric Solar Ecliptic frame is defined as follows:
+
+      -  The position of the Sun relative to Moon is the primary vector:
+         +X axis points from Moon to the Sun;
+ 
+      -  The inertially referenced velocity of the Sun relative to Moon
+         is the secondary vector: +Y axis is the component of this
+         velocity vector orthogonal to the +X axis;
+
+      -  +Z axis completes the right-handed system;
+
+      -  the origin of this frame is Moon's center of mass.
+
+   All vectors are geometric: no corrections are used.",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+LUNA_C,"Selenocentric coordinates","See Explanatory Supplement, Section 7.3",IVOA,"https://www.ivoa.net/documents/REC/DM/STC-20071030.html#_Toc181531804"
+LUNA_G,"Selenographic coordinates","See Explanatory Supplement, Section 7.3",IVOA,"https://www.ivoa.net/documents/REC/DM/STC-20071030.html#_Toc181531804"
+LUTETIA_CSO,"Comet solar orbital  centered on asteroid LUTETIA","Comet frames are defined as a two-vector style dynamic frames as follows:
+ 
+      -  The position of the sun relative to the comet is the primary
+         vector: the X axis points from the comet to the sun.
+
+      -  The inertially referenced velocity of the sun relative to the
+         comet is the secondary vector: the Y axis is the component of
+         this velocity vector orthogonal to the X axis.
+
+      -  The Z axis is X cross Y, completing the right-handed reference
+         frame.
+
+      -  All vectors are geometric: no aberration corrections are used.",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+LUTETIA_EME,"J2000 centered on asteroid LUTETIA","Earth mean equator, dynamical equinox of J2000 centered on LUTETIA.",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+M,"	Local Magnetic Coordinates (Sect. 3.2)","",Laundal,"https://doi.org/10.1007/s11214-016-0275-y"
+MA,"	Modified Apex (Sect. 4.1)","",Laundal,"https://doi.org/10.1007/s11214-016-0275-y"
+MAG,"Geomagnetic coordinates","See F&H (2002)",IVOA,"https://www.ivoa.net/documents/REC/DM/STC-20071030.html#_Toc181531804"
+MAG,"Geomagnetic - geocentric. Z axis is parallel to the geomagnetic dipole axis, positive north. X is in the plane defined by the Z axis and the Earths rotation axis. If N is a unit vector from the Earths center to the north geographic pole, the signs of the X and Y axes are given by Y = N x Z, X = Y x Z.. See Russell, 1971, and <http://cdpp.cnes.fr/00428.pdf>","Geomagnetic - geocentric. Z axis is parallel to the geomagnetic dipole axis, positive north. X is in the plane defined by the Z axis and the Earths rotation axis. If N is a unit vector from the Earths center to the north geographic pole, the signs of the X and Y axes are given by Y = N x Z, X = Y x Z.. See Russell, 1971, and <http://cdpp.cnes.fr/00428.pdf>",SPASE,"https://spase-group.org/data/model/spase-2.4.0/spase-2_4_0_xsd.html#CoordinateSystemName"
+MAG,"Geomagnetic coordinate system","MAG Frame: from http://rbsp.space.umn.edu/data/rbsp/teams/spice/fk/rbsp_general011.tf
+      ---------------------------------------------------------
+
+      Definition :
+
+      Geomagnetic - geocentric. Z axis is parallel to the geomagnetic
+      dipole axis, positive north. X is in the plane defined by the Z axis
+      and the Earth's rotation axis. If N is a unit vector from the Earth's
+      center to the north geographic pole, the signs of the X and Y axes are
+      given by Y = N x Z, X = Y x Z.. See Russell, 1971
+      
+
+      The implementation of this frame is complicated in that the definition
+      of the IGRF dipole is a function of time and the IGRF model cannot be
+      directly incorporated into Spice. However, Spice does allow one to define
+      time dependent Euler angles. Meaning, you can define an Euler angle
+      that rotates GEO to MAG for a given ephemeris time t:
+
+         V           = r(t) * V
+          GEI                  MAG
+      
+      where r(t) is a time dependent Euler angle representation of a
+      rotation. Spice allows for the time dependence to be represented by a
+      polynomial expansion. This expansion can be fit using the IGRF model,
+      thus representing the IGRF dipole axis.
+
+      IGRF-11 (the 11th version) was fit for the period of 1990-2020, which
+      should encompass the mission and will also make this kernel useful for
+      performing Magnetic dipole frame transformations for the 1990's and
+      the 2000's. However, IGRF-11 is not as accurate for this entire time
+      interval. The years between 1945-2005 are labeled definitive, although
+      only back to 1990 was used in the polynomial fit. 2005-2010 is
+      provisional, and may change with IGRF-12. 2010-2015 was only a
+      prediction. Beyond 2015, the predict is so far in the future as to not
+      be valid. So to make the polynomials behave nicely in this region (in
+      case someone does try to use this frame during that time), the
+      2015 prediction was extended until 2020. So for low precision, this
+      kernel can be used for the years 2015-2020. Any times less than 1990
+      and greater than 2020 were not used in the fit, and therefore may be
+      vastly incorrect as the polynomials may diverge outside of this region.
+      These coefficients will be refit when IGRF-12 is released.
+      
+      Also, since the rest of the magnetic dipole frames are defined from
+      this one, similar time ranges should be used for those frames.
+
+                  Definitive           Provisional   Predict    Not Valid
+       |------------------------------|+++++++++++|###########|???????????|
+     1990                           2005        2010        2015        2020
+
+      In addition to the error inherit in the model itself, the polynomial
+      expansion cannot perfectly be fit the IGRF dipole. The maximum error
+      on the fit is .2 milliradians, or .01 degrees. 
+
+      The MAG frame is achieved by first rotating the GEO frame about Z by
+      the longitude degrees, and then rotating about the Y axis by the
+      amount of latitude. This matches the new frame to Russell's definition.",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+MARS_C,"Planetocentric coordinates on Mars","See Explanatory Supplement, Section 7.4",IVOA,"https://www.ivoa.net/documents/REC/DM/STC-20071030.html#_Toc181531804"
+MARS_G,"Planetographic coordinates on Mars","See Explanatory Supplement, Section 7.4
+Left-handed",IVOA,"https://www.ivoa.net/documents/REC/DM/STC-20071030.html#_Toc181531804"
+MECLIP,"ECLIPJ2000 centered on Mercury","The value for the obliquity of the
+                      ecliptic at J2000 is taken from 
+                      of 'Explanatory Supplement to the Astronomical Almanac'
+						edited by P. Kenneth Seidelmann. University Science
+						Books, 20 Edgehill Road, Mill Valley, CA 94941 (1992)
+					  page 114 equation 3.222-1",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+MEME,"J2000 centered on Mercury","Earth mean equator, dynamical equinox of J2000 centered on Mercury.",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+MERCURY_C,"Planetocentric coordinates on Mercury","See Explanatory Supplement, Section 7.4",IVOA,"https://www.ivoa.net/documents/REC/DM/STC-20071030.html#_Toc181531804"
+MERCURY_G,"Planetographic coordinates on Mercury","See Explanatory Supplement, Section 7.4
+Left-handed",IVOA,"https://www.ivoa.net/documents/REC/DM/STC-20071030.html#_Toc181531804"
+MESE,"Mercury-centric Solar Ecliptic","The Mercury-centric Solar Ecliptic frame is defined as follows :
+
+      -  X-Y plane is defined by the Earth Mean Ecliptic plane of date:
+         the +Z axis, primary vector, is the normal vector to this plane,
+         always pointing toward the North side of the invariant plane;
+
+      -  +X axis is the component of the Mercury-Sun vector that is orthogonal
+         to the +Z axis;
+
+      -  +Y axis completes the right-handed system;
+
+      -  the origin of this frame is the Sun's center of mass.
+
+   All the vectors are geometric: no aberration corrections are used.",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+MESEQ,"Mercury-centric Solar Equatorial","The Mercury-centric Solar Equatorial frame is defined as follows :
+
+      -  +X axis is the position of the Sun relative to the Mercury; it's
+         the primary vector and points from the Mercury to the Sun;
+
+      -  +Z axis is the component of the Sun's north pole of date orthogonal
+         to the +X axis;
+
+      -  +Y axis completes the right-handed reference frame;
+
+      -  the origin of this frame is the Mercury's center of mass.
+
+   All the vectors are geometric: no aberration corrections are used.",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+MESO,"Mercury Solar Orbital","The Mercury Solar Orbital frame is defined as follows:
+
+      -  The position of the Sun relative to Mercury is the primary vector:
+         +X axis points from Mercury to the Sun;
+
+      -  The inertially referenced velocity of the Sun relative to Mercury
+         is the secondary vector: +Y axis is the component of this
+         velocity vector orthogonal to the +X axis;
+
+      -  +Z axis completes the right-handed system;
+
+      -  the origin of this frame is Mercury center of mass.
+
+   All vectors are geometric: no corrections are used.",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+MFA,"Magnetic Field Aligned - A coordinate system spacecraft-centered system with Z in the direction of the ambient magnetic field vector. X is in the plane defined by Z and the spacecraft-Sun line, positive sunward. See <http://cdpp.cnes.fr/00428.pdf>","Magnetic Field Aligned - A coordinate system spacecraft-centered system with Z in the direction of the ambient magnetic field vector. X is in the plane defined by Z and the spacecraft-Sun line, positive sunward. See <http://cdpp.cnes.fr/00428.pdf>",SPASE,"https://spase-group.org/data/model/spase-2.4.0/spase-2_4_0_xsd.html#CoordinateSystemName"
+MIIS,"Mimas Inter-action coordinate System","The Moon Inter-action coordinate System frame is defined as follows:
+
+      -  The inertially referenced velocity of Saturn relative to Moon
+         is the primary vector: +X;
+
+	  -  The position of Saturn relative to Moon is the secondary vector:
+         +Y axis points from Moon to the Saturn;
+
+      -  +Z axis completes the right-handed system;
+
+      -  the origin of this frame is Moon's center of mass.
+
+   All vectors are geometric: no corrections are used.",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+MME,"Mars Mean Equator","The Mars Mean Equator of Date frame (also known as Mars Mean Equator
+   and IAU vector of Date frame) is defined as follows :
+
+      -  X-Y plane is defined by the Mars equator of date: the
+         +Z axis, primary vector, is parallel to the Mars' rotation
+         axis of date, pointing toward the North side of the invariant
+         plane;
+
+      -  +X axis is defined by the intersection of the Mars' equator of
+         date with the J2000 equator;
+
+      -  +Y axis completes the right-handed system;
+
+      -  the origin of this frame is Mars' center of mass.
+
+
+   All vectors are geometric: no corrections are used.",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+MSM,"Mercury solar magnetospheric"," A coordinate system with its origin at the center of the planetary dipole moment but otherwise equivalent to the MSO coordinate system.",CDPP/AMDA,"Request sent to SPASE email list"
+MSO,"Mars/Mercury Solar Orbital A coordinate system related to Mars or Mercury. A coordinate system where, depending on the body (Mars or Mercury), X is anti-sunward, Y along the orbital velocity direction.","Mars/Mercury Solar Orbital A coordinate system related to Mars or Mercury. A coordinate system where, depending on the body (Mars or Mercury), X is anti-sunward, Y along the orbital velocity direction.",SPASE,"https://spase-group.org/data/model/spase-2.4.0/spase-2_4_0_xsd.html#CoordinateSystemName"
+MSO,"Mars Solar Orbital","The Mars Solar Orbital frame is defined as follows:
+
+      -  The position of the Sun relative to Mars is the primary vector:
+         +X axis points from Mars to the Sun;
+
+      -  The inertially referenced velocity of the Sun relative to Mars
+         is the secondary vector: +Y axis is the component of this
+         velocity vector orthogonal to the +X axis;
+
+      -  +Z axis completes the right-handed system;
+
+      -  the origin of this frame is Mars' center of mass.
+
+   All vectors are geometric: no corrections are used.",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+NEC,"North East Earth-Centered frame","",CDPP/AMDA,"Request sent to SPASE email list"
+NECLIP,"ECLIPJ2000 centered on Neptune","The value for the obliquity of the
+                      ecliptic at J2000 is taken from 
+                      of 'Explanatory Supplement to the Astronomical Almanac'
+						edited by P. Kenneth Seidelmann. University Science
+						Books, 20 Edgehill Road, Mill Valley, CA 94941 (1992)
+					  page 114 equation 3.222-1",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+NEME,"J2000 centered on Neptune","Earth mean equator, dynamical equinox of J2000 centered on Neptune.",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+NEPTUNE_C_III,"Planetocentric coordinates on Neptune, system III","See Explanatory Supplement, Section 7.4",IVOA,"https://www.ivoa.net/documents/REC/DM/STC-20071030.html#_Toc181531804"
+NEPTUNE_G_III,"Planetographic coordinates on Neptune, system III","See Explanatory Supplement, Section 7.4
+Left-handed",IVOA,"https://www.ivoa.net/documents/REC/DM/STC-20071030.html#_Toc181531804"
+NSO,"Neptune Solar Orbital","The Neptune Solar Orbital frame is defined as follows:
+
+      -  The position of the Sun relative to Neptune is the primary vector:
+         +X axis points from Neptune to the Sun;
+
+      -  The inertially referenced velocity of the Sun relative to Neptune
+         is the secondary vector: +Y axis is the component of this
+         velocity vector orthogonal to the +X axis;
+
+      -  +Z axis completes the right-handed system;
+
+      -  the origin of this frame is Neptune center of mass.
+
+   All vectors are geometric: no corrections are used.",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+PECLIP,"ECLIPJ2000 centered on Pluto","The value for the obliquity of the
+                      ecliptic at J2000 is taken from 
+                      of 'Explanatory Supplement to the Astronomical Almanac'
+						edited by P. Kenneth Seidelmann. University Science
+						Books, 20 Edgehill Road, Mill Valley, CA 94941 (1992)
+					  page 114 equation 3.222-1",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+PEME,"EME2000 centered on Pluto","None",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+PLUTO_C,"Planetocentric coordinates on Pluto","See Explanatory Supplement, Section 7.4",IVOA,"https://www.ivoa.net/documents/REC/DM/STC-20071030.html#_Toc181531804"
+PLUTO_G,"Planetographic coordinates on Pluto","See Explanatory Supplement, Section 7.4",IVOA,"https://www.ivoa.net/documents/REC/DM/STC-20071030.html#_Toc181531804"
+PME,"Phobos Mean Equator","The Phobos Mean Equator of Date frame (also known as Phobos Mean Equator
+   and IAU vector of Date frame) is defined as follows :
+
+      -  X-Y plane is defined by the Phobos equator of date, and the
+         +Z axis, primary vector of this frame, is parallel to the
+         Moon's rotation axis of date, pointing toward the North side
+         of the invariant plane;
+
+      -  +X axis is defined by the intersection of the Moon's equator
+         of date with the Earth Mean Equator of J2000;
+
+      -  +Y axis completes the right-handed system;
+
+      -  the origin of this frame is Phobos' center of mass.
+
+   All vectors are geometric: no corrections are used.",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+PSE,"Phobos-centric Solar Ecliptic","The Moon-centric Solar Ecliptic frame is defined as follows:
+
+      -  The position of the Sun relative to Phobos is the primary vector:
+         +X axis points from Moon to the Sun;
+ 
+      -  The inertially referenced velocity of the Sun relative to Phobos
+         is the secondary vector: +Y axis is the component of this
+         velocity vector orthogonal to the +X axis;
+
+      -  +Z axis completes the right-handed system;
+
+      -  the origin of this frame is Phobos' center of mass.
+
+   All vectors are geometric: no corrections are used.",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+PSO,"Pluto Solar Orbital","The Pluto Solar Orbital frame is defined as follows:
+
+      -  The position of the Sun relative to Pluto is the primary vector:
+         +X axis points from Pluto to the Sun;
+
+      -  The inertially referenced velocity of the Sun relative to Pluto
+         is the secondary vector: +Y axis is the component of this
+         velocity vector orthogonal to the +X axis;
+
+      -  +Z axis completes the right-handed system;
+
+      -  the origin of this frame is Pluto center of mass.
+
+   All vectors are geometric: no corrections are used.",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+QD,"	Quasi-Dipole (Sect. 4.1)","",Laundal,"https://doi.org/10.1007/s11214-016-0275-y"
+RHIS,"Rhea Inter-action coordinate System","The Moon Inter-action coordinate System frame is defined as follows:
+
+      -  The inertially referenced velocity of Saturn relative to Moon
+         is the primary vector: +X;
+
+	  -  The position of Saturn relative to Moon is the secondary vector:
+         +Y axis points from Moon to the Saturn;
+
+      -  +Z axis completes the right-handed system;
+
+      -  the origin of this frame is Moon's center of mass.
+
+   All vectors are geometric: no corrections are used.",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+RTN,"Radial Tangential Normal. Typically centered at a spacecraft. Used for IMF and plasma V vectors. The X axis (radial) is set as the primary axis, and is defined as the axis pointing from the spacecraft to the Sun. The Z axis (tangential) is set as the secondary axis, and is defined as that portion of the solar North rotational axis which is perpendicular to the primary axis. The Y axis (normal) is defined as Z cross X.","Radial Tangential Normal. Typically centered at a spacecraft. Used for IMF and plasma V vectors. The X axis (radial) is set as the primary axis, and is defined as the axis pointing from the spacecraft to the Sun. The Z axis (tangential) is set as the secondary axis, and is defined as that portion of the solar North rotational axis which is perpendicular to the primary axis. The Y axis (normal) is defined as Z cross X.",SPASE,"https://spase-group.org/data/model/spase-2.4.0/spase-2_4_0_xsd.html#CoordinateSystemName"
+RTN,"Sun-Spacecraft coordinate system","RTN Frame is defined as follows:
+                    - R is positive from the Sun to the spacecraft.
+                    - T is omega cross R, where omega is the sun spin axis.
+                    - N is R cross T, which completes the right-handed system.
+					
+					This frame assumes the instantaneous center is located at the Sun,
+                        and not the spacecraft. Further, the axes are associated
+                        with the normal X, Y, and Z in the following manner:
+                     
+					- R -> X
+					- T -> Y
+					- N -> Z",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+RTP,"Planet-Spacecraft coordinate system","The RTP frame is defined as follows:
+                    - R is positive from the Planet to the spacecraft.
+                    - T is omega cross R, where omega is the planet spin axis.
+                    - P is R cross T, which completes the right-handed system.
+                     
+                
+                      This frame assumes the instantaneous center is located at planet
+                      and not the spacecraft. Further, the axes are associated
+                      with the normal X, Y, and Z in the following manner:
+                     
+					        - R     -> X
+							- Theta -> Y
+							- Phi   -> Z",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+SATURN_C_III,"Planetocentric coordinates on Saturn, system III","See Explanatory Supplement, Section 7.4",IVOA,"https://www.ivoa.net/documents/REC/DM/STC-20071030.html#_Toc181531804"
+SATURN_G_III,"Planetographic coordinates on Saturn, system III","See Explanatory Supplement, Section 7.4
+Left-handed",IVOA,"https://www.ivoa.net/documents/REC/DM/STC-20071030.html#_Toc181531804"
+SC,"Spacecraft - A coordinate system defined by the spacecraft geometry and/or spin. Often has Z axis parallel to spacecraft spin vector. X and Y axes may or may not corotate with the spacecraft. See SR and SR2 below.","Spacecraft - A coordinate system defined by the spacecraft geometry and/or spin. Often has Z axis parallel to spacecraft spin vector. X and Y axes may or may not corotate with the spacecraft. See SR and SR2 below.",SPASE,"https://spase-group.org/data/model/spase-2.4.0/spase-2_4_0_xsd.html#CoordinateSystemName"
+SE,"Solar Ecliptic - A heliocentric coordinate system where the Z axis is normal to the ecliptic plane, positive northward. X axis is positive towards the first point of Aries (from Earth to Sun at vernal equinox). Same as HAE above. See <http://nssdc.gsfc.nasa.gov/space/helios/coor_des.html>","Solar Ecliptic - A heliocentric coordinate system where the Z axis is normal to the ecliptic plane, positive northward. X axis is positive towards the first point of Aries (from Earth to Sun at vernal equinox). Same as HAE above. See <http://nssdc.gsfc.nasa.gov/space/helios/coor_des.html>",SPASE,"https://spase-group.org/data/model/spase-2.4.0/spase-2_4_0_xsd.html#CoordinateSystemName"
+SEQ,"Solar Equatorial coordinates"," A coordinate system centered at Sun and defined such that Z is along the Sun spin axis",CDPP/AMDA,"Request sent to SPASE email list"
+SM,"Solar Magnetic coordinates","See F&H (2002)",IVOA,"https://www.ivoa.net/documents/REC/DM/STC-20071030.html#_Toc181531804"
+SM,"Solar Magnetic - A geocentric coordinate system where the Z axis is northward along Earths dipole axis, X axis is in plane of z axis and Earth-Sun line, positive sunward. See Russell, 1971.","Solar Magnetic - A geocentric coordinate system where the Z axis is northward along Earths dipole axis, X axis is in plane of z axis and Earth-Sun line, positive sunward. See Russell, 1971.",SPASE,"https://spase-group.org/data/model/spase-2.4.0/spase-2_4_0_xsd.html#CoordinateSystemName"
+SM,"	Solar Magnetic (Sect. 3.5)","",Laundal,"https://doi.org/10.1007/s11214-016-0275-y"
+SM,"Solar Magnetic coordinates","Solar Magnetic - A geocentric coordinate system where the
+      Z axis is northward along Earth's dipole axis,
+      X axis is in plane of z axis and Earth-Sun line, positive sunward.
+      See Russell, 1971.
+
+      Thus, this is much like GSM, except that now the +Z axis is the
+      primary, meaning it is parallel to the dipole vector, and +X is the
+      secondary. Since the X-Z plane is the same as GSM's X-Z plane, the Y
+      axis is the same as GSM.",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+SR,"Spin Reference - A special case of a Spacecraft (SC) coordinate system for a spinning spacecraft. Z is parallel to the spacecraft spin vector. X and Y rotate with the spacecraft. See <http://cdpp.cnes.fr/00428.pdf>","Spin Reference - A special case of a Spacecraft (SC) coordinate system for a spinning spacecraft. Z is parallel to the spacecraft spin vector. X and Y rotate with the spacecraft. See <http://cdpp.cnes.fr/00428.pdf>",SPASE,"https://spase-group.org/data/model/spase-2.4.0/spase-2_4_0_xsd.html#CoordinateSystemName"
+SR2,"Spin Reference 2 - A special case of a Spacecraft (SC) coordinate system for a spinning spacecraft. Z is parallel to the spacecraft spin vector. X is in the plane defined by Z and the spacecraft-Sun line, positive sunward. See <http://cdpp.cnes.fr/00428.pdf>","Spin Reference 2 - A special case of a Spacecraft (SC) coordinate system for a spinning spacecraft. Z is parallel to the spacecraft spin vector. X is in the plane defined by Z and the spacecraft-Sun line, positive sunward. See <http://cdpp.cnes.fr/00428.pdf>",SPASE,"https://spase-group.org/data/model/spase-2.4.0/spase-2_4_0_xsd.html#CoordinateSystemName"
+SRF,"Spacecraft Reference Frame","",CDPP/AMDA,"Request sent to SPASE email list"
+SSE,"Spacecraft Solar Ecliptic - A coordinate system used for deep space spacecraft, for example Helios. - X axis from spacecraft to Sun. Z axis normal to ecliptic plane, positive northward. Note: Angle between normals to ecliptic and to Helios orbit plane ~ 0.25 deg.","Spacecraft Solar Ecliptic - A coordinate system used for deep space spacecraft, for example Helios. - X axis from spacecraft to Sun. Z axis normal to ecliptic plane, positive northward. Note: Angle between normals to ecliptic and to Helios orbit plane ~ 0.25 deg.",SPASE,"https://spase-group.org/data/model/spase-2.4.0/spase-2_4_0_xsd.html#CoordinateSystemName"
+SSE_L,"Selenocentric Solar Ecliptic.  The X axis points from the center of the Earths moon to the sun, the Z axis is normal to the ecliptic plane, positive northward.  And the Y axis completes the right-handed set of axes.","Selenocentric Solar Ecliptic.  The X axis points from the center of the Earths moon to the sun, the Z axis is normal to the ecliptic plane, positive northward.  And the Y axis completes the right-handed set of axes.",SPASE,"https://spase-group.org/data/model/spase-2.4.0/spase-2_4_0_xsd.html#CoordinateSystemName"
+SSE​,"Spacecraft Solar Ecliptic"," A coordinate system used for deep space spacecraft",CDPP/AMDA,"Request sent to SPASE email list"
+STEINS_CSO,"Comet solar orbital  centered on asteroid STEINS","Comet frames are defined as a two-vector style dynamic frames as follows:
+ 
+      -  The position of the sun relative to the comet is the primary
+         vector: the X axis points from the comet to the sun.
+
+      -  The inertially referenced velocity of the sun relative to the
+         comet is the secondary vector: the Y axis is the component of
+         this velocity vector orthogonal to the X axis.
+
+      -  The Z axis is X cross Y, completing the right-handed reference
+         frame.
+
+      -  All vectors are geometric: no aberration corrections are used.",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+STEINS_EME,"J2000 centered on asteroid STEINS","Earth mean equator, dynamical equinox of J2000 centered on STEINS.",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+SUPER_GALACTIC,"Super-galactic coordinates:
+pole at GALACTIC_II (47.37,+6.32)
+origin at GALACTIC_II (137.37,0)","Left-handed in spherical coordinates",IVOA,"https://www.ivoa.net/documents/REC/DM/STC-20071030.html#_Toc181531804"
+SYSTEM_3,"Body-Fixed Frame, same as IAU_JUPITER","System 3 frame is the body fixed frame known in SPICE as IAU_JUPITER",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+SZS,"Saturn-2-spin"," a Saturn-centered spin-aligned coordinate system with the primary axis",CDPP/AMDA,"Request sent to SPASE email list"
+SpacecraftOrbitPlane,"A coordinate system where X lies in the plane normal to and in the direction of motion of the spacecraft, Z is normal to this plane and Y completes the triad in a right-handed coordinate system.","A coordinate system where X lies in the plane normal to and in the direction of motion of the spacecraft, Z is normal to this plane and Y completes the triad in a right-handed coordinate system.",SPASE,"https://spase-group.org/data/model/spase-2.4.0/spase-2_4_0_xsd.html#CoordinateSystemName"
+TEIS,"Tethys Inter-action coordinate System","The Moon Inter-action coordinate System frame is defined as follows:
+
+      -  The inertially referenced velocity of Saturn relative to Moon
+         is the primary vector: +X;
+
+	  -  The position of Saturn relative to Moon is the secondary vector:
+         +Y axis points from Moon to the Saturn;
+
+      -  +Z axis completes the right-handed system;
+
+      -  the origin of this frame is Moon's center of mass.
+
+   All vectors are geometric: no corrections are used.",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+TIIS,"Kronian Solar Orbital - A coordinate system related to Saturn where X is anti-sunward, Y along the orbital velocity direction.","Kronian Solar Orbital - A coordinate system related to Saturn where X is anti-sunward, Y along the orbital velocity direction.",SPASE,"https://spase-group.org/data/model/spase-2.4.0/spase-2_4_0_xsd.html#CoordinateSystemName"
+TIIS,"TItan Inter-action coordinate System","The Moon Inter-action coordinate System frame is defined as follows:
+
+      -  The inertially referenced velocity of Saturn relative to Moon
+         is the primary vector: +X;
+
+	  -  The position of Saturn relative to Moon is the secondary vector:
+         +Y axis points from Moon to the Saturn;
+
+      -  +Z axis completes the right-handed system;
+
+      -  the origin of this frame is Moon's center of mass.
+
+   All vectors are geometric: no corrections are used.",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+UECLIP,"ECLIPJ2000 centered on Uranus","The value for the obliquity of the
+                      ecliptic at J2000 is taken from 
+                      of 'Explanatory Supplement to the Astronomical Almanac'
+						edited by P. Kenneth Seidelmann. University Science
+						Books, 20 Edgehill Road, Mill Valley, CA 94941 (1992)
+					  page 114 equation 3.222-1",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+UEME,"J2000 centered on Uranus","Earth mean equator, dynamical equinox of J2000 centered on Uranus.",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+UNKNOWNFrame,"Unknown reference frame","Only to be used as a last resort or for simulations
+The client is responsible for assigning a suitable default",IVOA,"https://www.ivoa.net/documents/REC/DM/STC-20071030.html#_Toc181531804"
+URANUS_C_III,"Planetocentric coordinates on Uranus, system III","See Explanatory Supplement, Section 7.4",IVOA,"https://www.ivoa.net/documents/REC/DM/STC-20071030.html#_Toc181531804"
+URANUS_G_III,"Planetographic coordinates on Uranus, system III","See Explanatory Supplement, Section 7.4",IVOA,"https://www.ivoa.net/documents/REC/DM/STC-20071030.html#_Toc181531804"
+USO,"Uranus Solar Orbital","The Uranus Solar Orbital frame is defined as follows:
+
+      -  The position of the Sun relative to Uranus is the primary vector:
+         +X axis points from Uranus to the Sun;
+
+      -  The inertially referenced velocity of the Sun relative to Uranus
+         is the secondary vector: +Y axis is the component of this
+         velocity vector orthogonal to the +X axis;
+
+      -  +Z axis completes the right-handed system;
+
+      -  the origin of this frame is Uranus center of mass.
+
+   All vectors are geometric: no corrections are used.",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+VENUS_C,"Planetocentric coordinates on Venus","See Explanatory Supplement, Section 7.4",IVOA,"https://www.ivoa.net/documents/REC/DM/STC-20071030.html#_Toc181531804"
+VENUS_G,"Planetographic coordinates on Venus","See Explanatory Supplement, Section 7.4",IVOA,"https://www.ivoa.net/documents/REC/DM/STC-20071030.html#_Toc181531804"
+VME,"Venus Mean Equator","The Venus Mean Equatorial of Date frame (also known as Venus Mean
+   Equator and IAU vector of Date frame) is defined as follows :
+
+      -  X-Y plane is defined by the Venus equator of date, and
+         the +Z axis is parallel to the Venus' rotation axis of date,
+         pointing toward the North side of the invariant plane;
+
+      -  +X axis is defined by the intersection of the Venus' equator
+         of date with the Earth Mean Equator of J2000;
+
+      -  +Y axis completes the right-handed system;
+
+      -  the origin of this frame is Venus' center of mass.
+
+   All vectors are geometric: no corrections are used.",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+VSO,"Venus Solar Orbital - A coordinate system related to Venus where X is anti-sunward, Y along the orbital velocity direction.","Venus Solar Orbital - A coordinate system related to Venus where X is anti-sunward, Y along the orbital velocity direction.",SPASE,"https://spase-group.org/data/model/spase-2.4.0/spase-2_4_0_xsd.html#CoordinateSystemName"
+VSO,"Venus Solar Orbital","The Venus Solar Orbital frame is defined as follows:
+
+      -  The position of the Sun relative to Venus is the primary vector:
+         +X axis points from Venus to the Sun;
+
+      -  The inertially referenced velocity of the Sun relative to Venus
+         is the secondary vector: +Y axis is the component of this
+         velocity vector orthogonal to the +X axis;
+
+      -  +Z axis completes the right-handed system;
+
+      -  the origin of this frame is Venus center of mass.
+
+   All vectors are geometric: no corrections are used.",TREPS,"https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+WGS84,"The World Geodetic System (WGS) defines a reference frame for the earth, for use in geodesy and navigation. The WGS84 uses the zero meridian as defined by the Bureau International de lHeure.","The World Geodetic System (WGS) defines a reference frame for the earth, for use in geodesy and navigation. The WGS84 uses the zero meridian as defined by the Bureau International de lHeure.",SPASE,"https://spase-group.org/data/model/spase-2.4.0/spase-2_4_0_xsd.html#CoordinateSystemName"
+https://github.com/sunpy/sunpy/wiki/Coordinate-systems,"","",SunPy,"https://github.com/sunpy/sunpy/wiki/Coordinate-systems"

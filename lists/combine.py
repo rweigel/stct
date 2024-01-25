@@ -1,6 +1,6 @@
 import csv
 
-def read_csv(filename, source):
+def read_csv(filename, sourceLabel, source):
   D = []
   print("Reading", filename)
   with open(filename, newline='') as csvfile:
@@ -9,7 +9,7 @@ def read_csv(filename, source):
         if row[0].startswith('#'):
           continue
 
-        d = {"term": "", "label": "", "definition": "", "source": source}
+        d = {"term": "", "label": "", "definition": "", "sourceLabel": sourceLabel, "source": source}
 
         d["term"] = row[0].replace(" ","")
         if len(row) > 1:
@@ -21,7 +21,7 @@ def read_csv(filename, source):
 
   return D
 
-def read_xml(filename, source):
+def read_xml(filename, sourceLabel, source):
   import xmltodict
 
   print("Reading", filename)
@@ -33,6 +33,7 @@ def read_xml(filename, source):
     d = {'term': frame['@id'],
          'label': frame['fullname'],
          'definition': frame['description'],
+         'sourceLabel': sourceLabel,
          'source': source
     }
     D.append(d)
@@ -62,13 +63,13 @@ def read_md():
           d["definition"] += line
 
 
-D1 = read_csv('IVOA-2007-STCT.csv', 'https://www.ivoa.net/documents/REC/DM/STC-20071030.html#_Toc181531804')
-D2 = read_csv('cdpp-adma-request.csv', 'Request sent to SPASE email list')
-D3 = read_csv('spase.csv', 'https://spase-group.org/data/model/spase-2.4.0/spase-2_4_0_xsd.html#CoordinateSystemName')
-D4 = read_csv('sunpy.csv', 'https://github.com/sunpy/sunpy/wiki/Coordinate-systems')
-D5 = read_csv('laundal-and-richmond-2016.csv', 'https://doi.org/10.1007/s11214-016-0275-y')
-D6 = read_xml('frames.xml','https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml')
-D7 = read_csv('spice-built-in-pck-body-fixed.csv','https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20Inertial%20Reference%20Frames')
+D1 = read_csv('IVOA-2007-STCT.csv', 'IVOA', 'https://www.ivoa.net/documents/REC/DM/STC-20071030.html#_Toc181531804')
+D2 = read_csv('cdpp-adma-request.csv', 'CDPP/AMDA', 'Request sent to SPASE email list')
+D3 = read_csv('spase.csv', 'SPASE', 'https://spase-group.org/data/model/spase-2.4.0/spase-2_4_0_xsd.html#CoordinateSystemName')
+D4 = read_csv('sunpy.csv', 'SunPy', 'https://github.com/sunpy/sunpy/wiki/Coordinate-systems')
+D5 = read_csv('laundal-and-richmond-2016.csv', 'Laundal', 'https://doi.org/10.1007/s11214-016-0275-y')
+D6 = read_xml('frames.xml','TREPS', 'https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml')
+D7 = read_csv('spice-built-in-pck-body-fixed.csv', 'NAIF', 'https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20Inertial%20Reference%20Frames')
 
 D = [*D1, *D2, *D3, *D4, *D5, *D6, *D7]
 
@@ -80,6 +81,13 @@ filename = "combined.json"
 with open(filename, "w") as outfile:
   print("Writing", filename)
   json.dump(D, outfile, indent=2)
+
+filename = "combined.csv"
+with open(filename, "w") as outfile:
+  print("Writing", filename)
+  outfile.write("term,label,definition,sourceLabel,source\n")
+  for d in D:
+    outfile.write(f'{d["term"]},"{d["label"]}","{d["definition"]}",{d["sourceLabel"]},"{d["source"]}"\n')
 
 filename = "../VEP-for-IVOA.head.md"
 with open(filename,"r") as f:
