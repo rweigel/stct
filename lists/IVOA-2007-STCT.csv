@@ -6,13 +6,13 @@ Left-handed in spherical coordinates"
 ECLIPTIC,Ecliptic coordinates,Left-handed in spherical coordinates
 ICRS,International Celestial Reference System,Left-handed in spherical coordinates
 GALACTIC_I,Old Galactic coordinates,Left-handed in spherical coordinates
-GALACTIC[_II],“New” Galactic coordinates,Left-handed in spherical coordinates
+GALACTIC[_II],"New" Galactic coordinates,Left-handed in spherical coordinates
 SUPER_GALACTIC,"Super-galactic coordinates:
 pole at GALACTIC_II (47.37,+6.32)
 origin at GALACTIC_II (137.37,0)",Left-handed in spherical coordinates
 AZ_EL,Local azimuth and elevation,"Ground-based observatories
 Azimuth: from north through east"
-BODY,Generic “BODY” coordinates,
+BODY,Generic "BODY" coordinates,
 GEO_C,"Geographic (geocentric) coordinates: longitude, latitude, geocentric distance",3-D spherical or 3-D Cartesian
 GEO_D,"Geodetic coordinates: longitude, latitude, elevation","Semi-major axis and inverse flattening of the reference spheroid may need to be provided; default is IAU 1976 (6378140 m, 298.2577)"
 MAG,Geomagnetic coordinates,See F&H (2002)
