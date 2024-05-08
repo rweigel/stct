@@ -1,8 +1,12 @@
-There are two basic definitions of the Geocentric Equatorial Inertial (GEI) coordinate system in common use.
+There are two basic categories of the Geocentric Equatorial Inertial (GEI) coordinate frame in common use.
 
-1. An inertial coordinate system. There are several versions that depend on the date and time when the obliquity and ecliptic plane was computed. Variants include B1900, B1950, and J2000.
+1. A non-inertial coordinate frame. There are several versions, depending on which how and which of the following time-varying effects are were accounted for
+  * obliquity (tilt of the planetary rotation axis with respect to the ecliptic plane),
+  * precession (rotation of planetary rotation axis tilt around the ecliptic pole),
+  * nutation (perturbations to precession path), and
+  * planetary precession (motion of the ecliptic with respect to the fixed starts).
 
-2. An non-inertial coordinate system. There are several versions, depending on which of the following were accounted for: obliquity (tilt with respect to ecliptic plan), precession (rotation of tilt around ecliptic pole), nutation (perturbations to precession path), and planetary precession (motion of the ecliptic with respect to the fixed starts).
+2. An inertial coordinate frame. There are several versions that depend on how and which time-varying effects are accounted for but evaluate them at a specific date and time (epoch).
 
 _Discuss why and when two versions are used._
 
@@ -10,6 +14,9 @@ _Discuss why and when two versions are used._
 
 The following terms are used in the references, and may need definition.
 
+* Coordinate frame
+* Coordinate representation
+* Coordinate system
 * True of Date
 * Mean Equator
 * Mean Equinox
@@ -27,24 +34,60 @@ Using [hxform](https://github.com/rweigel/hxform/),
 Time: [2010, 12, 30, 0, 0, 0]
 Transform: GEI in car => GEO in car
 
-                           x           y           z           mag   
+                           x           y           z       magnitude
 -----------------------------------------------------------------------------------
 Input (GEI):           0.57735027  0.57735027  0.57735027  1.00000000
 
-Output (GEO):                                                         ∠ wrt Input
+Output (GEO):                                                         ∠° wrt Input
 -----------------------------------------------------------------------------------
-spacepy-irbem          0.48765281 -0.65487510  0.57735027  1.00000000 76.30298692
 cxform                 0.48763899 -0.65488540  0.57735027  1.00000000 76.30380821
-spiceypy1              0.49005307 -0.65253584  0.57796623  1.00000000 76.12057248
-sunpy                  0.48938523 -0.65299116  0.57801786  1.00000000 76.15708166
-spiceypy2              0.49005307 -0.65253584  0.57796623  1.00000000 76.12057248
 geopack_08_dp          0.48765281 -0.65487510  0.57735027  1.00000000 76.30298692
 spacepy                0.48759274 -0.65491984  0.57735027  1.00000000 76.30655535
+spacepy-irbem          0.48765281 -0.65487510  0.57735027  1.00000000 76.30298692
+spiceypy1              0.49005307 -0.65253584  0.57796623  1.00000000 76.12057248
+spiceypy2              0.49005307 -0.65253584  0.57796623  1.00000000 76.12057248
+sscweb                 0.49000000 -0.65000000  0.58000000  0.99949987 75.95945565
+sunpy                  0.48938523 -0.65299116  0.57801786  1.00000000 76.15708166
 
 
-max-min:               0.00246033  0.00238399  0.00066759  0.00000000  0.18598286
-100*|max-min|/|max|:       0.5021%     0.3653%     0.1155%     0.0000%     0.2437%
+max-min:               0.00246033  0.00491984  0.00264973  0.00050013  0.34709969
+100*|max-min|/|max|:       0.5021%     0.7569%     0.4569%     0.0500%     0.4549%
+Time: [2010, 12, 30, 0, 0, 0]
+Transform: GEO in car => GEI in car
+
+                           x           y           z       magnitude
+-----------------------------------------------------------------------------------
+Input (GEO):           0.57735027  0.57735027  0.57735027  1.00000000
+
+Output (GEI):                                                         ∠° wrt Input
+-----------------------------------------------------------------------------------
+cxform                -0.65488540  0.48763899  0.57735027  1.00000000 76.30380821
+geopack_08_dp         -0.65487510  0.48765281  0.57735027  1.00000000 76.30298692
+spacepy               -0.65491984  0.48759274  0.57735027  1.00000000 76.30655535
+spacepy-irbem         -0.65487510  0.48765281  0.57735027  1.00000000 76.30298692
+spiceypy1             -0.65252950  0.48996431  0.57804864  1.00000000 76.12057248
+spiceypy2             -0.65252950  0.48996431  0.57804864  1.00000000 76.12057248
+sscweb                -0.65000000  0.49000000  0.58000000  0.99949987 75.95945565
+sunpy                 -0.65297685  0.48929725  0.57810851  1.00000000 76.15650299
+
+
+max-min:               0.00491984  0.00240726  0.00264973  0.00050013  0.34709969
+100*|max-min|/|max|:       0.7569%     0.4913%     0.4569%     0.0500%     0.4549%
 ```
+
+# https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/Tutorials/pdf/individual_docs/17_frames_and_coordinate_systems.pdf
+
+J2000 (also known as EME 2000, and is generally used in SPICE to refer to the ICRF)
+
+The J2000* (aka EME2000) frame definition is based on the earth’s equator and equinox, determined from observations of planetary motions, plus other data.
+
+*Caution: The name “J2000” is also used to refer to the zero epoch of the ephemeris time system (ET, also known as TDB)
+
+The reference frame name "J2000" is generally used in SPICE as a label for the ICRF frame.
+
+* In reality, any SPICE data said to be referenced to the J2000 frame are actually referenced to the ICRF frame.
+  * Except for attitude derived from the 1976 IAU Earth precession model and 1980 IAU Earth nutation and mean obliquity of date models
+* For historical and backwards compatibility reasons, only the name “J2000” is recognized by SPICE software as a frame name–not “ICRF.”
 
 # https://www.mssl.ucl.ac.uk/grid/iau/extra/local_copy/SP_coords/geo_sys.htm
 
