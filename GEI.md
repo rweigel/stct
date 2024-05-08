@@ -1,3 +1,5 @@
+The following are notes on the GEI coordinate system.
+
 There are two basic categories of the Geocentric Equatorial Inertial (GEI) coordinate frame in common use.
 
 1. A non-inertial coordinate frame. There are several versions, depending on which how and which of the following time-varying effects are were accounted for
@@ -54,7 +56,7 @@ max-min:               0.00246033  0.00491984  0.00264973  0.00050013  0.3470996
 100*|max-min|/|max|:       0.5021%     0.7569%     0.4569%     0.0500%     0.4549%
 ```
 
-# https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/Tutorials/pdf/individual_docs/17_frames_and_coordinate_systems.pdf
+# [NAIF Tutorial](https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/Tutorials/pdf/individual_docs/17_frames_and_coordinate_systems.pdf)
 
 J2000 (also known as EME 2000, and is generally used in SPICE to refer to the ICRF)
 
@@ -68,13 +70,13 @@ The reference frame name "J2000" is generally used in SPICE as a label for the I
   * Except for attitude derived from the 1976 IAU Earth precession model and 1980 IAU Earth nutation and mean obliquity of date models
 * For historical and backwards compatibility reasons, only the name “J2000” is recognized by SPICE software as a frame name–not “ICRF.”
 
-# https://www.mssl.ucl.ac.uk/grid/iau/extra/local_copy/SP_coords/geo_sys.htm
+# [www.mssl.ucl.ac.uk](https://www.mssl.ucl.ac.uk/grid/iau/extra/local_copy/SP_coords/geo_sys.htm)
 
 This system has its Z axis parallel to the Earth's rotation axis (positive to the North) and its X axis towards the First Point of Aries (the direction in space defined by the intersection between the Earth's equatorial plane and the plane of its orbit around the Sun (the plane of the ecliptic). This system is (to first order) fixed with respect to the distant stars. It is convenient for specifying the orbits (and hence location) of Earth-orbiting spacecraft as one can specify a Keplerian orbit in this frame.
 
 However note that the GEI system is subject to second order change with time owing to the various slow motions of the Earth's rotation axis with respect to the fixed stars. Thus for GEI coordinates one must specify the date (normally termed the epoch) to which the coordinate system applies. For space physics work one should use the epoch-of-date GEI system, i.e. the system applying at the same time as the data were taken. (Thus the rotation axis in GEI is identical with the GEO rotation axis.) On these pages the unqualified acronym GEI refers to the epoch-of-date system. See Hapgood (1995) for a more detailed discussion of this issue.
 
-# https://sscweb.gsfc.nasa.gov/users_guide/Appendix_C.shtml
+# [SSCWeb](https://sscweb.gsfc.nasa.gov/users_guide/Appendix_C.shtml)
 
 ## GEI: Geocentric Equatorial Inertial system.
 
