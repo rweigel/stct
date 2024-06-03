@@ -7,9 +7,10 @@ There are two basic categories of the Geocentric Equatorial Inertial^+ (GEI) coo
 1. A non-inertial coordinate frame. There are several versions, depending on which how and which of the following time-varying effects are were accounted for
   * obliquity (tilt of the planetary rotation axis with respect to the ecliptic plane),
   * precession (rotation of planetary rotation axis tilt around the ecliptic pole),
-  * nutation (perturbations to precession path), and
+  * nutation (perturbations to precession path),
+  * polar motion (IERS table; in SunPy, Geocentric Earth Equatorial does not include true polar motion GEO does; 10-20 meters), and
   * planetary precession (motion of the ecliptic with respect to the fixed starts).
-
+ 
 2. An inertial coordinate frame. There are several versions that depend on how and which time-varying effects are accounted for but evaluate them at a specific date and time (epoch).
 
 _Discuss why and when two versions are used._
