@@ -22,18 +22,18 @@ The geomagnetic coordinate system (MAG) is defined so that its Z-axis is paralle
 
 # [Laundal and Richmond 2017](https://drive.google.com/file/d/1JO-43r4Z3E6gTBG1-B2Wo_npMwQwoTc_/view)
 
-Centered dipole coordinates are defined so that the Cartesian $z$ axis aligns with the dipole axis, pointing towards the centered dipole pole in the NH (i.e. the direction of $\hat{\mathbf{m}}$$^1$). The $y$ axis is perpendicular to the plane containing the dipole axis and the rotation axis of the Earth ($\hat{\mathbf{z}}\_\text{GEO}$). The $x$ axis completes a right-handed system. Mathematically, the base vectors are $\hat{\mathbf{m}}$
+Centered dipole coordinates are defined so that the Cartesian $z$ axis aligns with the dipole axis, pointing towards the centered dipole pole in the NH (i.e. the direction of $\hat{\mathbf{m}}^I$). The $y$ axis is perpendicular to the plane containing the dipole axis and the rotation axis of the Earth ($\hat{\mathbf{z}}\_\text{GEO}$). The $x$ axis completes a right-handed system. Mathematically, the base vectors are $\hat{\mathbf{m}}$
 
 $^I$ defined earlier as a unit vector pointing antiparallel to a centered dipole approximation of Earth's field.
 
 $\hat{\mathbf{z}}\_\text{cd} = \hat{\mathbf{m}}\_\text{geo}$ (subscript $\text{geo}$ not in equation, but implied by earlier definition).
 
-$\hat{\mathbf{y}}\_\text{cd} = \hat{\mathbf{z}}\_\text{geo} \times \hat{\mathbf{z}}\_\text{cd}/|\hat{\mathbf{z}}\_\text{geo} \times \hat{\mathbf{z}}\_\text{cd}|$$^{II}$
+$\hat{\mathbf{y}}\_\text{cd} = \hat{\mathbf{z}}\_\text{geo} \times \hat{\mathbf{z}}\_\text{cd}/|\hat{\mathbf{z}}\_\text{geo} \times \hat{\mathbf{z}}\_\text{cd}|^{II}$
 
 $^{II}$ why is the denominator needed?
 
 $\hat{\mathbf{x}}\_\text{CD} = \hat{\mathbf{y}}\_\text{CD} \times \hat{\mathbf{z}}\_\text{CD}$
 
-# Reproducibility
+# Reproducibility Notes
 
 For reproducibility, the three constants, or an algorithm for computing them, in $\mathbf{m}\_\text{GEO}$ must be given. Some implementations of the CD coordinate frame use only values listed in IGRF tables, which apply to a 5-year time window (and may change unless the values are definitive). Other implementations use constants that are based on interpolation, so, for example, the $\hat{\mathbf{z}}\_\text{CD}$ direction at a time within a IGRF 5-year time window depends on the values in the prior and following IGRF time window.
