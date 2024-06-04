@@ -1,4 +1,4 @@
-GSM (Geocentric Solar Magnetospheric) - $\hat{\mathbf{x}}\_\text{GSM}$ directed along the vector from the center of the Earth to the center of the Sun.
+The following are notes on the Geocentric Solar Magnetospheric coordinate frame.
 
 This coordinate frame has been referred to as Geocentric Solar Magnetic (GSM) (Laundal and Richmond, 2017), Solar Magnetospheric (SM).
 
@@ -14,11 +14,11 @@ GSM: Geocentric Solar Magnetospheric system. This has its X-axis from the Earth 
 # [Hapgood 1995](https://drive.google.com/file/d/1JFZApinOVlJpzgEQ0qhLpP5XUfOjjl9v/view?usp=drive_link)
 
 * $X$= Earth-Sun line
-* $Z$= Projection of dipole axis on $\text{GSE}$ $Y$$Z$ plane
+* $Z$= Projection of dipole axis on $\text{GSE}$ $YZ$ plane
 
 # [Russell 1971](https://drive.google.com/file/d/1zAAVba4I8JU2tpfhXeN1Y-rX5ogQTN3D/view)
 
-The geocentric solar magnetospheric system (GSM), ... has its $X$-axis from the Earth to the Sun. The $Y$-axis is defined to be perpendicular to the Earth's magnetic dipole so that the $X$- $Z$ plane contains the dipole axis. The positive $Z$-axis is chosen to be in the same sense as the northern magnetic pole.
+The geocentric solar magnetospheric system (GSM), ... has its $X$-axis from the Earth to the Sun. The $Y$-axis is defined to be perpendicular to the Earth's magnetic dipole so that the $X-Z$ plane contains the dipole axis. The positive $Z$-axis is chosen to be in the same sense as the northern magnetic pole.
 
 # [SPASE](https://spase-group.org/data/model/spase-2.4.0/spase-2_4_0_xsd.html#CoordinateSystemName)
 
