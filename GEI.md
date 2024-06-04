@@ -1,6 +1,6 @@
 The following are notes on the GEI coordinate frame.
 
-There are two basic categories of the Geocentric Equatorial Inertial$^I$ (GEI) coordinate frame in common use.
+There are two basic categories of the Geocentric Equatorial Inertial$\text{}^I$ (GEI) coordinate frame in common use.
 
 $^I$ Other variations include "Geocentric Earth Equatorial" (Franz and Harper 2017), "Geocentric Celestial Inertial (GCI) (Russell 1971). Note that Franz and Harper 2017 use "Geocentric Earth Equatorial" and cite Hapgood 1995 in the first bullet of section 3.1. However, Hapgood 1995 only uses "Geocentric Equatorial Inertial" and an explanation is not given for the change in name.
 
