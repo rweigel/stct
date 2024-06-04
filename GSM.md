@@ -1,6 +1,6 @@
 GSM (Geocentric Solar Magnetospheric) - $\hat{\mathbf{x}}\_\text{GSM}$ directed along the vector from the center of the Earth to the center of the Sun.
 
-This coordinate frame has been referred to as Geocentric Solar Magnetic.
+This coordinate frame has been referred to as Geocentric Solar Magnetic (GSM) (Laundal and Richmond, 2017), Solar Magnetospheric (SM).
 
 # [SSCWeb](https://sscweb.gsfc.nasa.gov/users_guide/Appendix_C.shtml)
 
@@ -8,13 +8,13 @@ GSM: Geocentric Solar Magnetospheric system. This has its X-axis from the Earth 
 
 # [Franz and Harper](https://drive.google.com/file/d/1x0T2L57-SqXaDsq2nZEYU5RmWsSLGuNC/view?usp=drive_link)
 
-* $+Z$-axis: projection of norther dipole axis on GSE$\_D$ $YZ$ plane
-* vector Earth-Sun of date
+* $+Z$-axis: projection of northern dipole axis on $\text{GSE}\_D$ $YZ$ plane
+* $+X$-axis: vector Earth-Sun of date
 
 # [Hapgood 1995](https://drive.google.com/file/d/1JFZApinOVlJpzgEQ0qhLpP5XUfOjjl9v/view?usp=drive_link)
 
 * $X = $ Earth-Sun line
-* $Z = $ Projection of dipole axis on GSE $YZ$ plane
+* $Z = $ Projection of dipole axis on $\text{GSE}$ $YZ$ plane
 
 # [Russell 1971](https://drive.google.com/file/d/1zAAVba4I8JU2tpfhXeN1Y-rX5ogQTN3D/view)
 
@@ -26,7 +26,7 @@ Geocentric Solar Magnetospheric - A coordinate system where the X axis is from E
 
 # [Laundal and Richmond 2017 (https://drive.google.com/file/d/1JO-43r4Z3E6gTBG1-B2Wo_npMwQwoTc_/view)
 
-The GSM base vectors are:
+The Geocentric Solar _Magnetic_ (GSM) base vectors are:
 
 $\hat{\mathbf{x}}\_\text{GSM} = \hat{\mathbf{s}}$
 
