@@ -1,4 +1,4 @@
-The following are notes on the GEI coordinate system.
+The following are notes on the GEI coordinate frame.
 
 There are two basic categories of the Geocentric Equatorial Inertial^+ (GEI) coordinate frame in common use.
 
