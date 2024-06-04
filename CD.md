@@ -28,9 +28,7 @@ $^I$ defined earlier as a unit vector pointing antiparallel to a centered dipole
 
 $\hat{\mathbf{z}}\_\text{cd} = \hat{\mathbf{m}}\_\text{geo}$ (subscript $\text{geo}$ not in equation, but implied by earlier definition).
 
-$\hat{\mathbf{y}}\_\text{cd} = \hat{\mathbf{z}}\_\text{geo} \times \hat{\mathbf{z}}\_\text{cd}/|\hat{\mathbf{z}}\_\text{geo} \times \hat{\mathbf{z}}\_\text{cd}|^{II}$
-
-$^{II}$ why is the denominator needed?
+$\hat{\mathbf{y}}\_\text{cd} = \hat{\mathbf{z}}\_\text{geo} \times \hat{\mathbf{z}}\_\text{cd}/|\hat{\mathbf{z}}\_\text{geo} \times \hat{\mathbf{z}}\_\text{cd}|$
 
 $\hat{\mathbf{x}}\_\text{CD} = \hat{\mathbf{y}}\_\text{CD} \times \hat{\mathbf{z}}\_\text{CD}$
 
