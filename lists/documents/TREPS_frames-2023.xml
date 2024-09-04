@@ -1,4 +1,7 @@
 <?xml version="1.0"?>
+<!--
+TREPS, https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml
+-->
 <treps>
 	<frames>
 		<frame id="EME">

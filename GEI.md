@@ -8,28 +8,12 @@ $^I$ Other variations include "Geocentric Earth Equatorial" (Franz and Harper 20
   * obliquity (tilt of the planetary rotation axis with respect to the ecliptic plane),
   * precession (rotation of planetary rotation axis tilt around the ecliptic pole),
   * nutation (perturbations to precession path),
-  * polar motion (IERS table; in SunPy, Geocentric Earth Equatorial does not include true polar motion GEO does; 10-20 meters), and
-  * planetary precession (motion of the ecliptic with respect to the fixed starts).
- 
+  * polar motion (IERS table; in SunPy, [Geocentric Earth Equatorial](https://docs.sunpy.org/en/stable/generated/api/sunpy.coordinates.GeocentricEarthEquatorial.html) (what is "abberation due to Earth motion"?) does not include true polar motion GEO does; 10-20 meters), and
+  * planetary precession (motion of the ecliptic with respect to the fixed stars).
+
 2. An inertial coordinate frame. There are several versions that depend on how and which time-varying effects are accounted for but evaluate them at a specific date and time (epoch).
 
 _Discuss why and when two versions are used._
-
-# Terminology
-
-The following terms are used in the references, and may need definition.
-
-* Coordinate frame
-* Coordinate representation
-* Coordinate system
-* True of Date
-* Mean Equator
-* Mean Equinox
-* Mean Obliquity
-* Ecliptic Plane
-* Epoch is used to mean a reference date and time (an instant, rather than a period of time as is another common usage of "epoch")
-* First point of Aries, i.e. vector(Earth-Sun)
-* Vernal Equinox of Date
 
 # Implementation Comparisons
 
@@ -59,6 +43,10 @@ max-min:               0.00246033  0.00491984  0.00264973  0.00050013  0.3470996
 100*|max-min|/|max|:       0.5021%     0.7569%     0.4569%     0.0500%     0.4549%
 ```
 
+# [Russell 1971]
+
+The Geocentric Equatorial Inertial System (GEI) has its X-axis pointing from the Earth towards the first point of Aries (the position of the Sun at the vernal equinox). This direction is the intersection of the Earth's equatorial plane and the ecliptic plane and thus the X-axis lies in both planes. The Z-axis is parallel to the rotation axis of the Earth and Y completes the right- handed orthogonal set (Y = Z x X).
+
 # [NAIF Tutorial](https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/Tutorials/pdf/individual_docs/17_frames_and_coordinate_systems.pdf)
 
 J2000 (also known as EME 2000, and is generally used in SPICE to refer to the ICRF)
@@ -79,9 +67,16 @@ This system has its Z axis parallel to the Earth's rotation axis (positive to th
 
 However note that the GEI system is subject to second order change with time owing to the various slow motions of the Earth's rotation axis with respect to the fixed stars. Thus for GEI coordinates one must specify the date (normally termed the epoch) to which the coordinate system applies. For space physics work one should use the epoch-of-date GEI system, i.e. the system applying at the same time as the data were taken. (Thus the rotation axis in GEI is identical with the GEO rotation axis.) On these pages the unqualified acronym GEI refers to the epoch-of-date system. See Hapgood (1995) for a more detailed discussion of this issue.
 
+# [SpacePy](https://spacepy.github.io/coordinates.html#magnetospheric-systems)
+
+* ECI2000 Earth-centered Inertial, J2000 epoch
+* ECIMOD Earth-centered Inertial, mean-of-date
+* ECITOD Earth-centered Inertial, true-of-date
+* GEI Geocentric Equatorial Inertial (IRBEM approximation of TOD)
+
 # [SSCWeb](https://sscweb.gsfc.nasa.gov/users_guide/Appendix_C.shtml)
 
-## GEI: Geocentric Equatorial Inertial system.
+## GEI: Geocentric Equatorial Inertial system
 
 This system has X-axis pointing from the Earth toward the first point of Aries (the position of the Sun at the vernal equinox). This direction is the intersection of the Earth's equatorial plane and the ecliptic plane and thus the X-axis lies in both planes. The Z-axis is parallel to the rotation axis of the Earth, and y completes the right-handed orthogonal set (Y = Z * X). Geocentric Inertial (GCI) and Earth-Centered Inertial (ECI) are the same as GEI.
 
@@ -125,6 +120,11 @@ PREC_MODEL  = 'EARTH_IAU_1976'
 OBLIQ_MODEL = 'EARTH_IAU_1980'
 ```
 
+# [Hapgood 1992]()
+
+* X = First Point of Aries
+* Geographic North Pole
+
 # [Hapgood 1995](https://drive.google.com/file/d/1JFZApinOVlJpzgEQ0qhLpP5XUfOjjl9v/view?usp=drive_link)
 
 When the inertial coordinate system is expressed in an epoch-of-date form there is, by convention, the option to ignore nutation effects. If the coordinate system is based on the average position of the rotation axis and the plane of the ecliptic allowing only for precession, it is known as the mean epoch-of-date system. If, however, it is based on their actual position allowing for precession and nutation, it is known as the true epoch-of-date system. We have already shown that the effect of nutation may be ignored in space physics coordinate transformations. Thus we may also neglect the difference between the mean and true epochs-of-date. We need only consider the difference between the epoch-of-date and standard epochs such as J2000.0.
@@ -134,12 +134,15 @@ When the inertial coordinate system is expressed in an epoch-of-date form there 
 ## GEI_J2000
 
 * XY-plane Earth mean equator at J2000.0
-* X-axis First point of Aries, i.e. vector(Earth-Sun) of vernal equinox of date
+* X-axis First point of Aries, i.e. vector(Earth-Sun) of vernal equinox at epoch J2000.0
+
+? This does not make sense. The vector from the Earth to the Sun at time J2000.0 (2000 January 1 noon TT) does not point towards Aries. Should this be "First point of Aries at epoch J2000.0"? Given "vernal equinox" is used as both a vector and a time, better to not use "vernal equinox".
 
 ## GEI_D (Mean Geocentric Earth Equatorial) (Hapgood 1995)
 
 * XY-plane Earth mean equator of date
 * X-axis First point of Aries, i.e. vector(Earth-Sun) of vernal equinox of date
+
 
 ## GEI_T (True Geocentric Earth Equatorial) (Hapgood 1995)
 

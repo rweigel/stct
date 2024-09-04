@@ -1,0 +1,18 @@
+# https://github.com/sunpy/sunpy/wiki/Coordinate-systems
+Heliocentric Aries Ecliptic (Mean J2000.0 or Date),Astropy's HeliocentricMeanEcliptic,"If using an Astropy version before v3.2, use the misleadingly named HeliocentricTrueEcliptic"
+Heliocentric Cartesian,Heliocentric,"Z=Sun-observer line, YZ-plane contains solar rotation axis"
+Heliocentric Earth Ecliptic,HeliocentricEarthEcliptic,"X=Sun-Earth line, XZ-plane contains the mean ecliptic north pole"
+Heliocentric Earth Equatorial,HeliographicStonyhurst,"Specify the coordinate representation using CartesianRepresentation, and retrieve the representation via the attribute .cartesian"
+Heliocentric Inertial,HeliocentricInertial,"Z=solar rotational axis, X=solar ascending node on mean ecliptic (J2000.0)"
+Heliocentric of Date,none,"Z=solar rotational axis, X=solar ascending node on mean ecliptic of date"
+Heliocentric Radial,~Heliocentric,"Use a cylindrical representation, but with a 90-degree offset in psi because Heliocentric in cylindrical measures counter-clockwise from the west limb rather than solar north"
+Heliocentric/Heliographic Radial-Tangential-Normal,~Heliocentric,"The axes are permuted, with HCC X, Y, Z equivalent respectively to HGRTN Y, Z, X"
+Heliographic Carrington,HeliographicCarrington,
+Heliographic Stonyhurst,HeliographicStonyhurst,
+Helioprojective Cartesian,Helioprojective,
+Helioprojective Radial,none,Is to Heliocentric Radial what HPC is to HCC
+Geocentric Earth Equatorial (Mean J2000.0 or Date),GeocentricEarthEquatorial,"Astropy's PrecessedGeocentric is similar, but includes aberration due to Earth motion"
+Geocentric Earth Equatorial (True),none,
+Geographic,Astropy's ITRS,"Z=true geographic north pole, X=intersection of Greenwich meridian and geographic equator"
+Geocentric Solar Ecliptic,GeocentricSolarEcliptic,"X=Earth-Sun line, XZ-plane contains the mean ecliptic north pole"
+Geocentric Solar Magnetospheric,none,"Z=projection of northern dipole axis on GSE YZ plane, X=Earth–Sun line"

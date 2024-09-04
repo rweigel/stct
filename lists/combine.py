@@ -63,13 +63,20 @@ def read_md():
           d["definition"] += line
 
 
-D1 = read_csv('IVOA-2007-STCT.csv', 'IVOA', 'https://www.ivoa.net/documents/REC/DM/STC-20071030.html#_Toc181531804')
-D2 = read_csv('cdpp-adma-request.csv', 'CDPP/AMDA', 'Request sent to SPASE email list')
-D3 = read_csv('spase.csv', 'SPASE', 'https://spase-group.org/data/model/spase-2.4.0/spase-2_4_0_xsd.html#CoordinateSystemName')
-D4 = read_csv('sunpy.csv', 'SunPy', 'https://github.com/sunpy/sunpy/wiki/Coordinate-systems')
-D5 = read_csv('laundal-and-richmond-2016.csv', 'Laundal', 'https://doi.org/10.1007/s11214-016-0275-y')
-D6 = read_xml('frames.xml','TREPS', 'https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml')
-D7 = read_csv('spice-built-in-pck-body-fixed.csv', 'NAIF', 'https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20Inertial%20Reference%20Frames')
+D1 = read_csv('documents/IVOA-2007-STCT.csv', 'IVOA', 'https://www.ivoa.net/documents/REC/DM/STC-20071030.html#_Toc181531804')
+D  = read_csv('documents/ivoa-refframe-2022-02-22-terms.csv', 'https://github.com/ivoa-std/Vocabularies/blob/master/refframe/terms.csv')
+D6 = read_xml('documents/frames.xml','TREPS', 'https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml')
+D2 = read_csv('documents/cdpp-adma-request.csv', 'CDPP/AMDA', 'Request sent to SPASE email list')
+D3 = read_csv('documents/spase.csv', 'SPASE', 'https://spase-group.org/data/model/spase-2.4.0/spase-2_4_0_xsd.html#CoordinateSystemName')
+
+D4 = read_csv('software/astropy.csv', 'AstroPy', 'https://docs.astropy.org/en/stable/coordinates/skycoord.html')
+D4 = read_csv('software/Kamodo.csv', 'Kamodo', 'https://nasa.github.io/Kamodo/notebooks/CoordinateConversions.html#retrieve-a-real-satellite-trajectory-as-input')
+D4 = read_csv('software/sunpy.csv', 'SunPy', 'https://github.com/sunpy/sunpy/wiki/Coordinate-systems')
+D4 = read_csv('software/spacepy.csv', 'SpacePy', 'https://spacepy.github.io/autosummary/spacepy.coordinates.Coords.html')
+
+D7 = read_csv('software/spice-built-in-pck-body-fixed.csv', 'NAIF', 'https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Appendix.%20%60%60Built%20in''%20Inertial%20Reference%20Frames')
+
+D5 = read_csv('papers/laundal-and-richmond-2016.csv', 'Laundal', 'https://doi.org/10.1007/s11214-016-0275-y')
 
 D = [*D1, *D2, *D3, *D4, *D5, *D6, *D7]
 
