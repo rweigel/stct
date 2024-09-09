@@ -1,0 +1,11 @@
+# https://spacepy.github.io/_modules/spacepy/coordinates.html#Coords
+ECI2000,"Earth-centered Inertial, J2000 epoch",
+ECIMOD,"Earth-centered Inertial, mean-of-date",
+ECITOD,"Earth-centered Inertial, true-of-date",
+GEI,"Geocentric Equatorial Inertial (IRBEM approximation of TOD)",
+GSM,"Geocentric Solar Magnetospheric",
+GSE,"Geocentric Solar Ecliptic",
+SM,"Solar Magnetic",
+MAG,"Geomagnetic Coordinate System (aka CDMAG)",
+GEO,"Geocentric geographic, aka Earth-centered Earth-fixed",
+GDZ,"Geodetic coordinates",

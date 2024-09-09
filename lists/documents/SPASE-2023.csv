@@ -1,5 +1,4 @@
-key, label, description, same_as, see_also
-#https://spase-group.org/data/model/spase-2.4.0/spase-2_4_0_xsd.html#CoordinateSystemName
+# https://spase-group.org/data/model/spase-2.4.0/spase-2_4_0_xsd.html#CoordinateSystemName
 "Carrington","Carrington","A coordinate system which is centered at the Sun and is ""fixed"" with respect to the synodic rotation rate; the mean synodic value is about 27.2753 days. The Astronomical Almanac gives a value for Carrington longitude of 349.03 degrees at 0000 UT on 1 January 1995.",,
 "CGM","Corrected Geomagnetic","Corrected Geomagnetic - A coordinate system from a spatial point with GEO radial distance and geomagnetic latitude and longitude, follow the epoch-appropriate IGRF/DGRF model field vector through to the point where the field line crosses the geomagnetic dipole equatorial plane. Then trace the dipole magnetic field vector Earthward from that point on the equatorial plane, in the same hemisphere as the original point, until the initial radial distance is reached. Designate the dipole latitude and longitude at that point as the CGM latitude and longitude of the original point.",,"http://nssdc.gsfc.nasa.gov/space/cgm/cgmm_des.html"
 CSO,"Corrected Solar Orbital","Corrected Solar Orbital - A coordinate system related to Earth where X is anti-sunward, Y along the orbital velocity direction.",
