@@ -40,6 +40,14 @@
     "source_file": "documents/IVOA_refframe-2022-02-22-terms.csv"
   },
   {
+    "term": "B1950",
+    "label": "Earth mean equator, dynamical equinox of B1950.",
+    "definition": "The B1950 reference frame is obtained by precessing the J2000 frame backwards from Julian year 2000 to Besselian year 1950, using the 1976 IAU precession model.\\n\\nThe rotation from B1950 to J2000 is\\n\\n[ -z ]  [ theta ]  [ -zeta ]\\n\\n      3          2          3\\n\\nThe values for z, theta, and zeta are computed from the formulas given in table 5 of [5].\\n\\n\\n\\nz     =  1153.04066200330\"\\n\\ntheta =  1002.26108439117\"\\n\\nzeta  =  1152.84248596724\"\nFK4,Fundamental Catalog (4).,The FK4 reference frame is derived from the B1950 frame by applying the equinox offset determined by Fricke.\\n\\n[ 0.525\"\" ]\\n\\na      3\"",
+    "sourceLabel": "SPICE_Built_In_Inertial",
+    "source_url": "https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html",
+    "source_file": "software/SPICE_Built_In_Inertial-2023.csv"
+  },
+  {
     "term": "BODY",
     "label": "Generic \"BODY\" coordinates",
     "definition": "",
@@ -54,6 +62,22 @@
     "sourceLabel": "IVOA_refframe",
     "source_url": "IVOA-2022",
     "source_file": "documents/IVOA_refframe-2022-02-22-terms.csv"
+  },
+  {
+    "term": "BarycentricMeanEcliptic",
+    "label": "Barycentric Mean Ecliptic",
+    "definition": " \"Barycentric mean ecliptic coordinates. These origin of the coordinates are the barycenter of the solar system",
+    "sourceLabel": "AstroPy",
+    "source_url": "https://docs.astropy.org/en/stable/coordinates/skycoord.html",
+    "source_file": "software/AstroPy-2024-09-09.csv"
+  },
+  {
+    "term": "BarycentricTrueEcliptic",
+    "label": "Barycentric True Ecliptic",
+    "definition": " Barycentric true ecliptic coordinates. These origin of the coordinates are the barycenter of the solar system",
+    "sourceLabel": "AstroPy",
+    "source_url": "https://docs.astropy.org/en/stable/coordinates/skycoord.html",
+    "source_file": "software/AstroPy-2024-09-09.csv"
   },
   {
     "term": "CD",
@@ -80,6 +104,14 @@
     "source_file": "documents/SPASE-2023.csv"
   },
   {
+    "term": "CIRS",
+    "label": "Celestial Intermediate Reference System",
+    "definition": "A coordinate or frame in the Celestial Intermediate Reference System (CIRS).",
+    "sourceLabel": "AstroPy",
+    "source_url": "https://docs.astropy.org/en/stable/coordinates/skycoord.html",
+    "source_file": "software/AstroPy-2024-09-09.csv"
+  },
+  {
     "term": "CPHIO",
     "label": "Callisto Phi-Omega",
     "definition": "In those Cartesian coordinate system (referred to as MphiO - M is Moon prefix -),\nX is along the flow direction, Y is along the Moon-Jupiter vector, and Z is along the spin axis.\nThese coordinates are analogous to the earth-centered GSE coordinates that relate to the direction of\nflow of the solar wind onto Earth's environment",
@@ -102,6 +134,126 @@
     "sourceLabel": "SPASE",
     "source_url": "https://spase-group.org/data/model/spase-2.4.0/spase-2_4_0_xsd.html",
     "source_file": "documents/SPASE-2023.csv"
+  },
+  {
+    "term": "DE-102",
+    "label": "JPL Developmental Ephemeris (102).",
+    "definition": "",
+    "sourceLabel": "SPICE_Built_In_Inertial",
+    "source_url": "https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html",
+    "source_file": "software/SPICE_Built_In_Inertial-2023.csv"
+  },
+  {
+    "term": "DE-108",
+    "label": "JPL Developmental Ephemeris (108).",
+    "definition": "",
+    "sourceLabel": "SPICE_Built_In_Inertial",
+    "source_url": "https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html",
+    "source_file": "software/SPICE_Built_In_Inertial-2023.csv"
+  },
+  {
+    "term": "DE-111",
+    "label": "JPL Developmental Ephemeris (111).",
+    "definition": "",
+    "sourceLabel": "SPICE_Built_In_Inertial",
+    "source_url": "https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html",
+    "source_file": "software/SPICE_Built_In_Inertial-2023.csv"
+  },
+  {
+    "term": "DE-114",
+    "label": "JPL Developmental Ephemeris (114).",
+    "definition": "",
+    "sourceLabel": "SPICE_Built_In_Inertial",
+    "source_url": "https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html",
+    "source_file": "software/SPICE_Built_In_Inertial-2023.csv"
+  },
+  {
+    "term": "DE-118",
+    "label": "JPL Developmental Ephemeris (118).",
+    "definition": "The DE-118 reference frame is nearly identical to the FK4 frame. It is also derived from the B1950 frame. Only the offset is different\\n\\n[ 0.53155 ]\\n\\n      3\\n\\nIn [2]",
+    "sourceLabel": "SPICE_Built_In_Inertial",
+    "source_url": "https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html",
+    "source_file": "software/SPICE_Built_In_Inertial-2023.csv"
+  },
+  {
+    "term": "DE-122",
+    "label": "JPL Developmental Ephemeris (122).",
+    "definition": "",
+    "sourceLabel": "SPICE_Built_In_Inertial",
+    "source_url": "https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html",
+    "source_file": "software/SPICE_Built_In_Inertial-2023.csv"
+  },
+  {
+    "term": "DE-125",
+    "label": "JPL Developmental Ephemeris (125).",
+    "definition": "",
+    "sourceLabel": "SPICE_Built_In_Inertial",
+    "source_url": "https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html",
+    "source_file": "software/SPICE_Built_In_Inertial-2023.csv"
+  },
+  {
+    "term": "DE-130",
+    "label": "JPL Developmental Ephemeris (130).",
+    "definition": "",
+    "sourceLabel": "SPICE_Built_In_Inertial",
+    "source_url": "https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html",
+    "source_file": "software/SPICE_Built_In_Inertial-2023.csv"
+  },
+  {
+    "term": "DE-140",
+    "label": "JPL Developmental Ephemeris. (140)",
+    "definition": "The DE-140 frame is the DE-400 frame rotated:\\n\\n\\n\\n0.9999256765384668  0.0111817701197967  0.0048589521583895\\n-0.0111817701797229  0.9999374816848701 -0.0000271545195858\\n-0.0048589520204830 -0.0000271791849815  0.9999881948535965\\n\\nThe DE-400 frame is treated as equivalent to the J2000 frame.",
+    "sourceLabel": "SPICE_Built_In_Inertial",
+    "source_url": "https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html",
+    "source_file": "software/SPICE_Built_In_Inertial-2023.csv"
+  },
+  {
+    "term": "DE-142",
+    "label": "JPL Developmental Ephemeris. (142)",
+    "definition": "The DE-142 frame is the DE-402 frame rotated:\\n\\n0.9999256765402605  0.0111817697320531  0.0048589526815484\\n-0.0111817697907755  0.9999374816892126 -0.0000271547693170\\n-0.0048589525464121 -0.0000271789392288  0.9999881948510477\\n\\nThe DE-402 frame is treated as equivalent to the J2000 frame.",
+    "sourceLabel": "SPICE_Built_In_Inertial",
+    "source_url": "https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html",
+    "source_file": "software/SPICE_Built_In_Inertial-2023.csv"
+  },
+  {
+    "term": "DE-143",
+    "label": "JPL Developmental Ephemeris. (143)",
+    "definition": "The DE-143 frame is the DE-403 frame rotated:\\n\\n0.9999256765435852  0.0111817743077255  0.0048589414674762\\n-0.0111817743300355  0.9999374816382505 -0.0000271622115251\\n-0.0048589414161348 -0.0000271713942366  0.9999881949053349\\n\\nThe DE-403 frame is treated as equivalent to the J2000 frame.",
+    "sourceLabel": "SPICE_Built_In_Inertial",
+    "source_url": "https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html",
+    "source_file": "software/SPICE_Built_In_Inertial-2023.csv"
+  },
+  {
+    "term": "DE-200",
+    "label": "JPL Developmental Ephemeris (200).",
+    "definition": "",
+    "sourceLabel": "SPICE_Built_In_Inertial",
+    "source_url": "https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html",
+    "source_file": "software/SPICE_Built_In_Inertial-2023.csv"
+  },
+  {
+    "term": "DE-202",
+    "label": "JPL Developmental Ephemeris (202).",
+    "definition": "",
+    "sourceLabel": "SPICE_Built_In_Inertial",
+    "source_url": "https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html",
+    "source_file": "software/SPICE_Built_In_Inertial-2023.csv"
+  },
+  {
+    "term": "DE-96",
+    "label": "JPL Developmental Ephemeris ( 96).",
+    "definition": "",
+    "sourceLabel": "SPICE_Built_In_Inertial",
+    "source_url": "https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html",
+    "source_file": "software/SPICE_Built_In_Inertial-2023.csv"
+  },
+  {
+    "term": "DGEO",
+    "label": "WORLD GEODETIC SYSTEM WGS84 PARAMETERS FOR THE EARTH'S ELLIPSOID",
+    "definition": "",
+    "sourceLabel": "Geopack",
+    "source_url": "https://geo.phys.spbu.ru/~tsyganenko/empirical-models/coordinate_systems/gsw_system",
+    "source_file": "software/Geopack-2008_gsw_system.csv"
   },
   {
     "term": "DIIS",
@@ -168,12 +320,52 @@
     "source_file": "documents/SPASE-2023.csv"
   },
   {
+    "term": "ECI2000",
+    "label": "Earth-centered Inertial, J2000 epoch",
+    "definition": "",
+    "sourceLabel": "SpacePy",
+    "source_url": "https://spacepy.github.io/_modules/spacepy/coordinates.html",
+    "source_file": "software/SpacePy-2023.csv"
+  },
+  {
+    "term": "ECIMOD",
+    "label": "Earth-centered Inertial, mean-of-date",
+    "definition": "",
+    "sourceLabel": "SpacePy",
+    "source_url": "https://spacepy.github.io/_modules/spacepy/coordinates.html",
+    "source_file": "software/SpacePy-2023.csv"
+  },
+  {
+    "term": "ECITOD",
+    "label": "Earth-centered Inertial, true-of-date",
+    "definition": "",
+    "sourceLabel": "SpacePy",
+    "source_url": "https://spacepy.github.io/_modules/spacepy/coordinates.html",
+    "source_file": "software/SpacePy-2023.csv"
+  },
+  {
+    "term": "ECLIPB1950",
+    "label": "Ecliptic coordinates based upon the B1950 frame.",
+    "definition": "The value for the obliquity of the ecliptic at B1950 is taken from page 171 of [7].",
+    "sourceLabel": "SPICE_Built_In_Inertial",
+    "source_url": "https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html",
+    "source_file": "software/SPICE_Built_In_Inertial-2023.csv"
+  },
+  {
     "term": "ECLIPDATE",
     "label": "Earth Mean Ecliptic and Equinox",
     "definition": "The Earth Mean Ecliptic and Equinox of Date frame is defined as follows:\n\n      -  +Z axis is aligned with the north-pointing vector normal to the\n         mean orbital plane of the Earth;\n\n      -  +X axis points along the ``mean equinox'', which is defined as the\n         intersection of the Earth's mean orbital plane with the Earth's mean\n         equatorial plane. It is aligned with the cross product of the\n         north-pointing vectors normal to the Earth's mean equator and mean\n         orbit plane of date;\n\n      -  +Y axis is the cross product of the Z and X axes and completes the\n         right-handed frame;\n\n      -  the origin of this frame is the Earth's center of mass.\n\n   The mathematical model used to obtain the orientation of the Earth's mean\n   equator and equinox of date frame is the 1976 IAU precession model, built\n   into SPICE.\n\n   The mathematical model used to obtain the mean orbital plane of the Earth\n   is the 1980 IAU obliquity model, also built into SPICE.\n\n   The base frame for the 1976 IAU precession model is J2000.",
     "sourceLabel": "TREPS_frames",
     "source_url": "https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml",
     "source_file": "software/TREPS_frames-2023.xml"
+  },
+  {
+    "term": "ECLIPJ2000",
+    "label": "Ecliptic coordinates based upon the J2000 frame.",
+    "definition": "The value for the obliquity of the ecliptic at J2000 is taken from page 114 of [7] equation 3.222-1. This agrees with the expression given in [5].",
+    "sourceLabel": "SPICE_Built_In_Inertial",
+    "source_url": "https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html",
+    "source_file": "software/SPICE_Built_In_Inertial-2023.csv"
   },
   {
     "term": "ECLIPJ2000",
@@ -257,6 +449,14 @@
   },
   {
     "term": "FK4",
+    "label": "FK4",
+    "definition": "Note that this is a barycentric version of FK4 - that is, the origin for this frame is the Solar System Barycenter, not the Earth geocenter.",
+    "sourceLabel": "AstroPy",
+    "source_url": "https://docs.astropy.org/en/stable/coordinates/skycoord.html",
+    "source_file": "software/AstroPy-2024-09-09.csv"
+  },
+  {
+    "term": "FK4",
     "label": "Fundamental Katalog, system 4; Besselian",
     "definition": "Requires Equinox; default B1950.0\r\nLeft-handed in spherical coordinates",
     "sourceLabel": "IVOA_STCT",
@@ -270,6 +470,14 @@
     "sourceLabel": "IVOA_refframe",
     "source_url": "IVOA-2022",
     "source_file": "documents/IVOA_refframe-2022-02-22-terms.csv"
+  },
+  {
+    "term": "FK4NoETerms",
+    "label": "FK4 No E-Terms",
+    "definition": "A coordinate or frame in the FK4 system, but with the E-terms of aberration removed.\"\nGCRS,Geocentric Celestial Reference System,A coordinate or frame in the Geocentric Celestial Reference System (GCRS).\\n\\nGCRS is distinct form ICRS mainly in that it is relative to the Earth\u2019s center-of-mass rather than the solar system Barycenter. That means this frame includes the effects of aberration (unlike ICRS). For more background on the GCRS",
+    "sourceLabel": "AstroPy",
+    "source_url": "https://docs.astropy.org/en/stable/coordinates/skycoord.html",
+    "source_file": "software/AstroPy-2024-09-09.csv"
   },
   {
     "term": "FK5",
@@ -286,6 +494,14 @@
     "sourceLabel": "IVOA_refframe",
     "source_url": "IVOA-2022",
     "source_file": "documents/IVOA_refframe-2022-02-22-terms.csv"
+  },
+  {
+    "term": "GALACTIC",
+    "label": "Galactic System II.",
+    "definition": "The Galactic System II reference frame is defined by the following rotations:\\n\\no          o            o\\n\\n[ 327  ]  [ 62.6  ]  [ 282.25  ]\\n\\n      3          1            3\\n\\nIn the absence of better information, we assume the rotations are relative to the FK4 frame.",
+    "sourceLabel": "SPICE_Built_In_Inertial",
+    "source_url": "https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html",
+    "source_file": "software/SPICE_Built_In_Inertial-2023.csv"
   },
   {
     "term": "GALACTIC",
@@ -320,6 +536,38 @@
     "source_file": "documents/IVOA_refframe-2022-02-22-terms.csv"
   },
   {
+    "term": "GDZ",
+    "label": "Geodetic coordinates",
+    "definition": "",
+    "sourceLabel": "SpacePy",
+    "source_url": "https://spacepy.github.io/_modules/spacepy/coordinates.html",
+    "source_file": "software/SpacePy-2023.csv"
+  },
+  {
+    "term": "GEI",
+    "label": "",
+    "definition": "",
+    "sourceLabel": "PySPEDAS",
+    "source_url": "https://github.com/spedas/pyspedas/blob/master/pyspedas/cotrans/cotrans_lib.py",
+    "source_file": "software/PySPEDAS-2023.csv"
+  },
+  {
+    "term": "GEI",
+    "label": "Geocentric Equatorial Inertial (IRBEM approximation of TOD)",
+    "definition": "",
+    "sourceLabel": "SpacePy",
+    "source_url": "https://spacepy.github.io/_modules/spacepy/coordinates.html",
+    "source_file": "software/SpacePy-2023.csv"
+  },
+  {
+    "term": "GEI",
+    "label": "",
+    "definition": "",
+    "sourceLabel": "Geopack",
+    "source_url": "https://geo.phys.spbu.ru/~tsyganenko/empirical-models/coordinate_systems/gsw_system",
+    "source_file": "software/Geopack-2008_gsw_system.csv"
+  },
+  {
     "term": "GEI",
     "label": "Geocentric Equatorial Inertial",
     "definition": "GEI Geocentric Equatorial Inertial - A coordinate system where the Z axis is along Earths spin vector, positive northward. X axis points towards the first point of Aries (from the Earth towards the Sun at the vernal equinox). See Russell, 1971. When the X axis is the direction of the mean vernal equinox of J2000, the coordinate system is also called GCI. Then the Z axis is also defined as being normal to the mean Earth equator of J2000.",
@@ -342,6 +590,30 @@
     "sourceLabel": "Laundal_and_Richmond",
     "source_url": "https://doi.org/10.1007/s11214-016-0275-y",
     "source_file": "papers/Laundal_and_Richmond-2016.csv"
+  },
+  {
+    "term": "GEO",
+    "label": "",
+    "definition": "",
+    "sourceLabel": "PySPEDAS",
+    "source_url": "https://github.com/spedas/pyspedas/blob/master/pyspedas/cotrans/cotrans_lib.py",
+    "source_file": "software/PySPEDAS-2023.csv"
+  },
+  {
+    "term": "GEO",
+    "label": "Geocentric geographic, aka Earth-centered Earth-fixed",
+    "definition": "",
+    "sourceLabel": "SpacePy",
+    "source_url": "https://spacepy.github.io/_modules/spacepy/coordinates.html",
+    "source_file": "software/SpacePy-2023.csv"
+  },
+  {
+    "term": "GEO",
+    "label": "",
+    "definition": "",
+    "sourceLabel": "Geopack",
+    "source_url": "https://geo.phys.spbu.ru/~tsyganenko/empirical-models/coordinate_systems/gsw_system",
+    "source_file": "software/Geopack-2008_gsw_system.csv"
   },
   {
     "term": "GEO",
@@ -417,6 +689,22 @@
   },
   {
     "term": "GSE",
+    "label": "",
+    "definition": "",
+    "sourceLabel": "PySPEDAS",
+    "source_url": "https://github.com/spedas/pyspedas/blob/master/pyspedas/cotrans/cotrans_lib.py",
+    "source_file": "software/PySPEDAS-2023.csv"
+  },
+  {
+    "term": "GSE",
+    "label": "Geocentric Solar Ecliptic",
+    "definition": "",
+    "sourceLabel": "SpacePy",
+    "source_url": "https://spacepy.github.io/_modules/spacepy/coordinates.html",
+    "source_file": "software/SpacePy-2023.csv"
+  },
+  {
+    "term": "GSE",
     "label": "Geocentric Solar Ecliptic coordinates",
     "definition": "See F&H (2002)",
     "sourceLabel": "IVOA_STCT",
@@ -438,6 +726,14 @@
     "sourceLabel": "TREPS_frames",
     "source_url": "https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml",
     "source_file": "software/TREPS_frames-2023.xml"
+  },
+  {
+    "term": "GSE\"",
+    "label": "",
+    "definition": "",
+    "sourceLabel": "Geopack",
+    "source_url": "https://geo.phys.spbu.ru/~tsyganenko/empirical-models/coordinate_systems/gsw_system",
+    "source_file": "software/Geopack-2008_gsw_system.csv"
   },
   {
     "term": "GSEQ",
@@ -462,6 +758,30 @@
     "sourceLabel": "Laundal_and_Richmond",
     "source_url": "https://doi.org/10.1007/s11214-016-0275-y",
     "source_file": "papers/Laundal_and_Richmond-2016.csv"
+  },
+  {
+    "term": "GSM",
+    "label": "",
+    "definition": "",
+    "sourceLabel": "PySPEDAS",
+    "source_url": "https://github.com/spedas/pyspedas/blob/master/pyspedas/cotrans/cotrans_lib.py",
+    "source_file": "software/PySPEDAS-2023.csv"
+  },
+  {
+    "term": "GSM",
+    "label": "Geocentric Solar Magnetospheric",
+    "definition": "",
+    "sourceLabel": "SpacePy",
+    "source_url": "https://spacepy.github.io/_modules/spacepy/coordinates.html",
+    "source_file": "software/SpacePy-2023.csv"
+  },
+  {
+    "term": "GSM",
+    "label": "",
+    "definition": "",
+    "sourceLabel": "Geopack",
+    "source_url": "https://geo.phys.spbu.ru/~tsyganenko/empirical-models/coordinate_systems/gsw_system",
+    "source_file": "software/Geopack-2008_gsw_system.csv"
   },
   {
     "term": "GSM",
@@ -496,41 +816,57 @@
     "source_file": "software/Geopack-2008_gsw_system.csv"
   },
   {
-    "term": "GeocentricEarthEquatorial(MeanJ2000.0orDate)",
-    "label": "GeocentricEarthEquatorial",
-    "definition": "Astropy's PrecessedGeocentric is similar, but includes aberration due to Earth motion",
+    "term": "GeocentricEarthEquatorial",
+    "label": "Geocentric Earth Equatorial (Mean); GEI",
+    "definition": "The origin is the center of the Earth.\\n\\nThe Z-axis (+90 degrees latitude) is aligned with the Earth\u2019s north pole.\\n\\nThe X-axis (0 degrees longitude and 0 degrees latitude) is aligned with the mean (not true) vernal equinox.",
     "sourceLabel": "SunPy",
     "source_url": "https://github.com/sunpy/sunpy/wiki/Coordinate-systems",
     "source_file": "software/SunPy-2023.csv"
   },
   {
-    "term": "GeocentricEarthEquatorial(True)",
-    "label": "none",
-    "definition": "",
-    "sourceLabel": "SunPy",
-    "source_url": "https://github.com/sunpy/sunpy/wiki/Coordinate-systems",
-    "source_file": "software/SunPy-2023.csv"
+    "term": "GeocentricMeanEcliptic",
+    "label": "Geocentric Mean Ecliptic",
+    "definition": " \"Geocentric mean ecliptic coordinates. These origin of the coordinates are the geocenter (Earth)",
+    "sourceLabel": "AstroPy",
+    "source_url": "https://docs.astropy.org/en/stable/coordinates/skycoord.html",
+    "source_file": "software/AstroPy-2024-09-09.csv"
   },
   {
     "term": "GeocentricSolarEcliptic",
-    "label": "GeocentricSolarEcliptic",
-    "definition": "X=Earth-Sun line, XZ-plane contains the mean ecliptic north pole",
+    "label": "Geocentric Solar Ecliptic; GSE",
+    "definition": "The origin is the center of the Earth.\\n\\nThe X-axis (0 degrees longitude and 0 degrees latitude) is aligned with the Earth-Sun line.\\n\\nThe Z-axis (+90 degrees latitude) is aligned with the component perpendicular to the X-axis of the mean ecliptic pole at the observation time.",
     "sourceLabel": "SunPy",
     "source_url": "https://github.com/sunpy/sunpy/wiki/Coordinate-systems",
     "source_file": "software/SunPy-2023.csv"
   },
   {
     "term": "GeocentricSolarMagnetospheric",
-    "label": "none",
-    "definition": "Z=projection of northern dipole axis on GSE YZ plane, X=Earth\u2013Sun line",
+    "label": "Geocentric Solar Magnetospheric; GSM",
+    "definition": "The origin is the center of the Earth.\\n\\nThe X-axis (0 degrees longitude and 0 degrees latitude) is aligned with the Earth-Sun line.\\n\\nThe Z-axis (+90 degrees latitude) is aligned with the component of the Earth\u2019s magnetic north pole that is perpendicular to the X-axis.",
     "sourceLabel": "SunPy",
     "source_url": "https://github.com/sunpy/sunpy/wiki/Coordinate-systems",
     "source_file": "software/SunPy-2023.csv"
   },
   {
+    "term": "GeocentricTrueEcliptic",
+    "label": "Geocentric True Ecliptic",
+    "definition": "Geocentric true ecliptic coordinates. These origin of the coordinates are the geocenter (Earth), with the x axis pointing to the true (not mean) equinox at the time specified by the equinox attribute, and the xy-plane in the plane of the ecliptic for that date.\\n\\nBe aware that the definition of \u201cgeocentric\u201d here means that this frame includes light deflection from the sun, aberration, etc when transforming to/from e.g. ICRS.",
+    "sourceLabel": "AstroPy",
+    "source_url": "https://docs.astropy.org/en/stable/coordinates/skycoord.html",
+    "source_file": "software/AstroPy-2024-09-09.csv"
+  },
+  {
     "term": "Geographic",
-    "label": "Astropy's ITRS",
-    "definition": "Z=true geographic north pole, X=intersection of Greenwich meridian and geographic equator",
+    "label": "Geographic; GEO",
+    "definition": "Astropy's ITRS frame",
+    "sourceLabel": "SunPy",
+    "source_url": "https://github.com/sunpy/sunpy/wiki/Coordinate-systems",
+    "source_file": "software/SunPy-2023.csv"
+  },
+  {
+    "term": "Geomagnetic",
+    "label": "Geomagnetic; MAG",
+    "definition": "The origin is the center of the Earth.\\n\\nThe Z-axis (+90 degrees latitude) is aligned with the Earth\u2019s magnetic north pole.\\n\\nThe X-axis (0 degrees longitude and 0 degrees latitude) is aligned with the component of the Earth\u2019s geographic north pole that is perpendicular to the Z-axis.",
     "sourceLabel": "SunPy",
     "source_url": "https://github.com/sunpy/sunpy/wiki/Coordinate-systems",
     "source_file": "software/SunPy-2023.csv"
@@ -598,6 +934,14 @@
     "sourceLabel": "SPASE",
     "source_url": "https://spase-group.org/data/model/spase-2.4.0/spase-2_4_0_xsd.html",
     "source_file": "documents/SPASE-2023.csv"
+  },
+  {
+    "term": "HCRS",
+    "label": "Heliocentric system",
+    "definition": " with axes aligned to ICRS",
+    "sourceLabel": "AstroPy",
+    "source_url": "https://docs.astropy.org/en/stable/coordinates/skycoord.html",
+    "source_file": "software/AstroPy-2024-09-09.csv"
   },
   {
     "term": "HEE",
@@ -744,97 +1088,97 @@
     "source_file": "documents/SPASE-2023.csv"
   },
   {
+    "term": "Heliocentric",
+    "label": "HCC",
+    "definition": "A coordinate or frame in the Heliocentric system, which is observer-based.\\n\\nThe origin is the center of the Sun.\\n\\nThe Z-axis is aligned with the Sun-observer line.\\n\\nThe Y-axis is aligned with the component of the vector to the Sun\u2019s north pole that is perpendicular to the Z-axis.\\n\\nThis frame defaults to a Cartesian component representation, which is known as Heliocentric Cartesian (HCC). This frame can also be represented using cylindrical components, where where rho is the impact parameter and psi is the position angle. psi is measured relative to the west limb, rather than solar north, so is shifted by 90 degrees compared to the convention of the Heliocentric Radial (HCR) system.",
+    "sourceLabel": "SunPy",
+    "source_url": "https://github.com/sunpy/sunpy/wiki/Coordinate-systems",
+    "source_file": "software/SunPy-2023.csv"
+  },
+  {
     "term": "Heliocentric/HeliographicRadial-Tangential-Normal",
-    "label": "~Heliocentric",
+    "label": "HGRTN; similar to Heliocentric",
     "definition": "The axes are permuted, with HCC X, Y, Z equivalent respectively to HGRTN Y, Z, X",
     "sourceLabel": "SunPy",
     "source_url": "https://github.com/sunpy/sunpy/wiki/Coordinate-systems",
     "source_file": "software/SunPy-2023.csv"
   },
   {
-    "term": "HeliocentricAriesEcliptic(MeanJ2000.0orDate)",
-    "label": "Astropy's HeliocentricMeanEcliptic",
-    "definition": "If using an Astropy version before v3.2, use the misleadingly named HeliocentricTrueEcliptic",
-    "sourceLabel": "SunPy",
-    "source_url": "https://github.com/sunpy/sunpy/wiki/Coordinate-systems",
-    "source_file": "software/SunPy-2023.csv"
-  },
-  {
-    "term": "HeliocentricCartesian",
-    "label": "Heliocentric",
-    "definition": "Z=Sun-observer line, YZ-plane contains solar rotation axis",
-    "sourceLabel": "SunPy",
-    "source_url": "https://github.com/sunpy/sunpy/wiki/Coordinate-systems",
-    "source_file": "software/SunPy-2023.csv"
-  },
-  {
     "term": "HeliocentricEarthEcliptic",
-    "label": "HeliocentricEarthEcliptic",
-    "definition": "X=Sun-Earth line, XZ-plane contains the mean ecliptic north pole",
+    "label": "HEE",
+    "definition": "A coordinate or frame in the Heliocentric Earth Ecliptic (HEE) system.\\n\\nThe origin is the center of the Sun.\\n\\nThe X-axis (0 degrees longitude and 0 degrees latitude) is aligned with the Sun-Earth line.\\n\\nThe Z-axis (+90 degrees latitude) is aligned with the component perpendicular to the X-axis of the mean ecliptic pole at the observation time.",
     "sourceLabel": "SunPy",
     "source_url": "https://github.com/sunpy/sunpy/wiki/Coordinate-systems",
     "source_file": "software/SunPy-2023.csv"
   },
   {
     "term": "HeliocentricEarthEquatorial",
-    "label": "HeliographicStonyhurst",
-    "definition": "Specify the coordinate representation using CartesianRepresentation, and retrieve the representation via the attribute .cartesian",
+    "label": "HEEQ; HEQ",
+    "definition": "A coordinate or frame in the Heliocentric Earth Ecliptic (HEE) system.\\n\\nThe origin is the center of the Sun.\\n\\nThe X-axis (0 degrees longitude and 0 degrees latitude) is aligned with the Sun-Earth line.\\n\\nThe Z-axis (+90 degrees latitude) is aligned with the component perpendicular to the X-axis of the mean ecliptic pole at the observation time.",
     "sourceLabel": "SunPy",
     "source_url": "https://github.com/sunpy/sunpy/wiki/Coordinate-systems",
     "source_file": "software/SunPy-2023.csv"
   },
   {
+    "term": "HeliocentricEclipticIAU76",
+    "label": "Heliocentric Ecliptic IAU76",
+    "definition": "Heliocentric mean (IAU 1976) ecliptic coordinates. These origin of the coordinates are the center of the sun, with the x axis pointing in the direction of the mean (not true) equinox of J2000, and the xy-plane in the plane of the ecliptic of J2000 (according to the IAU 1976/1980 obliquity model). It has, therefore, a fixed equinox and an older obliquity value than the rest of the frames.",
+    "sourceLabel": "AstroPy",
+    "source_url": "https://docs.astropy.org/en/stable/coordinates/skycoord.html",
+    "source_file": "software/AstroPy-2024-09-09.csv"
+  },
+  {
     "term": "HeliocentricInertial",
-    "label": "HeliocentricInertial",
-    "definition": "Z=solar rotational axis, X=solar ascending node on mean ecliptic (J2000.0)",
+    "label": "HCI",
+    "definition": "The origin is the center of the Sun.\\n\\nThe Z-axis (+90 degrees latitude) is aligned with the Sun\u2019s north pole.\\n\\nThe X-axis (0 degrees longitude and 0 degrees latitude) is aligned with the solar ascending node on the ecliptic (mean J2000.0).",
+    "sourceLabel": "SunPy",
+    "source_url": "https://github.com/sunpy/sunpy/wiki/Coordinate-systems",
+    "source_file": "software/SunPy-2023.csv"
+  },
+  {
+    "term": "HeliocentricMeanEcliptic",
+    "label": "Heliocentric Aries Ecliptic (Mean) AKA: HAE; HEC; Astropy\u2019s HeliocentricMeanEcliptic",
+    "definition": "Heliocentric mean ecliptic coordinates. These origin of the coordinates are the center of the sun, with the x axis pointing in the direction of the mean (not true) equinox as at the time specified by the equinox attribute (as seen from Earth), and the xy-plane in the plane of the ecliptic for that date.",
     "sourceLabel": "SunPy",
     "source_url": "https://github.com/sunpy/sunpy/wiki/Coordinate-systems",
     "source_file": "software/SunPy-2023.csv"
   },
   {
     "term": "HeliocentricRadial",
-    "label": "~Heliocentric",
+    "label": "HCR; similar to Heliocentric",
     "definition": "Use a cylindrical representation, but with a 90-degree offset in psi because Heliocentric in cylindrical measures counter-clockwise from the west limb rather than solar north",
     "sourceLabel": "SunPy",
     "source_url": "https://github.com/sunpy/sunpy/wiki/Coordinate-systems",
     "source_file": "software/SunPy-2023.csv"
   },
   {
-    "term": "HeliocentricofDate",
-    "label": "none",
-    "definition": "Z=solar rotational axis, X=solar ascending node on mean ecliptic of date",
-    "sourceLabel": "SunPy",
-    "source_url": "https://github.com/sunpy/sunpy/wiki/Coordinate-systems",
-    "source_file": "software/SunPy-2023.csv"
+    "term": "HeliocentricTrueEcliptic",
+    "label": "Heliocentric True Ecliptic",
+    "definition": "Heliocentric true ecliptic coordinates. These origin of the coordinates are the center of the sun, with the x axis pointing in the direction of the true (not mean) equinox as at the time specified by the equinox attribute (as seen from Earth), and the xy-plane in the plane of the ecliptic for that date.",
+    "sourceLabel": "AstroPy",
+    "source_url": "https://docs.astropy.org/en/stable/coordinates/skycoord.html",
+    "source_file": "software/AstroPy-2024-09-09.csv"
   },
   {
     "term": "HeliographicCarrington",
-    "label": "HeliographicCarrington",
-    "definition": "",
+    "label": "Heliographic Carrington; HGC",
+    "definition": "A coordinate or frame in the Carrington Heliographic (HGC) system.\\n\\nThe origin is the center of the Sun.\\n\\nThe Z-axis (+90 degrees latitude) is aligned with the Sun\u2019s north pole.\\n\\nThe X-axis and Y-axis rotate with a period of 25.38 days.\\n\\nThis system differs from Stonyhurst Heliographic (HGS) in its definition of longitude. This longitude is an \u201capparent\u201d longitude because it takes into account the time it takes for light to travel from the Sun\u2019s surface to the observer (see Calculating Carrington longitude). Thus, the observer needs to be specified to be able to transform to any other coordinate frame.",
     "sourceLabel": "SunPy",
     "source_url": "https://github.com/sunpy/sunpy/wiki/Coordinate-systems",
     "source_file": "software/SunPy-2023.csv"
   },
   {
     "term": "HeliographicStonyhurst",
-    "label": "HeliographicStonyhurst",
-    "definition": "",
+    "label": "Heliographic Stonyhurst; HGS",
+    "definition": "A coordinate or frame in the Stonyhurst Heliographic (HGS) system.\\n\\nThe origin is the center of the Sun.\\n\\nThe Z-axis (+90 degrees latitude) is aligned with the Sun\u2019s north pole.\\n\\nThe X-axis (0 degrees longitude and 0 degrees latitude) is aligned with the projection of the Sun-Earth line onto the Sun\u2019s equatorial plane.\\n\\nThis system is also know as the Heliocentric Earth Equatorial (HEEQ) system when represented using Cartesian components.",
     "sourceLabel": "SunPy",
     "source_url": "https://github.com/sunpy/sunpy/wiki/Coordinate-systems",
     "source_file": "software/SunPy-2023.csv"
   },
   {
-    "term": "HelioprojectiveCartesian",
-    "label": "Helioprojective",
-    "definition": "",
-    "sourceLabel": "SunPy",
-    "source_url": "https://github.com/sunpy/sunpy/wiki/Coordinate-systems",
-    "source_file": "software/SunPy-2023.csv"
-  },
-  {
-    "term": "HelioprojectiveRadial",
-    "label": "none",
-    "definition": "Is to Heliocentric Radial what HPC is to HCC",
+    "term": "Helioprojective",
+    "label": "Helioprojectic Cartesian; HPC",
+    "definition": "A coordinate or frame in the Helioprojective Cartesian (HPC) system, which is observer-based.\\n\\nThe origin is the location of the observer.\\n\\nTx (aka \u201ctheta_x\u201d) is the angle relative to the plane containing the Sun-observer line and the Sun\u2019s rotation axis, with positive values in the direction of the Sun\u2019s west limb.\\n\\nTy (aka \u201ctheta_y\u201d) is the angle relative to the Sun\u2019s equatorial plane, with positive values in the direction of the Sun\u2019s north pole.\\n\\ndistance is the Sun-observer distance.\\n\\nThis system is frequently used in a projective form without distance specified. For observations looking very close to the center of the Sun, where the small-angle approximation is appropriate, Tx and Ty can be approximated as Cartesian components.",
     "sourceLabel": "SunPy",
     "source_url": "https://github.com/sunpy/sunpy/wiki/Coordinate-systems",
     "source_file": "software/SunPy-2023.csv"
@@ -1833,6 +2177,14 @@
   },
   {
     "term": "ICRS",
+    "label": "ICRS",
+    "definition": "A coordinate or frame in the ICRS system.\\n\\nIf you\u2019re looking for \u201cJ2000\u201d coordinates, and aren\u2019t sure if you want to use this or FK5, you probably want to use ICRS. It\u2019s more well-defined as a catalog coordinate and is an inertial system, and is very close (within tens of milliarcseconds) to J2000 equatorial.\\n\\nFor more background on the ICRS and related coordinate transformations, see the references provided in the See Also section of the documentation.",
+    "sourceLabel": "AstroPy",
+    "source_url": "https://docs.astropy.org/en/stable/coordinates/skycoord.html",
+    "source_file": "software/AstroPy-2024-09-09.csv"
+  },
+  {
+    "term": "ICRS",
     "label": "International Celestial Reference System",
     "definition": "Left-handed in spherical coordinates",
     "sourceLabel": "IVOA_STCT",
@@ -1858,10 +2210,18 @@
   {
     "term": "J2000",
     "label": "Earth mean equator, dynamical equinox of J2000.",
-    "definition": " \"The root reference frame for SPICE.\"",
+    "definition": "The root reference frame for SPICE.",
     "sourceLabel": "SPICE_Built_In_Inertial",
     "source_url": "https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html",
     "source_file": "software/SPICE_Built_In_Inertial-2023.csv"
+  },
+  {
+    "term": "J2000",
+    "label": "",
+    "definition": "",
+    "sourceLabel": "PySPEDAS",
+    "source_url": "https://github.com/spedas/pyspedas/blob/master/pyspedas/cotrans/cotrans_lib.py",
+    "source_file": "software/PySPEDAS-2023.csv"
   },
   {
     "term": "J2000",
@@ -2024,6 +2384,30 @@
     "source_file": "software/TREPS_frames-2023.xml"
   },
   {
+    "term": "LSR",
+    "label": "Local Standard of Rest",
+    "definition": "A coordinate or frame in the Local Standard of Rest (LSR).\\n\\nThis coordinate frame is axis-aligned and co-spatial with ICRS, but has a velocity offset relative to the solar system barycenter to remove the peculiar motion of the sun relative to the LSR. Roughly, the LSR is the mean velocity of the stars in the solar neighborhood, but the precise definition of which depends on the study. As defined in Sch\u00f6nrich et al. (2010): \u201cThe LSR is the rest frame at the location of the Sun of a star that would be on a circular orbit in the gravitational potential one would obtain by azimuthally averaging away non-axisymmetric features in the actual Galactic potential.\u201d No such orbit truly exists, but it is still a commonly used velocity frame.\\n\\nWe use default values from Sch\u00f6nrich et al. (2010) for the barycentric velocity relative to the LSR, which is defined in Galactic (right-handed) cartesian velocity components. These values are customizable via the v_bary argument which specifies the velocity of the solar system barycenter with respect to the LSR.",
+    "sourceLabel": "AstroPy",
+    "source_url": "https://docs.astropy.org/en/stable/coordinates/skycoord.html",
+    "source_file": "software/AstroPy-2024-09-09.csv"
+  },
+  {
+    "term": "LSRD",
+    "label": "Dynamical Local Standard of Rest",
+    "definition": "A coordinate or frame in the Dynamical Local Standard of Rest (LSRD).\\n\\nThis frame is defined as a velocity of U=9 km/s, V=12 km/s, and W=7 km/s in Galactic coordinates or 16.552945 km/s towards l=53.13 b=25.02. This is defined in:\\n\\nDelhaye 1965, Solar Motion and Velocity Distribution of Common Stars.\\n\\nThis coordinate frame is axis-aligned and co-spatial with ICRS, but has a velocity offset relative to the solar system barycenter to remove the peculiar motion of the sun relative to the LSRD.",
+    "sourceLabel": "AstroPy",
+    "source_url": "https://docs.astropy.org/en/stable/coordinates/skycoord.html",
+    "source_file": "software/AstroPy-2024-09-09.csv"
+  },
+  {
+    "term": "LSRK",
+    "label": "Kinematic Local Standard of Rest",
+    "definition": "A coordinate or frame in the Kinematic Local Standard of Rest (LSR).\\n\\nThis frame is defined as having a velocity of 20 km/s towards RA=270 Dec=30 (B1900) relative to the solar system Barycenter. This is defined in:\\n\\nGordon 1975, Methods of Experimental Physics: Volume 12: Astrophysics, Part C: Radio Observations - Section 6.1.5.\\n\\nThis coordinate frame is axis-aligned and co-spatial with ICRS, but has a velocity offset relative to the solar system barycenter to remove the peculiar motion of the sun relative to the LSRK.",
+    "sourceLabel": "AstroPy",
+    "source_url": "https://docs.astropy.org/en/stable/coordinates/skycoord.html",
+    "source_file": "software/AstroPy-2024-09-09.csv"
+  },
+  {
     "term": "LUNA_C",
     "label": "Selenocentric coordinates",
     "definition": "See Explanatory Supplement, Section 7.3",
@@ -2073,6 +2457,30 @@
   },
   {
     "term": "MAG",
+    "label": "",
+    "definition": "",
+    "sourceLabel": "PySPEDAS",
+    "source_url": "https://github.com/spedas/pyspedas/blob/master/pyspedas/cotrans/cotrans_lib.py",
+    "source_file": "software/PySPEDAS-2023.csv"
+  },
+  {
+    "term": "MAG",
+    "label": "Geomagnetic Coordinate System (aka CDMAG)",
+    "definition": "",
+    "sourceLabel": "SpacePy",
+    "source_url": "https://spacepy.github.io/_modules/spacepy/coordinates.html",
+    "source_file": "software/SpacePy-2023.csv"
+  },
+  {
+    "term": "MAG",
+    "label": "DIPOLE (MAG) COORDINATES",
+    "definition": "",
+    "sourceLabel": "Geopack",
+    "source_url": "https://geo.phys.spbu.ru/~tsyganenko/empirical-models/coordinate_systems/gsw_system",
+    "source_file": "software/Geopack-2008_gsw_system.csv"
+  },
+  {
+    "term": "MAG",
     "label": "Geomagnetic coordinates",
     "definition": "See F&H (2002)",
     "sourceLabel": "IVOA_STCT",
@@ -2094,6 +2502,14 @@
     "sourceLabel": "TREPS_frames",
     "source_url": "https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml",
     "source_file": "software/TREPS_frames-2023.xml"
+  },
+  {
+    "term": "MARSIAU",
+    "label": "Mars Mean Equator and IAU vector of J2000.",
+    "definition": "The IAU-vector at Mars is the point on the mean equator of Mars where the equator ascends through the earth mean equator. This vector is the cross product of Earth mean north with Mars mean north.",
+    "sourceLabel": "SPICE_Built_In_Inertial",
+    "source_url": "https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html",
+    "source_file": "software/SPICE_Built_In_Inertial-2023.csv"
   },
   {
     "term": "MARS_C",
@@ -2320,6 +2736,14 @@
     "source_file": "software/TREPS_frames-2023.xml"
   },
   {
+    "term": "PrecessedGeocentric",
+    "label": "Precessed Geocentric",
+    "definition": "A coordinate frame defined in a similar manner as GCRS, but precessed to a requested (mean) equinox. Note that this does not end up the same as regular GCRS even for J2000 equinox, because the GCRS orientation is fixed to that of ICRS, which is not quite the same as the dynamical J2000 orientation.",
+    "sourceLabel": "AstroPy",
+    "source_url": "https://docs.astropy.org/en/stable/coordinates/skycoord.html",
+    "source_file": "software/AstroPy-2024-09-09.csv"
+  },
+  {
     "term": "QD",
     "label": "Quasi-Dipole (Sect. 4.1)",
     "definition": "",
@@ -2406,6 +2830,30 @@
     "sourceLabel": "Laundal_and_Richmond",
     "source_url": "https://doi.org/10.1007/s11214-016-0275-y",
     "source_file": "papers/Laundal_and_Richmond-2016.csv"
+  },
+  {
+    "term": "SM",
+    "label": "",
+    "definition": "",
+    "sourceLabel": "PySPEDAS",
+    "source_url": "https://github.com/spedas/pyspedas/blob/master/pyspedas/cotrans/cotrans_lib.py",
+    "source_file": "software/PySPEDAS-2023.csv"
+  },
+  {
+    "term": "SM",
+    "label": "Solar Magnetic",
+    "definition": "",
+    "sourceLabel": "SpacePy",
+    "source_url": "https://spacepy.github.io/_modules/spacepy/coordinates.html",
+    "source_file": "software/SpacePy-2023.csv"
+  },
+  {
+    "term": "SM",
+    "label": "",
+    "definition": "",
+    "sourceLabel": "Geopack",
+    "source_url": "https://geo.phys.spbu.ru/~tsyganenko/empirical-models/coordinate_systems/gsw_system",
+    "source_file": "software/Geopack-2008_gsw_system.csv"
   },
   {
     "term": "SM",
@@ -2528,6 +2976,14 @@
     "source_file": "documents/CDPP_AMDA_request-2023-05.csv"
   },
   {
+    "term": "SolarMagnetic",
+    "label": "Solar Magnetic; SM",
+    "definition": "The origin is the center of the Earth.\\n\\nThe Z-axis (+90 degrees latitude) is aligned with the Earth\u2019s magnetic north pole.\\n\\nThe X-axis (0 degrees longitude and 0 degrees latitude) is aligned with the component of the Earth-Sun line that is perpendicular to the Z-axis.",
+    "sourceLabel": "SunPy",
+    "source_url": "https://github.com/sunpy/sunpy/wiki/Coordinate-systems",
+    "source_file": "software/SunPy-2023.csv"
+  },
+  {
     "term": "SpacecraftOrbitPlane",
     "label": "Spacecraft Orbit Plane",
     "definition": "A coordinate system where X lies in the plane normal to and in the direction of motion of the spacecraft, Z is normal to this plane and Y completes the triad in a right-handed coordinate system.",
@@ -2542,6 +2998,14 @@
     "sourceLabel": "TREPS_frames",
     "source_url": "https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml",
     "source_file": "software/TREPS_frames-2023.xml"
+  },
+  {
+    "term": "TETE",
+    "label": "Equatorial coordinate or frame using the True Equator and True Equinox",
+    "definition": "An equatorial coordinate or frame using the True Equator and True Equinox (TETE).\\n\\nEquatorial coordinate frames measure RA with respect to the equinox and declination with with respect to the equator. The location of the equinox and equator vary due the gravitational torques on the oblate Earth. This variation is split into precession and nutation, although really they are two aspects of a single phenomena. The smooth, long term variation is known as precession, whilst smaller, periodic components are called nutation.\\n\\nCalculation of the true equator and equinox involves the application of both precession and nutation, whilst only applying precession gives a mean equator and equinox.\\n\\nTETE coordinates are often referred to as \u201capparent\u201d coordinates, or \u201capparent place\u201d. TETE is the apparent coordinate system used by JPL Horizons and is the correct coordinate system to use when combining the right ascension with local apparent sidereal time to calculate the apparent (TIRS) hour angle.\\n\\nFor more background on TETE, see the references provided in the See Also section of the documentation. Of particular note are Sections 5 and 6 of USNO Circular 179) and especially the diagram at the top of page 57.\\n\\nThis frame also includes frames that are defined relative to the center of the Earth, but that are offset (in both position and velocity) from the center of the Earth. You may see such non-geocentric coordinates referred to as \u201ctopocentric\u201d.",
+    "sourceLabel": "AstroPy",
+    "source_url": "https://docs.astropy.org/en/stable/coordinates/skycoord.html",
+    "source_file": "software/AstroPy-2024-09-09.csv"
   },
   {
     "term": "TIIS",

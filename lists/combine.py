@@ -55,6 +55,7 @@ for file in files:
     source = "https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
     source_data = read_xml(file, file_id, source)
   data = [*data, *source_data]
+  # https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Complete%20List%20of%20%60%60Built%20in''%20Inertial%20Reference%20Frames
 
 # https://stackoverflow.com/a/21004113
 data = sorted(data, key=lambda x: x['term'])
