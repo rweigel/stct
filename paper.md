@@ -75,6 +75,7 @@ There are several versions that depend on how and which time-varying effects are
    * polar motion (IERS table; in SunPy, [Geocentric Earth Equatorial](https://docs.sunpy.org/en/stable/generated/api/sunpy.coordinates.GeocentricEarthEquatorial.html) (what is "abberation due to Earth motion"?) does not include true polar motion GEO does; 10-20 meters), and
    * planetary precession (motion of the ecliptic with respect to the fixed stars).
 
+
 Note that Franz and Harper 2017 define `GEI` as "Geocentric Earth Equatorial", perhaps to account for the fact that not all `GEI` definitions are actually inertial. Here we use the label "Geocentric Equatorial Inertial" for historical reasons. SunPy uses the term [`GeocentricEarthEquatorial`](https://docs.sunpy.org/en/stable/generated/api/sunpy.coordinates.frames.GeocentricEarthEquatorial.html) with definition "A coordinate or frame in the Geocentric Earth Equatorial (GEI) system".
 
 ## `GEI_TOD`
