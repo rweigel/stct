@@ -12,7 +12,7 @@ def read_csv(filename, sourceLabel):
     source_url = header[0].split("#")[1].strip()
     source_file = filename
     for row in reader:
-      d = {"term": "", "label": "", "definition": "", "sourceLabel": sourceLabel, "source_url": source_url, "source_file": source_file}
+      d = {"term": "", "label": "", "definition": "", "sourceLabel": sourceLabel, "sourceURL": source_url, "sourceFile": source_file}
       d["term"] = row[0].replace(" ","")
       if len(row) > 1:
         d["label"] = row[1]
@@ -23,7 +23,7 @@ def read_csv(filename, sourceLabel):
 
   return D
 
-def read_xml(filename, sourceLabel, source_url):
+def read_xml(filename, source_label, source_url):
   import xmltodict
 
   print("Reading", filename)
@@ -32,12 +32,15 @@ def read_xml(filename, sourceLabel, source_url):
 
   D = []
   for frame in doc['treps']['frames']['frame']:
+    definition = frame['description']
+    if definition is not None:
+      definition = definition.replace('"', '""')
     d = {'term': frame['@id'],
          'label': frame['fullname'],
-         'definition': frame['description'],
-         'sourceLabel': sourceLabel,
-         'source_url': source_url,
-         'source_file': filename
+         'definition': definition,
+         'sourceLabel': source_label,
+         'sourceURL': source_url,
+         'sourceFile': filename
     }
     D.append(d)
 
@@ -52,10 +55,13 @@ for file in files:
   if file_ext == '.csv':
     source_data = read_csv(file, file_id)
   else:
-    source = "https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
-    source_data = read_xml(file, file_id, source)
+    if file_id.startswith('SPICE'):
+      source_url = "https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Complete%20List%20of%20%60%60Built%20in''%20Inertial%20Reference%20Frames"
+    if file_id.startswith('TREPS'):
+      source_url = "https://gitlab.irap.omp.eu/CDPP/TREPS/blob/master/server/kernel/data/frames.xml"
+    source_data = read_xml(file, file_id, source_url)
   data = [*data, *source_data]
-  # https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/frames.html#Complete%20List%20of%20%60%60Built%20in''%20Inertial%20Reference%20Frames
+
 
 # https://stackoverflow.com/a/21004113
 data = sorted(data, key=lambda x: x['term'])
@@ -68,23 +74,7 @@ with open(filename, "w") as outfile:
 filename = "combined.csv"
 with open(filename, "w") as outfile:
   print("Writing", filename)
-  outfile.write("term,label,definition,sourceLabel,source_url,source_file\n")
+  outfile.write("term,sourceLabel,label,definition,sourceURL,sourceFile\n")
   for d in data:
-    outfile.write(f'{d["term"]},"{d["label"]}","{d["definition"]}",{d["sourceLabel"]},"{d["source_url"]}","{d["source_file"]}"\n')
+    outfile.write(f'{d["term"]},{d["sourceLabel"]},"{d["label"]}","{d["definition"]}","{d["sourceURL"]}","{d["sourceFile"]}"\n')
 
-
-if False:
-  filename = "../VEP-for-IVOA.head.md"
-  with open(filename,"r") as f:
-    print("Reading", filename)
-    head = f.read()
-
-  filename = "../VEP-for-IVOA.md"
-  with open(filename, "w") as outfile: 
-    print("Writing", filename)
-    outfile.write(head+"\n")
-    for d in D:
-      outfile.write(f'**Term**: `#{d["term"]}`\n')
-      outfile.write(f'**Label**: {d["label"]}\n')
-      outfile.write(f'**Definition**: \n{d["definition"]}\n')
-      outfile.write(f'______________________________________________________________\n\n')
