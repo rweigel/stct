@@ -1,6 +1,10 @@
+# Title
+
 Coordinate Frames and Transforms in Space Physics: Terms, Definitions, and Implementations
 
-R.S. Weigel, A.Y. Shih, R. Ringuett, S.M. Petrinec, S. Turner, R.M. Candey, and B. Cecconi
+# Authors?
+
+R.S. Weigel, A.Y. Shih, R. Ringuette, I. Christopher, S.M. Petrinec, S. Turner, R.M. Candey, and B. Cecconi
 
 # Abstract
 
@@ -242,7 +246,9 @@ Note that Franz and Harper 2017 define `GEI` as "Geocentric Earth Equatorial", p
 
 ## Spacecraft Ephemeris
 
-Geotail GEI, GSE, and GSM; Max differences on the order of 1000 km (⅙ of an RE).
+Geotail GEI, GSE, and GSM; Max differences on the order of 1000 km (⅙ of an RE). Summarize results over long time span (say avg(|angle|)
+
+Add a LEO s/c.
 
 ```
         X [km]        Y [km]         Z [km]   
