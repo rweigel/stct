@@ -1,3 +1,10 @@
+
+%Comment
+%More complete definition: https://spsweb.fltops.jpl.nasa.gov/portaldataops/mpg/MPG_Docs/MPG%20Book/Release/Chapter3-Coordinate%20&%20Reference%20Systems.pdf
+
+% https://space.stackexchange.com/questions/48386/are-eci-and-ecef-both-frames-and-or-coordinate-systems-is-there-a-difference?rq=1
+
+
 The following are notes on the GEI coordinate frame.
 
 There are two basic categories of the Geocentric Equatorial Inertial $^I$ (GEI) coordinate frame in common use.
